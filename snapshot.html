@@ -1067,24 +1067,32 @@ Ter ondersteuning bij het oplossen van die problemen beschrijven we er hier een 
 <p>Onderstaande flowchart beschrijft het proces zoals we dat binnen VNG Realisatie hanteren om tot Respec documentatie te komen. Daarnaast is het echter ook een voorbeeld van het gebruik van de Mermaid syntax voor het vervaardigen van zo'n flowchart. Zie de '<a href="https://mermaid.js.org/syntax/flowchart.html">Flowchart syntax</a>' voor een uitleg van de Mermaid syntax.</p>
 <figure id="fig-het-vng-r-respec-proces-mermaid-voorbeeld">
     
-<pre><code class="mermaid hljs" aria-busy="false" data-processed="true">%%{init: {"flowchart": {"defaultRenderer": "elk"}} }%%
-graph TD;
-    A([Start])----&gt;B{"&lt;b&gt;1&lt;/b&gt;&lt;br/&gt;Eerste versie&lt;br/&gt;van Respec&lt;br/&gt;documentatie?"};
-    B{"&lt;b&gt;1&lt;/b&gt;&lt;br/&gt;Eerste versie&lt;br/&gt;van Respec&lt;br/&gt;documentatie?"}--Nee--&gt;C("...");
-    C("...")----&gt;D("&lt;b&gt;3&lt;/b&gt;&lt;br/&gt;Creëer nieuwe content of pas content aan");
-    C("...")----&gt;E("&lt;b&gt;5&lt;/b&gt;&lt;br/&gt;Pas basisstructuur aan voor versie");
-    D("&lt;b&gt;3&lt;/b&gt;&lt;br/&gt;Creëer nieuwe content of pas content aan")----&gt;I("&lt;b&gt;4&lt;/b&gt;&lt;br/&gt;Assembleer document");
-    I("&lt;b&gt;4&lt;/b&gt;&lt;br/&gt;Assembleer document")----&gt;J("&lt;b&gt;5&lt;/b&gt;&lt;br/&gt;Pas document configuratie properties aan");
-    B{"&lt;b&gt;1&lt;/b&gt;&lt;br/&gt;Eerste versie&lt;br/&gt;van Respec&lt;br/&gt;documentatie?"}--Ja--&gt;F("...");
-    F("...")----&gt;G("&lt;b&gt;2&lt;/b&gt;&lt;br/&gt;Creëer en configureer project repo");
-    F("...")----&gt;H("&lt;b&gt;6&lt;/b&gt;&lt;br/&gt;Creëer basisstructuur in publicatie repo");
-    G("&lt;b&gt;2&lt;/b&gt;&lt;br/&gt;Creëer en configureer project repo")----&gt;D("&lt;b&gt;3&lt;/b&gt;&lt;br/&gt;Creëer nieuwe content of pas content aan");
-    H("&lt;b&gt;6&lt;/b&gt;&lt;br/&gt;Creëer basisstructuur in publicatie repo")----&gt;E("&lt;b&gt;7&lt;/b&gt;&lt;br/&gt;Pas basisstructuur aan voor versie");
-    E("&lt;b&gt;7&lt;/b&gt;&lt;br/&gt;Pas basisstructuur aan voor versie")----&gt;K("&lt;b&gt;8&lt;/b&gt;&lt;br/&gt;Plaats gegenereerde documenten in publicatie repo");
-    K("&lt;b&gt;8&lt;/b&gt;&lt;br/&gt;Plaats gegenereerde documenten in publicatie repo")----&gt;L("&lt;b&gt;9&lt;/b&gt;&lt;br/&gt;Gebruik publicatie link Respec doc in GH Pages");
-    J("&lt;b&gt;5&lt;/b&gt;&lt;br/&gt;Pas document configuratie properties aan")----&gt;K("&lt;b&gt;8&lt;/b&gt;&lt;br/&gt;Plaats gegenereerde documenten in publicatie repo");
-    L("&lt;b&gt;9&lt;/b&gt;&lt;br/&gt;Gebruik publicatie link Respec doc in GH Pages")----&gt;M([Stop]);
-</code></pre>
+<pre><code class="mermaid hljs" data-processed="true" aria-busy="false">Nee
+Ja
+Start
+1
+Eerste versie
+van Respec
+documentatie?
+...
+3
+Creëer nieuwe content of pas content aan
+7
+Pas basisstructuur aan voor versie
+4
+Assembleer document
+5
+Pas document configuratie properties aan
+...
+2
+Creëer en configureer project repo
+6
+Creëer basisstructuur in publicatie repo
+8
+Plaats gegenereerde documenten in publicatie repo
+9
+Gebruik publicatie link Respec doc in GH Pages
+Stop</code></pre>
 <figcaption><a class="self-link" href="#fig-het-vng-r-respec-proces-mermaid-voorbeeld">Figuur <bdi class="figno">3</bdi></a> <span class="fig-title">Het VNG-R Respec proces (Mermaid voorbeeld)</span></figcaption>
 </figure></section><section class="informative" id="niet-normatieve-deel"><h2 id="x7-niet-normatieve-deel"><bdi class="secno">7. </bdi>Niet-normatieve deel</h2><p><em>Dit onderdeel is niet normatief.</em></p>
 <p>Bijvoorbeeld een introductie.</p>
@@ -1174,7 +1182,7 @@ Het resultaat ziet er dan bijv. zo <a href="#dfn-definitie" class="internalDFN" 
 
 
 
-<section id="references" class="appendix"><h2 id="b-referenties"><bdi class="secno">B. </bdi>Referenties</h2><section id="normatieve-referenties">
+<div class="mermaidTooltip" style="opacity: 0;"></div><section id="references" class="appendix"><h2 id="b-referenties"><bdi class="secno">B. </bdi>Referenties</h2><section id="normatieve-referenties">
     <h3 id="b-1-normatieve-referenties"><bdi class="secno">B.1 </bdi>Normatieve referenties</h3>
     <dl class="bibliography"><dt id="bib-mim">[MIM]</dt><dd>
       <a href="https://docs.geostandaarden.nl/mim/mim/"><cite>MIM - Metamodel Informatie Modellering</cite></a>.  Geonovum. Oktober 2013. URL: <a href="https://docs.geostandaarden.nl/mim/mim/">https://docs.geostandaarden.nl/mim/mim/</a>
@@ -1183,7 +1191,7 @@ Het resultaat ziet er dan bijv. zo <a href="#dfn-definitie" class="internalDFN" 
     </dd></dl>
   </section></section><p role="navigation" id="back-to-top">
     <a href="#title"><abbr title="Back to Top">↑</abbr></a>
-  </p><div class="mermaidTooltip" style="opacity: 0;"></div><div class="dfn-panel" hidden="" role="dialog" aria-modal="true" id="dfn-panel-for-dfn-definitie" aria-label="Links in this document to definition: Definitie">
+  </p><div class="dfn-panel" hidden="" role="dialog" aria-modal="true" id="dfn-panel-for-dfn-definitie" aria-label="Links in this document to definition: Definitie">
       <span class="caret"></span>
       <div>
         <a class="self-link" href="#dfn-definitie" aria-label="Permalink for definition: Definitie. Activate to close this dialog.">Permalink</a>
