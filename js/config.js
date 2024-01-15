@@ -9,7 +9,6 @@ let respecConfig = {
  
   // Zie 'localizationStrings/nl' voor de lijst met toegestane specificatie-statussen
   specStatus: "IG",
-//  specStatus: "DEF",
   publishDate: "2024-1-10",
   publishVersion: "0.1.0",
   
@@ -37,7 +36,7 @@ let respecConfig = {
         companyURL: "https://vng.nl/artikelen/vng-realisatie",
       }
     ],
-  github: "https://github.com/melsk-r/VNG-R-Respec-Template",
+  github: "https://github.com/VNG-Realisatie/VNG-R-Respec-Template",
   
   // Creëer PDF en link deze aan de file in de header van het html document (optioneel). Het is (nog) niet mogelijk hier een globale property van te maken:
   alternateFormats: [
