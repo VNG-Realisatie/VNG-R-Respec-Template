@@ -2,9 +2,9 @@
 
 ReSpec is een tool om html en pdf documenten te genereren op basis van markdown en html content.<br/>Test.
 
-Organisatie administrators dienen de knop [_Use this template_](https://github.com/melsk-r/VNG-R-Respec-Template/generate) te gebruiken om een kopie van de template repository aan te maken. Deze kan daarna door jouzelf aangepast en uitgebreid worden.
+Organisatie administrators dienen de knop [_Use this template_](https://github.com/vng-realisatie/VNG-R-Respec-Template/generate) te gebruiken om een kopie van de template repository aan te maken. Deze kan daarna door jouzelf aangepast en uitgebreid worden.
 
-De dynamische pagina van het template document is [hier](https://melsk-r.github.io/VNG-R-Respec-Template/) te zien.
+De dynamische pagina van het template document is [hier](https://vng-realisatie.github.io/VNG-R-Respec-Template/) te zien.
 
 Deze repository bevat ook de GitHub Workflows om een statische HTML-pagina en PDF-document te genereren en enkele controles uit te voeren. Deze workflows worden 
 automatisch gerund zodra er een aanpassing gedaan wordt aan de main branch. <!-- Deze heb ik deels nog niet werkende. --> Een beschrijving van deze acties vind je onderaan dit hoofdstuk.
@@ -27,7 +27,7 @@ Aanpassingen maken aan het document gaat op 2 manieren:
 De **configuratie files** bevatten informatie over de organisatie en over 
 de status van het document. Helemaal onderaan hoofdstuk 3 vind je meer informatie over de configuratie opties, daarnaast kun je ook de [Logius ReSpec wiki](https://github.com/Logius-standaarden/respec/wiki) 
 bezoeken. De files zijn gesplitst in 2 files die weer in 2 verschillende repositories zijn ondergebracht:
-[organisation-config.js](https://github.com/melsk-r/Respec-Organization-configurations/blob/main/js/organisation-config.js) en [config.js](js/config.js).
+[organisation-config.js](https://github.com/vng-realisatie/Respec-Organization-configurations/blob/main/js/organisation-config.js) en [config.js](js/config.js).
 
 De organisation_config (organisation-config.js) bevat configuratie properties die betrekking hebben op alle VNG-R Respec documentatie, de properties in deze file 
 zullen zelden veranderen zoals bijv. de naam van de organisatie. 
@@ -37,7 +37,7 @@ De document_config (config.js) bevat configuratie properties die alleen relevant
 Beide configuratie bestanden worden gelinkt in de `index.html` file waardoor ze beide bij het renderen van de Respec documentatie automatisch worden samengevoegd. Daardoor zijn de organisatie specifieke configuraties over alle Respec documentatie van VNG-R gelijk en
 hoeft deze niet steeds gekopieerd te worden. Op deze wijze zorgen we er voor dat alle VNG-R Respec documenten zo eenduidig mogelijk zijn en blijven. 
 
-In [het volgende hoofdstuk](https://melsk-r.github.io/VNG-R-Respec-Template/#wow) staat beschreven hoe je de inhoud van het Respec document naar wens kunt aanpassen.
+In [het volgende hoofdstuk](https://vng-realisatie.github.io/VNG-R-Respec-Template/#wow) staat beschreven hoe je de inhoud van het Respec document naar wens kunt aanpassen.
 
 ### Rendering, automatische controles en publicatie
 Het bestand '.github/workflows/build.yml' bevat een action script waarmee automatisch een drietal acties worden uitgevoerd nadat een bestand in de repository wordt gewijzigd, toegevoegd of verwijderd:
@@ -84,7 +84,7 @@ Na het renderen van de Respec html en pdf worden er via github actions 2 control
 
 Bij het genereren van de links zijn op dit moment de volgende configuration properties van belang:
 * nl_organisationPublishURL<br/>
-  De basis url van de GitHub Pages interface van de 'publicatie' GitHub repository, op dit moment: `https://melsk-r.github.io/publicatie`. Deze is gedefinieerd in de organisation_config aangezien deze altijd gelijk blijft.
+  De basis url van de GitHub Pages interface van de 'publicatie' GitHub repository, op dit moment: `https://vng-realisatie.github.io/publicatie`. Deze is gedefinieerd in de organisation_config aangezien deze altijd gelijk blijft.
 * pubDomain<br/>
   Het publicatie domein. Aangezien we vooralsnog slechts voor Conceptuele Modellen Respec documentatie genereren heeft deze de waarde `cim` en staat deze gedefinieerd in de organisation_config. Zo nodig kan deze overruled worden in de document_config. Vergeet in dat geval niet om ook de structuur in de 'publicatie' GitHub repository uit te breiden.  Wordt gebruikt in 'latestVersion', 'thisVersion' en 'prevVersion'.
 * specStatus

@@ -27,7 +27,7 @@ Voor het publiceren van alle Respec documenten in de GitHub repository 'publicat
 
 In dit overzicht vertegenwoordigd `x.x.x` het versienummer van het Respec document. De folder met die naam kan zich herhalen maar komt minimaal 1x voor, de huiidge versie. De inhoud van die folder wordt dan eveneens geplaatst in de folder [project-mnemonic]. `project-mnemonic` is  Hieronder zie je een voorbeeld van deze structuur:
 
-![image](https://github.com/melsk-r/VNG-R-Respec-Template/assets/20185784/0ad7caf7-7c5b-4e72-9bee-09f7e9a93656)
+![image](https://github.com/vng-realisatie/VNG-R-Respec-Template/assets/20185784/0ad7caf7-7c5b-4e72-9bee-09f7e9a93656)
 
 Tijdens het samenstellen van de inhoud van een nieuwe versie van een bestaand of geheel nieuw Respec document kun je de structuur in de 'publicatie' repository al aanpassen.
 Betreft het de eerste versie van een Respec document creëer dan direct in de folder 'cim' een nieuwe folder die als naam de mnemonic van het project krijgt. Daarbinnen creëer je een versiefolder met als naam het versienummer waaronder je de eerste versie publiceert.
