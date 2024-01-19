@@ -16,7 +16,8 @@ let respecConfig = {
   //previousMaturity: "IG",
   //previousPublishDate: "2022-06-24",
   //previousPublishVersion: "0.0.4",
-
+  prevVersion: ["nl_organisationPublishURL", "pubDomain", "/", "shortName", "/", "previousPublishVersion"],
+  
   title: "Respec documentatie generatie",
   subtitle: "Tevens een voorbeeld van een gegenereerd Respec document",
   content: {"mermaid": "", "ch01": "informative", "ch02": ""},
