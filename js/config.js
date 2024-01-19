@@ -54,6 +54,4 @@ let respecConfig = {
             rawDate: "2023"
         },
     },
-
 };
-
