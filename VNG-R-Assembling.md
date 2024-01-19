@@ -240,7 +240,7 @@ De laatste 2 kolommen hebben de bedoeling het proces om het onderliggende docume
 					</ul>
 					</li>
 				</ul>
-			Verwijst naar de GitHub repository waarin het Informatiemodel wordt beheerd.</td>
+			Verwijst naar de GitHub repository waarin het Informatiemodel wordt beheerd.<br/><br/>Indien niet gedefinieerd dan wordt de 'Doe mee' tabel niet gegenereerd.</td>
 			<td></td>
 			<td>Gereed</td>
 		</tr>
