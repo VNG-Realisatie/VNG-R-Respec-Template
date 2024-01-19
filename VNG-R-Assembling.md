@@ -334,7 +334,7 @@ De laatste 2 kolommen hebben de bedoeling het proces om het onderliggende docume
 			<td>Lokaal</td>
 			<td>0</td>
 			<td/>
-			<td>Bepaald het aantal niveau's dat maximaal wordt opgenomen in de inhoudsopgave van het Respec document.</td>
+			<td>Bepaald het aantal niveau's dat maximaal wordt opgenomen in de inhoudsopgave van het Respec document.<br/><br/>Kan lokaal overruled worden.</td>
 			<td>Default worden alle niveau's opgenomen. Maken we hier i.d.d. een lokale property van die alleen wordt opgenomen en aangepast als de inhoudsopgave dermate groot is dat het ondoenlijk wordt er doorheen te scrollen? Ik ben bang dat dit denk al redelijk snel het geval is. </td>
 			<td>Gereed</td>
 		</tr>
