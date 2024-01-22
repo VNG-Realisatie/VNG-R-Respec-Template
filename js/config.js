@@ -6,7 +6,9 @@ let respecConfig = {
 
   // Zie 'localizationStrings/nl' voor de lijst met toegestane specificatie-types
   specType: "HR",
- 
+
+  pubDomain: "cim/bv",
+  
   // Zie 'localizationStrings/nl' voor de lijst met toegestane specificatie-statussen
   specStatus: "IG",
   publishDate: "2024-1-10",
