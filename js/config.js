@@ -13,9 +13,9 @@ let respecConfig = {
   publishVersion: "0.1.0",
   
   // Zie 'localizationStrings/nl' voor de lijst met toegestane maturities
-  //previousMaturity: "IG",
-  //previousPublishDate: "2022-06-24",
-  //previousPublishVersion: "0.0.4",
+  previousMaturity: "IG",
+  previousPublishDate: "2022-06-24",
+  previousPublishVersion: "0.0.4",
 
   title: "Respec documentatie generatie",
   subtitle: "Tevens een voorbeeld van een gegenereerd Respec document",
