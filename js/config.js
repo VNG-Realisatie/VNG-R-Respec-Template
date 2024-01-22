@@ -2,7 +2,7 @@ let respecConfig = {
 //  useLogo: true,
 //  useLabel: true,
 //  license: "eupl",
-  shortName: "Respec-template",
+//  shortName: "Respec-template",
 
   // Zie 'localizationStrings/nl' voor de lijst met toegestane specificatie-types
   specType: "HR",
@@ -16,18 +16,6 @@ let respecConfig = {
   previousMaturity: "IG",
   previousPublishDate: "2022-06-24",
   previousPublishVersion: "0.0.4",
-
-   // latestVersion: ["nl_organisationPublishURL", "pubDomain", "/", "shortName"],
-   latestVersion: ["nl_organisationPublishURL", "pubDomain", "/", "shortName", "/#"],
-   // thisVersion: ["nl_organisationPublishURL", "pubDomain", "/", "specStatus", "-", "specType", "-", "shortName", "-", "publishDate"],
-   thisVersion: ["nl_organisationPublishURL", "pubDomain", "/", "shortName", "/", "publishVersion", "/#"],
-   //prevVersion: ["nl_organisationPublishURL", "pubDomain", "/", "previousMaturity", "-", "specType", "-", "shortName", "-", "previousPublishDate"],
-   prevVersion: ["nl_organisationPublishURL", "pubDomain", "/", "shortName", "/", "previousPublishVersion", "/#"],
-
-
-
-
-
   
   title: "Respec documentatie generatie",
   subtitle: "Tevens een voorbeeld van een gegenereerd Respec document",
