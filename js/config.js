@@ -6,8 +6,6 @@ let respecConfig = {
 
   // Zie 'localizationStrings/nl' voor de lijst met toegestane specificatie-types
   specType: "HR",
-
-  edDraftURI: "",
   
   // Zie 'localizationStrings/nl' voor de lijst met toegestane specificatie-statussen
   specStatus: "IG",
