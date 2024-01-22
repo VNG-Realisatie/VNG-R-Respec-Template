@@ -147,7 +147,7 @@ De laatste 2 kolommen hebben de bedoeling het proces om het onderliggende docume
 			<th>Property</th>
 			<th><a href="https://github.com/Logius-standaarden/respec/wiki/addSectionLinks">Link</a></th>
 			<th>Type</th>
-			<th>Globaal/Lokaal</th>
+			<th>Afspraak gebruik binnen VNG-R (Globaal/Lokaal)</th>
 			<th>Vaste globale waarde of default waarde</th>
 			<th>Gerelateerd property</th>
 			<th>Beschrijving</th>
@@ -163,8 +163,9 @@ De laatste 2 kolommen hebben de bedoeling het proces om het onderliggende docume
 			<td>Globaal</td>
 			<td>false</td>
 			<td/>
-			<td>Bepaald of er een paragraafteken (§), met een link naar de paragraaf waar het teken vóór komt te staan, wordt gegenereerd of niet.<br/>Kan handig zijn om anderen de gelegenheid te bieden om links naar specifieke paragrafen in je specificaties te kopiëren en elders te gebruiken.<br/><br/>Kan lokaal overruled worden.</td>
-			<td>Te bepalen of we standaard Respec documentatie met of zonder paragraafteken willen genereren en of we wel willen dat dat lokaal overruled kan worden.</td>
+			<td>Bepaald of er een paragraafteken (§), met een link naar de paragraaf waar het teken vóór komt te staan, wordt gegenereerd of niet.<br/>
+			Kan handig zijn om anderen de gelegenheid te bieden om links naar specifieke paragrafen in je specificaties te kopiëren en elders te gebruiken.</td>
+			<td>Dit kan zowel globaal als lokaal gedefinieerd worden en kan, indien globaal gedefinieerd, lokaal overruled worden.</td>
 			<td>Gereed </td>
 		</tr>
 		<tr>
@@ -174,7 +175,8 @@ De laatste 2 kolommen hebben de bedoeling het proces om het onderliggende docume
 			<td>Lokaal</td>
 			<td/>
 			<td/>
-			<td>Hiermee kun je aangeven of je de Respec documentatie ook in een ander formaat dan html aanbiedt, op dit moment alleen pdf.<br/>Deze configuratie property zorgt er voor dat er een pdf bestand wordt gegenereerd en dat er in de Respec documentatie een zin gewijd wordt aan pdf formaat met daarin de link naar het pdf bestand.</td>
+			<td>Hiermee kun je aangeven of je de Respec documentatie ook in een ander formaat dan html aanbiedt, op dit moment alleen pdf.<br/>
+			Deze configuratie property zorgt er voor dat er een pdf bestand wordt gegenereerd en dat er in de Respec documentatie een zin gewijd wordt aan pdf formaat met daarin de link naar het pdf bestand.</td>
 			<td>Dit kan geen globale property zijn.</td>
 			<td>Gereed</td>
 		</tr>
@@ -262,9 +264,11 @@ De laatste 2 kolommen hebben de bedoeling het proces om het onderliggende docume
 			<td>Globaal</td>
 			<td/>
 			<td/>
-			<td>Url van de laatst gepubliceerde versie.<br/>Wordt opgebouwd m.b.v. andere gedefinieerde configuration properties en '/' tekens. Daarin voorkomende hoofdletters worden omgezet naar kleine letters.<br/><br/>
+			<td>Url van de laatst gepubliceerde versie.<br/>
+			Wordt opgebouwd m.b.v. andere gedefinieerde configuration properties en '/' tekens. Daarin voorkomende hoofdletters worden omgezet naar kleine letters.<br/><br/>
+			Indien deze configuration property of een van de properties waaruit het bestaat niet wordt verstrekt dan wordt de gerelateerde rubriek in de specificatie ook niet aangemaakt.<br/><br/>
 			Mag niet lokaal overruled worden.</td>
-			<td>Te bepalen hoe deze variabele bij VNG-R opgebouwd moet worden, in de README.md wordt daarvoor een voorstel gedaan.</td>
+			<td>Hoewel dit zowel globaal als lokaal gedefinieerd kan worden is het voorstel dat dit globaal gebeurd. Als we toestaan dat het lokaal gebeurd dan is de werking van de links niet te garanderen en kan het gevolgen hebben voor de structuur van de publishing repository.</td>
 			<td>Gereed</td>
 		</tr>
 		<tr>
@@ -445,13 +449,14 @@ De laatste 2 kolommen hebben de bedoeling het proces om het onderliggende docume
 			<td>prevVersion</td>
 			<td><a href="https://github.com/Logius-standaarden/respec/wiki/prevVersion">link</a></td>
 			<td>Combinatie van strings en propertynamen</td>
-			<td>?</td>
+			<td>Globaal</td>
 			<td/>
 			<td/>
 			<td>Url van de voorgaande versie.<br/>
-				Wordt opgebouwd m.b.v. andere gedefinieerde configuration properties en '/' tekens. Daarin voorkomende hoofdletters worden omgezet naar kleine letters.<br/><br/>
-				Indien deze configuration property niet wordt verstrekt dan wordt de gerelateerde rubriek in de specificatie ook niet aangemaakt.</td>
-			<td>Te bepalen hoe deze variabele bij VNG-R opgebouwd moet worden, in de README.md wordt daarvoor een voorstel gedaan.</td>
+			Wordt opgebouwd m.b.v. andere gedefinieerde configuration properties en '/' tekens. Daarin voorkomende hoofdletters worden omgezet naar kleine letters.<br/><br/>
+			Indien deze configuration property of een van de properties waaruit het bestaat niet wordt verstrekt dan wordt de gerelateerde rubriek in de specificatie ook niet aangemaakt.<br/><br/>
+			Mag niet lokaal overruled worden.</td>
+			<td>Hoewel dit zowel globaal als lokaal gedefinieerd kan worden is het voorstel dat dit globaal gebeurd. Als we toestaan dat het lokaal gebeurd dan is de werking van de links niet te garanderen en kan het gevolgen hebben voor de structuur van de publishing repository.</td>
 			<td>Gereed</td>
 		</tr>
 		<tr>
@@ -578,11 +583,10 @@ De laatste 2 kolommen hebben de bedoeling het proces om het onderliggende docume
 			<td/>
 			<td/>
 			<td>Url van de huidige versie.<br/>
-				Wordt opgebouwd m.b.v. andere gedefinieerde configuration properties en '/' tekens. Daarin voorkomende hoofdletters worden omgezet naar kleine letters.<br/><br/>
-				Het is verplicht deze property van een waarde te voorzien en deze mag niet Lokaal overruled worden.</td>
-			<td>Willen we dat dit een globale property is of juist een lokale? Indien het een globale wordt moet het dan lokaal overruled kunnen worden?<br/>
-				Bijv. met een lege waarde waardoor de gerelateerde rubriek in de specificatie ook niet wordt aangemaakt. &lt;-- Is dat wel de manier om dit te doen?<br/><br/>
-				Te bepalen hoe deze variabele bij VNG-R opgebouwd moet worden, in de README.md wordt daarvoor een voorstel gedaan.</td>
+			Wordt opgebouwd m.b.v. andere gedefinieerde configuration properties en '/' tekens. Daarin voorkomende hoofdletters worden omgezet naar kleine letters.<br/><br/>
+			Indien deze configuration property of een van de properties waaruit het bestaat niet wordt verstrekt dan wordt de gerelateerde rubriek in de specificatie ook niet aangemaakt.<br/><br/>
+			Mag niet lokaal overruled worden.</td>
+			<td>Hoewel dit zowel globaal als lokaal gedefinieerd kan worden is het voorstel dat dit globaal gebeurd. Als we toestaan dat het lokaal gebeurd dan is de werking van de links niet te garanderen en kan het gevolgen hebben voor de structuur van de publishing repository.</td>
 			<td>Gereed</td>
 		</tr>
 		<tr>
