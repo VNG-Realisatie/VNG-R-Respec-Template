@@ -52,8 +52,14 @@ let respecConfig = {
            "href": "https://docs.geostandaarden.nl/mim/mim/",
            "publisher": "Geonovum",
            "title": "MIM - Metamodel Informatie Modellering",
-            date: "Oktober 2013",
-            rawDate: "2023"
+           "date": "Oktober 2023",
+           "rawDate": "2023"
+        },
+        "SemVer": {
+           "href": "https://semver.org/lang/nl/",
+           "title": "Semantisch Versioneren 2.0.0",
+           "date": "December 19, 2023",
+           "rawDate": "2023"
         },
     },
 };
