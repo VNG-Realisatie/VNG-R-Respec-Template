@@ -143,7 +143,7 @@ Alle lokale configuratie properties kun je vinden in 'js/config.js' en mag je na
 Hieronder vind je de totale lijst van Configuratie properties. De vierde kolom geeft aan of het als een globale of lokale property wordt ingeschat, daar moet echter nog een discussie over gevoerd worden. Voor sommige properties is die inschattinh heel logisch, Zo zijn 'localizationStrings' en 'logos' logischerwijs globaal, 'github' en 'previousPublishVersion' zijn juist lokaal.
 Een aantal properties worden globaal gedefinieerd maar kunnen lokaal overruled worden zoals 'useLogo'. In de op een na laatste kolom staan vragen of opmerkingen die we moeten bediscusieren en de laatste kolom geeft aan of de omschrijving van de property nog aandacht verdiend of van voldoende kwaliteit is.
 
-De laatste 2 kolommen hebben de bedoeling het proces om het onderliggende document te vervolmaken te ondersteunen en kunnen, als alle properties bediscusieerd zijn, worden verwijderd. De kolom 'Documentatie status' geeft daarbij aan of betreffende property voldoende gedocumenteerd is om bediscusieerd te kunnen worden.
+De laatste kolom heeft de bedoeling het proces om het onderliggende document te vervolmaken te ondersteunen en kan, als alle properties bediscusieerd zijn en de in die kolom beschreven vragen zijn opgelost en verwerkt, worden verwijderd.
 
 <table>
 	<thead>
@@ -156,7 +156,6 @@ De laatste 2 kolommen hebben de bedoeling het proces om het onderliggende docume
 			<th>Gerelateerd property</th>
 			<th>Beschrijving</th>
 			<th>Opmerking/Vraag/Actie</th>
-			<th>Documentatie status</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -170,7 +169,6 @@ De laatste 2 kolommen hebben de bedoeling het proces om het onderliggende docume
 			<td>Bepaald of er een paragraafteken (§), met een link naar de paragraaf waar het teken vóór komt te staan, wordt gegenereerd of niet.<br/>
 			Kan handig zijn om anderen de gelegenheid te bieden om links naar specifieke paragrafen in je specificaties te kopiëren en elders te gebruiken.</td>
 			<td>Dit kan zowel globaal als lokaal gedefinieerd worden en kan, indien globaal gedefinieerd, lokaal overruled worden.</td>
-			<td>Gereed </td>
 		</tr>
 		<tr>
 			<td>alternateFormats</td>
@@ -182,7 +180,6 @@ De laatste 2 kolommen hebben de bedoeling het proces om het onderliggende docume
 			<td>Hiermee kun je aangeven of je de Respec documentatie ook in een ander formaat dan html aanbiedt, op dit moment alleen pdf.<br/>
 			Deze configuratie property zorgt er voor dat er een pdf bestand wordt gegenereerd en dat er in de Respec documentatie een zin gewijd wordt aan pdf formaat met daarin de link naar het pdf bestand.</td>
 			<td>Dit kan geen globale property zijn.</td>
-			<td>Gereed</td>
 		</tr>
 		<tr>
 			<td>authors</td>
@@ -193,7 +190,6 @@ De laatste 2 kolommen hebben de bedoeling het proces om het onderliggende docume
 			<td/>
 			<td>Bevat 1 of meerdere beschrijvingen van personen die hebben bijgedragen aan de tot stand koming van de specificatie.<br/><br/>Het heeft de voorkeur editors te gebruiken boven authors. Indien deze configuratie property niet aanwezig is wordt 'Auteurs' niet getoond.</td>
 			<td>Het verschil tussen editors en authors lijkt duidelijk. Authors hebben bijgedragen aan de initiële content van de specificatie, editors hebben verbeteringen en wijzigingen aangebracht aan die initiële content. Dat wetende begrijp ik echter niet waarom Editors de voorkeur hebben. Wellicht wil men het onderscheid liever niet maken en wordt iedereen als een editor gezien.</td>
-			<td>Gereed </td>
 		</tr>
 		<tr>
 			<td>content</td>
@@ -204,7 +200,6 @@ De laatste 2 kolommen hebben de bedoeling het proces om het onderliggende docume
 			<td/>
 			<td>Te gebruiken voor het toevoegen van content aan het Respec document.</td>
 			<td>Ik mis deze property in de side bar van https://github.com/Logius-standaarden/respec/wiki</td>
-			<td>Gereed</td>
 		</tr>
 		<tr>
 			<td>editors</td>
@@ -215,7 +210,6 @@ De laatste 2 kolommen hebben de bedoeling het proces om het onderliggende docume
 			<td/>
 			<td>1 of meerdere beschrijvingen van personen die hebben bijgedragen aan de tot stand koming van de specificatie.<br/><br/>Het heeft de voorkeur editors te gebruiken boven authors. Indien deze configuratie property niet aanwezig is wordt 'Redacteurs' getoond zonder vulling.</td>
 			<td>Het verschil tussen editors en authors lijkt duidelijk. Authors hebben bijgedragen aan de initiële content van de specificatie, editors hebben verbeteringen en wijzigingen aangebracht aan die initiële content. Dat wetende begrijp ik echter niet waarom Editors de voorkeur hebben. Wellicht wil men het onderscheid liever niet maken en wordt iedereen als een editor gezien.</td>
-			<td>Gereed</td>
 		</tr>
 		<tr>
 			<td>formerEditors</td>
@@ -226,7 +220,6 @@ De laatste 2 kolommen hebben de bedoeling het proces om het onderliggende docume
 			<td/>
 			<td>Bevat 1 of meerdere beschrijvingen van personen die in het verleden hebben bijgedragen aan de totstandkoming van de specificatie.</td>
 			<td/>
-			<td>Gereed</td>
 		</tr>
 		<tr>
 			<td>github</td>
@@ -248,7 +241,6 @@ De laatste 2 kolommen hebben de bedoeling het proces om het onderliggende docume
 				</ul>
 			Verwijst naar de GitHub repository waarin het Informatiemodel wordt beheerd.<br/><br/>Indien niet gedefinieerd dan wordt de 'Doe mee' tabel niet gegenereerd.</td>
 			<td></td>
-			<td>Gereed</td>
 		</tr>
 		<tr>
 			<td>labelColor</td>
@@ -259,7 +251,6 @@ De laatste 2 kolommen hebben de bedoeling het proces om het onderliggende docume
 			<td/>
 			<td>Definieert de bij de in 'LocalizationStrings' gedefinieerde waardes horende kleuren.<br/><br/>Mag niet Lokaal overruled worden.</td>
 			<td>Bij VNG-R zullen we nog de bij onze statussen gewenste kleuren moeten definiëren.</td>
-			<td>Gereed</td>
 		</tr>
 		<tr>
 			<td>latestVersion</td>
@@ -273,7 +264,6 @@ De laatste 2 kolommen hebben de bedoeling het proces om het onderliggende docume
 			Indien deze configuration property of een van de properties waaruit het bestaat niet wordt verstrekt dan wordt de gerelateerde rubriek in de specificatie ook niet aangemaakt.<br/><br/>
 			Mag niet lokaal overruled worden.</td>
 			<td>Hoewel dit zowel globaal als lokaal gedefinieerd kan worden is het voorstel dat dit globaal gebeurd. Als we toestaan dat het lokaal gebeurd dan is de werking van de links niet te garanderen en kan het gevolgen hebben voor de structuur van de publishing repository.</td>
-			<td>Gereed</td>
 		</tr>
 		<tr>
 			<td>license</td>
@@ -285,7 +275,6 @@ De laatste 2 kolommen hebben de bedoeling het proces om het onderliggende docume
 			<td>Definieert het licentietype dat van toepassing is op de specificatie. VNG-R hanteert de 'EUPL' licentie maar zo gewenst kan ook gekozen worden voor 'CC0', 'CC-BY' of 'CC-BY-ND'. Toegestane waardes 'eupl', 'cc0', 'cc-by', 'cc-by-nd'. Wordt gebruikt om licentie-logo en bijbehorende link in het document te genereren.
 				Nieuwe licentie types en het bijbehorende logo kunnen in de Globale property 'licenses' worden gedefinieerd.<br/><br/>Kan lokaal overruled worden.</td>
 			<td>Willen we wel dat deze lokaal overruled kan worden?</td>
-			<td>Gereed</td>
 		</tr>
 		<tr>
 			<td>licenses</td>
@@ -296,7 +285,6 @@ De laatste 2 kolommen hebben de bedoeling het proces om het onderliggende docume
 			<td/>
 			<td>Definieert middels een array van configuratie opties de te gebruiken soorten licenties waarnaar middels de code kan worden verwezen in de configuratie-optie 'license'.<br/><br/>Mag waarschijnlijk lokaal overruled worden.</td>
 			<td>Bij VNG-R zullen we moeten bepalen welke licenties bij ons van toepassing (zouden kunnen) zijn.<br/>Ik vermoed dat ook deze lokaal te overrulen is maar willen we dat wel.</td>
-			<td>Gereed</td>
 		</tr>
 		<tr>
 			<td>localBiblio</td>
@@ -310,7 +298,6 @@ De laatste 2 kolommen hebben de bedoeling het proces om het onderliggende docume
 				Gerefereerd kan worden aan specrefs die beschikbaar zijn in de SpecRef database https://www.specref.org/ (zie ook https://github.com/tobie/specref) of aan zelf in deze propertty gedefinieerde referenties. De syntax voor de inhoud van de localBiblio property is beschreven in https://github.com/tobie/specref/blob/main/schemas/raw-reference.json.<br/><br/>
 				Deze property kan zowel lokaal als globaal geconfigureerd worden.<br/><br/>Voor referenties waarvan we verwachten dat deze vaker gebruikt gaan worden of waarvan inmiddels duidelijk is dat deze vaker gebruikt worden dient een verzoek gedaan te worden gedaan deze op te nemen in de organisation-config.js. Beheerders van Respec repositories zijn er vanaf dat moment zelf verantwoordelijk voor dat deze referenties uit hun eigen config.js worden verwijderd.</td>
 			<td/>
-			<td>Gereed</td>
 		</tr>
 		<tr>
 			<td>localizationStrings</td>
@@ -322,7 +309,6 @@ De laatste 2 kolommen hebben de bedoeling het proces om het onderliggende docume
 			<td>Bevat voor een aantal doelen en talen voor de te gebruiken codes en de daarbij horende volledige tekst.</td>
 			<td>Nog te bepalen voor welke doelen hier codes gedefinieerd kunnen worden.<br/><br/>
 				Bij VNG-R zullen we moeten bepalen of alle bestaande codes gewenst zijn en of er nieuwe codes toegevoegd moeten worden.<br/><br/>Is Lokaal specificeren voor deze configuratie property wel aan de orde.</td>
-			<td/>
 		</tr>
 		<tr>
 			<td>logos</td>
@@ -333,7 +319,6 @@ De laatste 2 kolommen hebben de bedoeling het proces om het onderliggende docume
 			<td/>
 			<td>definieert de src, alternate tekst, url en grootte van het linksboven in de specificatie te plaatsen logo.<br/><br/>Mag niet Lokaal overruled worden.</td>
 			<td>Willen we het VNG Realisatie logo geplaatst hebben of een ander logo?</td>
-			<td>Gereed</td>
 		</tr>
 		<tr>
 			<td>maxTocLevel</td>
@@ -344,7 +329,6 @@ De laatste 2 kolommen hebben de bedoeling het proces om het onderliggende docume
 			<td/>
 			<td>Bepaald het aantal niveau's dat maximaal wordt opgenomen in de inhoudsopgave van het Respec document.<br/><br/>Kan lokaal overruled worden.</td>
 			<td>Default worden alle niveau's opgenomen. Maken we hier i.d.d. een lokale property van die alleen wordt opgenomen en aangepast als de inhoudsopgave dermate groot is dat het ondoenlijk wordt er doorheen te scrollen? Ik ben bang dat dit denk al redelijk snel het geval is. </td>
-			<td>Gereed</td>
 		</tr>
 		<tr>
 			<td>nl_organisationName</td>
@@ -356,7 +340,6 @@ De laatste 2 kolommen hebben de bedoeling het proces om het onderliggende docume
 			<td>Wordt gebruikt om de subtitel en het vertikale label linksboven te genereren.<br/><br/>
 				Kan lokaal overruled worden.</td>
 			<td>Willen we wel dat deze lokaal overruled kan worden? Zo ja dan moet ook het logo misschien overruled kunnen worden.</td>
-			<td>Gereed</td>
 		</tr>
 		<tr>
 			<td>nl_organisationPublishURL</td>
@@ -367,7 +350,6 @@ De laatste 2 kolommen hebben de bedoeling het proces om het onderliggende docume
 			<td/>
 			<td>Wordt gebruikt voor het genereren van de link naar de GitHub pages van de huidige, de vorige en de laatst gepubliceerde versie. Een link die leidt naar een document in de GitHub Pages interface van de 'publicatie' GitHub repository. De laatste gepubliceerde versie is overigens wat anders dan de laatste werkversie.<br/><br/>Kan worden gebruikt in de properties 'lastVersion', 'thisVersion' en 'prevVersion'.<br/><br/>Mag niet lokaal overruled worden.</td>
 			<td>Er moet bepaald worden welke waarde we hier als VNG-R willen hebben staan. Helemaal onderin de README.md doe ik een voorstel voor de publicatie GitHub repository wat daarmee verband houdt. N.m.m. moet dit een globale configuratie optie zijn en er moet dus ook beschreven worden hoe hier procesmatig mee omgegaan moet worden. Daarover moet nog wel een beslissing worden genomen en ook of een lokale variant toegestaan is.</td>
-			<td/>
 		</tr>
 		<tr>
 			<td>nl_organisationStylesURL</td>
@@ -378,7 +360,6 @@ De laatste 2 kolommen hebben de bedoeling het proces om het onderliggende docume
 			<td/>
 			<td>Definieert de lokatie waar het te gebruiken css bestand staat excl. dat bestand zelf.<br/><br/>Mag niet Lokaal overruled worden.</td>
 			<td>Moet onderzocht worden of we hiervoor een eigen variant kunnen creëren en zo ja of we dat ook willen.</td>
-			<td>Gereed</td>
 		</tr>
 		<tr>
 			<td>noTOC</td>
@@ -389,7 +370,6 @@ De laatste 2 kolommen hebben de bedoeling het proces om het onderliggende docume
 			<td/>
 			<td>Bepaald of er links van de inhoud een frame met de inhoudsopgave gegenereerd moet worden.</td>
 			<td>Moet het mogelijk voor repository eigenaren om te besluiten geen TOC te genereren?</td>
-			<td>Gereed</td>
 		</tr>
 		<tr>
 			<td>otherLinks</td>
@@ -400,7 +380,6 @@ De laatste 2 kolommen hebben de bedoeling het proces om het onderliggende docume
 			<td/>
 			<td>Genereert een sectie in de header van het Respec document met als titel de key van deze property en als inhoud een of meerdere links.</td>
 			<td/>
-			<td>Gereed</td>
 		</tr>
 		<tr>
 			<td>postProcess</td>
@@ -411,7 +390,6 @@ De laatste 2 kolommen hebben de bedoeling het proces om het onderliggende docume
 			<td/>
 			<td>Bevat een of meer JavaScript functies die achtereenvolgend opgestart worden nadat Respec klaar is met generatie van het Respec document.</td>
 			<td>Bevat nu een functie die indien van toepassing mermaid notatie wijze omzet naar graphs.</td>
-			<td>Gereed</td>
 		</tr>
 		<tr>
 			<td>previousMaturity</td>
@@ -423,7 +401,6 @@ De laatste 2 kolommen hebben de bedoeling het proces om het onderliggende docume
 			<td>Status van de voorgaande versie.<br/><br/>
 				Kan evt. worden gebruikt in de properties 'prevVersion' maar wordt daar nu niet gebruikt.</td>
 			<td>Er moet bepaald worden of we deze opnemen bij het opbouwen van 'prevVersion'.</td>
-			<td>Gereed</td>
 		</tr>
 		<tr>
 			<td>previousPublishDate</td>
@@ -435,7 +412,6 @@ De laatste 2 kolommen hebben de bedoeling het proces om het onderliggende docume
 			<td>Publicatiedatum van de voorgaande versie.<br/><br/>
 				Kan evt. worden gebruikt in de properties 'prevVersion' maar wordt daar nu niet gebruikt.</td>
 			<td>Er moet bepaald worden of we deze opnemen bij het opbouwen van 'prevVersion'.</td>
-			<td>Gereed</td>
 		</tr>
 		<tr>
 			<td>previousPublishVersion</td>
@@ -447,7 +423,6 @@ De laatste 2 kolommen hebben de bedoeling het proces om het onderliggende docume
 			<td>Versienummer van de voorgaande versie in SemVer notatie (https://semver.org/lang/nl/).<br/><br/>
 				Wordt gebruikt in de property 'prevVersion'.</td>
 			<td>Er moet bepaald worden of we deze inderdaad opgenomen willen hebben bij het opbouwen van 'prevVersion'.</td>
-			<td>Gereed</td>
 		</tr>
 		<tr>
 			<td>prevVersion</td>
@@ -461,7 +436,6 @@ De laatste 2 kolommen hebben de bedoeling het proces om het onderliggende docume
 			Indien deze configuration property of een van de properties waaruit het bestaat niet wordt verstrekt dan wordt de gerelateerde rubriek in de specificatie ook niet aangemaakt.<br/><br/>
 			Mag niet lokaal overruled worden.</td>
 			<td>Hoewel dit zowel globaal als lokaal gedefinieerd kan worden is het voorstel dat dit globaal gebeurd. Als we toestaan dat het lokaal gebeurd dan is de werking van de links niet te garanderen en kan het gevolgen hebben voor de structuur van de publishing repository.</td>
-			<td>Gereed</td>
 		</tr>
 		<tr>
 			<td>pubDomain</td>
@@ -483,7 +457,6 @@ De laatste 2 kolommen hebben de bedoeling het proces om het onderliggende docume
 				</ul>
 				Dat betekent wel dat de folderstructuur van de 'publicatie' GitHub repository ook moet worden aangepast.
 			</td>
-			<td>Gereed</td>
 		</tr>
 		<tr>
 			<td>publishDate</td>
@@ -495,7 +468,6 @@ De laatste 2 kolommen hebben de bedoeling het proces om het onderliggende docume
 			<td>Publicatiedatum van de huidige versie.<br/><br/>
 				Kan evt. worden gebruikt in de properties 'latestVersion' en 'thisVersion'.</td>
 			<td>Er moet bepaald worden of we deze opnemen bij het opbouwen van 'prevVersion'.</td>
-			<td>Gereed</td>
 		</tr>
 		<tr>
 			<td>publishVersion</td>
@@ -507,7 +479,6 @@ De laatste 2 kolommen hebben de bedoeling het proces om het onderliggende docume
 			<td>Versienummer van de huidige versie in SemVer notatie (https://semver.org/lang/nl/).<br/><br/>
 				Wordt gebruikt in de properties 'lastVersion' en 'thisVersion'.</td>
 			<td>Er moet bepaald worden of we deze inderdaad opgenomen willen hebben bij het opbouwen van 'prevVersion'.</td>
-			<td>Gereed</td>
 		</tr>
 		<tr>
 			<td>shortName</td>
@@ -519,7 +490,6 @@ De laatste 2 kolommen hebben de bedoeling het proces om het onderliggende docume
 			<td>Korte naam (mnemonic) van de specificatie.<br/><br/>
 				Wordt gebruikt in de properties 'lastVersion', 'thisVersion' en 'prevVersion'.</td>
 			<td>Er moet bepaald worden of we deze inderdaad opgenomen willen hebben bij het opbouwen van 'prevVersion'.</td>
-			<td>Gereed</td>
 		</tr>
 		<tr>
 			<td>sotdText</td>
@@ -530,7 +500,6 @@ De laatste 2 kolommen hebben de bedoeling het proces om het onderliggende docume
 			<td/>
 			<td>Bevat voor een aantal 'specStatus'sen en talen de te gebruiken codes en de daarbij horende volledige tekst.<br/><br/>Mag niet lokaal overruled worden.</td>
 			<td>Bij VNG-R zullen we moeten bepalen welke teksten er bij welke status gegenereerd moeten worden.</td>
-			<td>Gereed</td>
 		</tr>
 		<tr>
 			<td>specStatus</td>
@@ -543,7 +512,6 @@ De laatste 2 kolommen hebben de bedoeling het proces om het onderliggende docume
 				De kleuren voor de VNG-R statussen kunnen worden gedefinieerd in de globale optie 'labelColor'.<br/><br/>
 				Kan evt. ook worden gebruikt in de properties 'latestVersion', 'thisVersion' en 'prevVersion'.</td>
 			<td>Er moet bepaald worden of we deze opnemen bij het opbouwen van 'latestVersion', 'thisVersion' en 'prevVersion'.</td>
-			<td>Gereed</td>
 		</tr>
 		<tr>
 			<td>spectype</td>
@@ -555,7 +523,6 @@ De laatste 2 kolommen hebben de bedoeling het proces om het onderliggende docume
 			<td>Definieert het type van de specificatie. Wordt gebruikt om de subtitel en het vertikale label linksboven te genereren. In het template heeft dit de waarde 'IM' aangezien we bij VNG-R Respec veelal zullen gebruiken om Informatiemodellen mee te publiceren.<br/><br/>
 				Kan evt. ook worden gebruikt in de properties 'latestVersion', 'thisVersion' en 'prevVersion'.</td>
 			<td>Er moet bepaald worden of we deze opnemen bij het opbouwen van 'latestVersion', 'thisVersion' en 'prevVersion'.</td>
-			<td>Gereed</td>
 		</tr>
 		<tr>
 			<td>subtitle</td>
@@ -566,7 +533,6 @@ De laatste 2 kolommen hebben de bedoeling het proces om het onderliggende docume
 			<td/>
 			<td>String die als subtitel van de titel van het document dient. Wordt geplaatst boven de gegenereerde subtitel waarin de organisatienaam, documenttype, specStatus en versiedatum worden gebruikt.</td>
 			<td/>
-			<td>Gereed</td>
 		</tr>
 		<tr>
 			<td>testSuiteURI</td>
@@ -577,7 +543,6 @@ De laatste 2 kolommen hebben de bedoeling het proces om het onderliggende docume
 			<td/>
 			<td>Genereert een sectie in de header van het Respec document met als titel 'Test suite' en als inhoud een link naar een testsuite. Wellicht te gebruiken voor het API Testplatform maar alleen als we Respec ook gaan gebruiken voor de API's.</td>
 			<td>Wordt de genoemde sectie niet gegenereerd als we deze property weglaten?</td>
-			<td/>
 		</tr>
 		<tr>
 			<td>thisVersion</td>
@@ -591,7 +556,6 @@ De laatste 2 kolommen hebben de bedoeling het proces om het onderliggende docume
 			Indien deze configuration property of een van de properties waaruit het bestaat niet wordt verstrekt dan wordt de gerelateerde rubriek in de specificatie ook niet aangemaakt.<br/><br/>
 			Mag niet lokaal overruled worden.</td>
 			<td>Hoewel dit zowel globaal als lokaal gedefinieerd kan worden is het voorstel dat dit globaal gebeurd. Als we toestaan dat het lokaal gebeurd dan is de werking van de links niet te garanderen en kan het gevolgen hebben voor de structuur van de publishing repository.</td>
-			<td>Gereed</td>
 		</tr>
 		<tr>
 			<td>title</td>
@@ -602,7 +566,6 @@ De laatste 2 kolommen hebben de bedoeling het proces om het onderliggende docume
 			<td/>
 			<td>De titel van de betreffende specificatie.</td>
 			<td>Ik mis deze property in de side bar van https://github.com/Logius-standaarden/respec/wiki</td>
-			<td>Gereed</td>
 		</tr>
 		<tr>
 			<td>useLabel</td>
@@ -615,7 +578,6 @@ De laatste 2 kolommen hebben de bedoeling het proces om het onderliggende docume
 				Kan lokaal overruled worden.</td>
 			<td>Willen we wel dat deze lokaal overruled kan worden?<br/><br/>
 				Ik mis deze property in de side bar van https://github.com/Logius-standaarden/respec/wiki</td>
-			<td>Gereed</td>
 		</tr>
 		<tr>
 			<td>useLogo</td>
@@ -627,7 +589,6 @@ De laatste 2 kolommen hebben de bedoeling het proces om het onderliggende docume
 			<td>Bepaald of het VNG-Realisatie logo in de rechter bovenzijde van het document geplaatst moet worden.<br/><br/>
 				Kan lokaal overruled worden.</td>
 			<td>Willen we wel dat deze lokaal overruled kan worden?</td>
-			<td>Gereed</td>
 		</tr>
 		<!--tr>
 			<td>useSideBar</td>
@@ -638,7 +599,6 @@ De laatste 2 kolommen hebben de bedoeling het proces om het onderliggende docume
 			<td/>
 			<td>Functie van deze property is onbekend.</td>
 			<td>Property staat wel in de side bar van https://github.com/Logius-standaarden/respec/wiki maar link leidt niet naar een pagina met uitleg.</td>
-			<td/>
 	</tr-->
 		<tr>
 			<td>edDraftURI</td>
@@ -649,7 +609,6 @@ De laatste 2 kolommen hebben de bedoeling het proces om het onderliggende docume
 			<td/>
 			<td>Beschrijft de url waar de draft van de specificatie kan worden bekeken. Er wordt geadviseerd de Editors Draft niet te publiceren. Indien deze property een lege waarde heeft wordt 'Laatste werkversie' niet getoond.</td>
 			<td/>
-			<td>Gereed</td>
 		</tr>
 	</tbody>
 </table>
