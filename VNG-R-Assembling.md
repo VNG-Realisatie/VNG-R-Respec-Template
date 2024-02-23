@@ -68,7 +68,7 @@ Bij de methode met de 'section' elementen maken we nog verschil tussen 'sectie' 
 
 In de onderstaande paragrafen volgt per sectie een toelichting.
 
-### Secties met 'id' attribuutwaarde 'sotd'
+#### Secties met 'id' attribuutwaarde 'sotd'
 
 Toe te voegen m.b.v. ``<section id="sotd"></section>``. Leidt ertoe dat het hoofdstuk met de titel 'Status van het document' wordt toegevoegd met als inhoud de, van de waarde van de configuration property 'specStatus' afhankelijke, content van de configuration property 'sotdText'.
 
@@ -77,34 +77,34 @@ Tevens wordt een TOC gegenereerd waarin de titels (incl. evt. hoofdstuk en parag
 Indien de configuration property 'content' bestaat dan worden de daarin gedefinieerde markdown bestanden na de 'sotd' sectie opgenomen.
 Zo niet dan worden de in de 'content' configuratie property gedefinieerde secties ook niet toegevoegd en wordt er ook geen TOC gegenereerd.
 
-### Secties met 'id' attribuutwaarde 'abstract'
+#### Secties met 'id' attribuutwaarde 'abstract'
 
 Indien de sectie wordt toegevoegd met ``<sectie id="abstract" data-include-format="markdown" data-include="filenaam.md">`` dan krijgt het hoofdstuk de titel Samenvatting zonder hoofdstuknr. als inhoud wordt de inhoud van het bestand 'filenaam.md' toegevoegd.
 
-### Secties met 'id' attribuutwaarde 'conformance'
+#### Secties met 'id' attribuutwaarde 'conformance'
 
 Door ``<section id='conformance'></section>`` wordt een hoofdstuk met als titel 'Conformiteit' toegevoegd. 
 
 De inhoud komt waarschijnlijk uit https://github.com/Logius-standaarden/respec. Het is nog niet duidelijk hoe dit hoofdstuk zijn inhoud krijgt.
 
-### Secties met 'id' attribuutwaarde 'tof'
+#### Secties met 'id' attribuutwaarde 'tof'
 
 ``<section id='tof'></section>`` genereert een hoofdstuk met als titel 'Lijst met Figuren' als er in minimaal een van de opgenomen bestanden minimaal een html 'figure' element met een 'figcaption' element is opgenomen of een markdown equivalent daarvan ( '![Tekstueel alternatief voor toegankelijkheid](pad naar iluustratie bestand "Onderschrift")' ). In de markdown variant mag het onderschrift ontbreken.
 
 De titel komt waarschijnlijk uit https://github.com/Logius-standaarden/respec. Het is nog niet duidelijk hoe die titel wordt toegekend.
 
-### Secties met 'id' attribuutwaarde 'index'
+#### Secties met 'id' attribuutwaarde 'index'
 
 ``<section id="index"></section>`` genereert een hoofdstuk met als titel 'Bijlage N Index' als er in minimaal 1 van de in het document opgenomen bestanden (zowel markdown als html) minimaal 1 'dfn' element is opgenomen. Vanuit de tekst kan naar dat element verwezen worden door een 'a' element op te nemen zonder attributen maar met als inhoud de naam van een 'dfn' element.
 
-### Secties met een andere 'id' attribuutwaarde
+#### Secties met een andere 'id' attribuutwaarde
 
 * Indien de sectie wordt toegevoegd met ``<sectie id="nnnnnn" data-include-format="markdown" data-include="filenaam.md">`` dan wordt het hoofdstuk gevuld met de inhoud van 'filenaam.md'. Als 'filenaam.md' met een markdown titel start (ongeacht het level en het aantal blanco regels er voor) dan wordt een hoofdstuknummer voor die titel gegenereerd anders wordt de content zonder titel toegevoegd aan het document. Een evt. titel wordt ook opgenomen in de TOC.
 * Indien de sectie wordt toegevoegd met ``<sectie data-include-format="markdown" data-include="filenaam.md">`` dan wijkt het resultaat niet af van die van hierboven. Alleen wordt bij deze variant het 'id' van de sectie en de gerelateerde 'href' in de TOC gegenereerd op basis van de titel van deze sectie.
 
 In alle gevallen is ``data-include-format="markdown"`` verplicht.
 
-### Secties met ``data-include-format="html"``
+#### Secties met ``data-include-format="html"``
 
 Dit soort secties wordt direct opgenomen op de plaats waar ``<section id="nnnn" data-include-format="html" data-include="filenaam.html"></section>`` is geplaatst.
 
@@ -118,7 +118,7 @@ Dit soort secties mag ook zonder 'id' attribuut worden opgenomen. Die variant ge
 
 ``data-include-format="html"`` mag worden weggelaten.
 
-### Andersoortige secties
+#### Andersoortige secties
 
 Indien een sectie element leeg is en het 'id' komt niet overeen met een van de, in de voorgaande paragrafen beschreven, bekende id's dan wordt de sectie genegeerd.
 
