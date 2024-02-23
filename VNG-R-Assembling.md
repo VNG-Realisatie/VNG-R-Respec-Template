@@ -33,12 +33,14 @@ Waarbij je 'XXXX.html' vervangt door de naam van het zojuist aangepaste bestand 
 ### De content van het Respec document aanpassen
 
 Een Respec document kan op 2 verschillende manier van content worden voorzien:
-* m.b.v. de 'content' configuratie property;
 * door de 'sectie' elementen aan het 'index.html' bestand toe te voegen.
+* m.b.v. de 'content' configuratie property;
 
-Beide methodes kunnen elkaar aanvullen en kennen eigen functionaliteiten.
+Beide methodes kunnen naast elkaar worden gebruikt. Advies is echter omn de eerste methode te gebruiken. Deze is transparanter omdat met 1 blik op het index.html bestand te zien is wat er in wordt opgenomen.
 
 Het Respec document zoals dat van het VNG-R Respec template is overgenomen moet nog aangepast worden. Deels kan dat door in de 'index.html' secties aan te passen danwel te vervangen en deels door de configuration property 'content' aan te passen.  
+
+#### Content methode
 
 M.b.v. de 'content' configuratie property kunnen alleen secties waarvan de content in markdown bestanden staat worden toegevoegd. In deze property kan per bestand worden aangegeven of die sectie informatief is. Is dat het geval dan wordt automatisch de tekst `Dit onderdeel is niet normatief.` aan het hoofdstuk toegevoegd.
 Het toevoegen van bestanden aan de 'content' configuratie property doe je door de naam van het bestand (zonder de extensie) en een eventueel relevante CSS class in de property te plaatsen.
@@ -57,6 +59,8 @@ Het gebruik van de 'content' properties is niet verplicht, er mag voor worden ge
 `document.getElementById("id-van-sectie").insertAdjacentHTML('afterend', content);`
 
 zodanig dat de waarde 'id-van-sectie' de waarde van het id heeft.
+
+#### Sectie methode
 
 In tegenstelling tot de methode met de 'content' configuratie property kunnen aan het 'index.html' bestand zowel 'sectie' elementen worden toegevoegd waarvan de content uit markdown bestaat als 'sectie' elementen waarvan de content uit html bestaat. Aangezien het gegenereerde Respec bestand een html bestand is kunnen we het alleen toevoegen aan het Respec document door een 'sectie' element toe te voegen aan het index.html bestand.
 
