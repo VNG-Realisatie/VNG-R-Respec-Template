@@ -441,7 +441,7 @@ De laatste kolom heeft de bedoeling het proces om het onderliggende document te 
 			<td>pubDomain</td>
 			<td><a href="https://github.com/Logius-standaarden/respec/wiki/pubDomain">link</a></td>
 			<td>enumeration</td>
-			<td>Lokaal</td>
+			<td>Globaal</td>
 			<td/>
 			<td/>
 			<td>Definieert het publicatie domein van de specificatie en heeft op dit moment de waarde 'cim'.<br/><br/>Wordt nu gebruikt in de properties 'lastVersion', 'thisVersion' en 'prevVersion'.</td>
