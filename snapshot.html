@@ -543,24 +543,32 @@ De voorgaande versie van het te publiceren Respec document. Komt overeen met de 
 <td>respec, msword</td>
 <td>Definieert het type te genereren document. Een Respec html document of een MsWord html variant.</td>
 </tr>
-<tr>
-<td>createimagemap</td>
-<td>yes, no</td>
-<td>Definieert of van de Diagrammen een imagemap moet worden gegenereerd. De default is 'yes'.</td>
-</tr>
 </tbody></table>
 <p>Voor het genereren van Respec documentatie is het essentieel om in je lokale Imvertor property bestand de property 'createofficevariant' de waarde 'respec' te geven. Normaliter zal je dan ook de property 'createofficemode' de waarde 'click' geven.
 Dit resulteert er in dat in de folder 'app/cat' 2 Respec bestanden geplaatst, 1 in html en de ander in xhtml.</p>
 </section><section id="diagrammen-als-clickable-images"><h3 id="x2-2-diagrammen-als-clickable-images"><bdi class="secno">2.2 </bdi>Diagrammen als clickable images</h3>
-<p>Het is mogelijk om de in Enterprise Architect vervaardigde diagrammen m.b.v. Imvertor als clickable images in de gegenereerde (x) html op te nemen. Om dat te kunnen doen moet wel aan een aantal voorwaarden worden voldaan.</p>
+<p>Standaard zet Imvertor alle in Enterprise Architect gedefinieerde diagrammen om naar PNG images. Deze images worden echter niet als <code>img</code> elementen opgenomen in de gegenereerde (x)html. Indien dat gewenst is dan zul je ze zelf moeten opnemen. Het is echter wel mogelijk om deze diagrammen automatisch als clickable images in de gegenereerde (x)html op te nemen. Om dat te kunnen doen moet wel aan een aantal voorwaarden worden voldaan.</p>
 <ol>
-<li>Alleen diagrammen die staan in de root folder (Stereotype = 'Basismodel') of in de folder waarin (de folder met ) de componenten staan worden daarbij meegenomen;</li>
-<li>De diagrammen moeten wel class diagrams zijn;</li>
+<li>Alleen diagrammen die geplaatst zijn in de root folder (Stereotype = 'Basismodel') of in de folder waarin (de folder met) de componenten staan worden daarbij meegenomen;</li>
+<li>De diagrammen moeten class diagrams zijn;</li>
 <li>De naam van de diagrammen moet als suffix <code>- overzicht</code> of <code>- detail</code> hebben;</li>
-<li>Geef de configuratieproperty <code>createimagemap</code> de waarde 'yes'.</li>
 </ol>
-<p>Op deze wijze worden PNG images gegenereerd en in de (x)html bestanden <code>img</code> elementen met referenties naar de juiste images en imagemap elementen opgenomen.</p>
-<p>Standaard worden overigens ook zonder bovenstaande instellingen de diagrammen geëxporteerd als PNG image maar die worden dan niet opgenomen in de gegenereerde (x)html bestanden.</p>
+<p>Tenslotte is de onderstaande Imvertor configuratieproperty nog van belang.</p>
+<table class="simple">
+<thead>
+<tr>
+<th>Configuratieproperty</th>
+<th>Mogelijke waarden</th>
+<th>Uitleg</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>createimagemap</td>
+<td>yes, no</td>
+<td>Definieert of van de Diagrammen een imagemap moet worden gegenereerd en of de gegenereerde PNG images als <code>img</code> element in de (x)html images worden opgenomen. De default is 'yes'.</td>
+</tr>
+</tbody></table>
+<p>Als deze de waarde 'yes' heeft of niet geconfigureerd is worden er in de (x)html bestanden <code>img</code> elementen met referenties naar de juiste images en imagemap elementen opgenomen.</p>
 </section></section>
   <section id="assembl"><h2 id="x3-samenstellen-respec-documentatie-in-github-under-construction"><bdi class="secno">3. </bdi>Samenstellen Respec documentatie in GitHub (under construction)</h2>
 <p>De acties die in het voorgaande hoofdstuk staan beschreven leveren een html bestand voor de Respec documentatie op waarin een informatiemodel wordt beschreven. Respec documentatie hoeft echter niet persé over informatiemodellen te gaan, voor de Respec documentatie die je nu leest is dat immers ook niet het geval. Het resultaat van het voorgaande hoofdstuk kan samen met andere html of markdown bestanden worden gebundeld tot de Respec documentatie. Daarnaast wordt een deel van de content van de Respec documentatie door het Respec framework in GitHub gegenereerd a.d.h.v. een aantal variabelen. Dat framework  verzorgt daarnaast ook de vormgeving dat essentieel is voor de Respec documentatie.</p>
