@@ -1,4 +1,6 @@
-# Respec documentatie generatie m.b.v. Imvertor
+# Respec m.b.v. Imvertor
+
+## Documentatie generatie
 
 Het is mogelijk om met Imvertor Respec documentatie te genereren van een model. Voorwaarde is wel dat het model MIM compliant is. Bij het genereren spelen de volgende Imvertor configuratieproperties (<b>LET OP!</b> Dus niet een van de Respec property bestanden) een rol:
 
@@ -12,3 +14,19 @@ Het is mogelijk om met Imvertor Respec documentatie te genereren van een model. 
 
 Voor het genereren van Respec documentatie is het essentieel om in je lokale Imvertor property bestand de property 'createofficevariant' de waarde 'respec' te geven. Normaliter zal je dan ook de property 'createofficemode' de waarde 'click' geven.
 Dit resulteert er in dat in de folder 'app/cat' 2 Respec bestanden geplaatst, 1 in html en de ander in xhtml.
+
+## Diagrammen als images
+
+Het is mogelijk om de in Enterprise Architect vervaardigde diagrammen m.b.v. Imvertor als images in de gegenereerde (x) html op te nemen. Om dat te kunnen doen moet wel aan een aantal voorwaarden worden voldaan.
+
+1. Alleen diagrammen die staan in de root folder (Stereotype = 'Basismodel') of in de folder waarin (de folder met ) de componenten staan worden daarbij meegenomen;
+2. De diagrammen moeten wel class diagrams zijn;
+3. De naam van de diagrammen moet als suffix `- overzicht` of `- detail` hebben;
+4. Geef de configuratieproperty `createimagemap` de waarde 'no'.
+
+Op deze wijze worden images gegenereerd en in de (x)html bestanden `img` elementen met referenties naar de juiste images opgenomen.
+
+### Clickable maps
+
+Om de images als clickable maps op te kunnen nemen moet de configuratieproperty `createimagemap` de waarde 'yes' krijgen.
+Daardoor zal Imvertor in de (x)html bestanden naast `img` elementen ook imagemap elementen opnemen.
