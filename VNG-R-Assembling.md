@@ -25,7 +25,7 @@ Je beschikt nu over een repository die je kunt gaan vullen en waarin je je perso
 
 ### Imvertor resultaat plaatsen
 
-Plaats het met Imvertor gegenereerde bestand in de root van de repository. Van dat bestand gebruiken we alleen de 'section' met het id 'cat'. Verwijder alle andere content behalve de processing instruction 'DOCTYPE HTML' aan het begin van dit bestand en commit het bestand.
+Plaats het met Imvertor gegenereerde bestand in de root van de repository. Van dat bestand gebruiken we alleen de inhoud van het 'section' element met het id 'cat'. Het section element zelf gebruiken we dus niet. Verwijder alle andere content behalve de processing instruction 'DOCTYPE HTML' aan het begin van dit bestand en commit het bestand.
 Open vervolgens het bestand 'index.html' en plaats daarin op de gewenste locatie het volgende html fragment:<br/><br/>
    `<section id="XXXX" data-include-format="html" data-include="XXXX.html"></section>`<br/><br/>
 Waarbij je 'XXXX.html' vervangt door de naam van het zojuist aangepaste bestand en 'XXXX' door een id dat de sectie duidelijk en uniek identificeert.
