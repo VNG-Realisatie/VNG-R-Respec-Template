@@ -29,3 +29,5 @@ Tenslotte is de onderstaande Imvertor configuratieproperty nog van belang.
 | createimagemap | yes, no | Definieert of van de Diagrammen een imagemap moet worden gegenereerd en of de gegenereerde PNG images als `img` element in de (x)html images worden opgenomen. De default is 'yes'.|
 
 Als deze de waarde 'yes' heeft of niet geconfigureerd is worden er in de (x)html bestanden `img` elementen met referenties naar de juiste images en imagemap elementen opgenomen.
+
+**LET OP!** Maak de in Respec op te nemen diagrammen zoveel in portrait mode op. Dat voorkomt dat je nodeloos diep op het Respec document moet inzoomen.
