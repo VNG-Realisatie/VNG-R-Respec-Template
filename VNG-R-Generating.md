@@ -30,4 +30,4 @@ Tenslotte is de onderstaande Imvertor configuratieproperty nog van belang.
 
 Als deze de waarde 'yes' heeft of niet geconfigureerd is worden er in de (x)html bestanden `img` elementen met referenties naar de juiste images en imagemap elementen opgenomen.
 
-**LET OP!** Maak de in Respec op te nemen diagrammen zoveel in portrait mode op. Dat voorkomt dat je nodeloos diep op het Respec document moet inzoomen.
+**LET OP!** Maak de in Respec op te nemen diagrammen zoveel a;s mogelijk in portrait mode op. Dat voorkomt dat je nodeloos diep op het Respec document moet inzoomen.
