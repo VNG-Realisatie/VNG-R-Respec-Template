@@ -1,8 +1,13 @@
 ## ReSpec template instructies
 
-ReSpec is een tool om html en pdf documenten te genereren op basis van markdown en html content.<br/>Test.
+ReSpec is een tool om html en pdf documenten te genereren op basis van markdown en html content.
 
 Organisatie administrators dienen de knop [_Use this template_](https://github.com/vng-realisatie/VNG-R-Respec-Template/generate) te gebruiken om een kopie van de template repository aan te maken. Deze kan daarna door jouzelf aangepast en uitgebreid worden.
+Dit template is afgeleid van het [Logius Respec template](https://github.com/Logius-standaarden/respec-template) maar is op enkele details aangepast:
+* Het organisation configuration bestand is in een [aparte repository](https://github.com/VNG-Realisatie/VNG-R-Respec-Organization-configurations) ondergebracht;
+* Het lokale configuratie bestand is aangepast aan de behoeftes van VNG Realisatie;
+* In de 'index.html' is een style element aangebracht waarmee de standaard instelling van de 'max-width' property op 'none' is gesteld;
+* De uitleg van de toepassing van het VNG-R Respec profiel is als inhoud aan deze repository toegevoegd.
 
 De dynamische pagina van het template document is [hier](https://vng-realisatie.github.io/VNG-R-Respec-Template/) te zien.
 
