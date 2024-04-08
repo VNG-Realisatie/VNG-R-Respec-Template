@@ -47,16 +47,7 @@ let respecConfig = {
             ig: "IG versie",
             io: "IO versie",
 	    // Specificatie-types
-            basis: "Document",
-            no: "Norm",
-            st: "Standaard",
-            im: "Informatiemodel",
-            pr: "Praktijkrichtlijn",
-            hr: "Handreiking",
-            wa: "Werkafspraak",
-            al: "Algemeen",
-            bd: "Beheerdocumentatie",
-            bp: "Best practice",
+            hr: "Handleiding",
         },
     },
 
