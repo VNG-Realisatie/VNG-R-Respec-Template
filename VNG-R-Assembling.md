@@ -181,7 +181,7 @@ De laatste kolom heeft de bedoeling het proces om het onderliggende document te 
 			<td>Lokaal</td>
 			<td/>
 			<td>Bevat 1 of meerdere beschrijvingen van personen die hebben bijgedragen aan de tot stand koming van de specificatie.<br/><br/>Het heeft de voorkeur editors te gebruiken boven authors. Indien deze configuratie property niet aanwezig is wordt 'Auteurs' niet getoond.</td>
-			<td>Het verschil tussen editors en authors lijkt duidelijk. Authors hebben bijgedragen aan de initiële content van de specificatie, editors hebben verbeteringen en wijzigingen aangebracht aan die initiële content.</td>
+			<td>Authors hebben bijgedragen aan de initiële content van de specificatie, editors hebben verbeteringen en wijzigingen aangebracht aan die initiële content.</td>
 		</tr>
 		<tr>
 			<td>content</td>
@@ -197,7 +197,7 @@ De laatste kolom heeft de bedoeling het proces om het onderliggende document te 
 			<td>Lokaal</td>
 			<td/>
 			<td>1 of meerdere beschrijvingen van personen die hebben bijgedragen aan de tot stand koming van de specificatie.<br/><br/>Het heeft de voorkeur editors te gebruiken boven authors. Indien deze configuratie property niet aanwezig is wordt 'Redacteurs' getoond zonder vulling.</td>
-			<td>Het verschil tussen editors en authors lijkt duidelijk. Authors hebben bijgedragen aan de initiële content van de specificatie, editors hebben verbeteringen en wijzigingen aangebracht aan die initiële content. Dat wetende begrijp ik echter niet waarom Editors de voorkeur hebben. Wellicht wil men het onderscheid liever niet maken en wordt iedereen als een editor gezien.</td>
+			<td>Authors hebben bijgedragen aan de initiële content van de specificatie, editors hebben verbeteringen en wijzigingen aangebracht aan die initiële content.</td>
 		</tr>
 		<tr>
 			<td><a href="https://github.com/w3c/respec/wiki/formerEditors">formerEditors</a></td>
@@ -224,15 +224,20 @@ De laatste kolom heeft de bedoeling het proces om het onderliggende document te 
 					</li>
 				</ul>
 			Verwijst naar de GitHub repository waarin het Informatiemodel wordt beheerd.<br/><br/>Indien niet gedefinieerd dan wordt de 'Doe mee' tabel niet gegenereerd.</td>
-			<td></td>
+			<td/>
 		</tr>
 		<tr>
 			<td><a href="https://github.com/Logius-standaarden/respec/wiki/labelColor">labelColor</a></td>
 			<td>Hexadecimale colorcode.</td>
 			<td>Globaal</td>
 			<td/>
-			<td>Definieert de bij de in 'LocalizationStrings' gedefinieerde waardes horende kleuren.<br/><br/>Mag niet Lokaal overruled worden.</td>
-			<td>Bij VNG-R zullen we nog de bij onze statussen gewenste kleuren moeten definiëren.</td>
+			<td>Definieert de bij de in 'LocalizationStrings' gedefinieerde statussen horende kleuren.<br/><br/>Mag niet Lokaal overruled worden.</td>
+			<td>De alleen binnen VNG Realisatie gebruikte statussen kennen de volgende kleuren:<br/>
+			    <ul>
+				<li>In gebruik: <span style="color: #A569BD">███████</span></li>
+				<li>In ontwikkeling: <span style="color: #DC7633">███████</span></li>
+			    </ul>
+			</td>
 		</tr>
 		<tr>
 			<td><a href="https://github.com/Logius-standaarden/respec/wiki/latestVersion">latestVersion</a></td>
