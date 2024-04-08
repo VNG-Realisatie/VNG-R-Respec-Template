@@ -39,12 +39,6 @@ let respecConfig = {
     ],
   github: "https://github.com/VNG-Realisatie/VNG-R-Respec-Template",
 
-    labelColor: {
-        def: "#154273",
-        wv: "#39870c",
-	      ig: "#A5555",
-	      io: "#D5555"
-    },
 //  maxTocLevel: 2,
   
   // Creëer PDF en link deze aan de file in de header van het html document (optioneel). Het is (nog) niet mogelijk hier een globale property van te maken:
