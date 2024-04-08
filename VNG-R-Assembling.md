@@ -164,7 +164,7 @@ De laatste kolom heeft de bedoeling het proces om het onderliggende document te 
 			<td>false</td>
 			<td>Bepaald of er een paragraafteken (§), met een link naar de paragraaf waar het teken vóór komt te staan, wordt gegenereerd of niet.<br/>
 			Kan handig zijn om anderen de gelegenheid te bieden om links naar specifieke paragrafen in je specificaties te kopiëren en elders te gebruiken.</td>
-			<td>Deze property is globaal op 'true' ingesteld maar kan lokaal overruled worden.</td>
+			<td>Deze property is globaal op 'true' ingesteld maar DAT kan lokaal overruled worden.</td>
 		</tr>
 		<tr>
 			<td><a href="[https://github.com/Logius-standaarden/respec/wiki/authors](https://github.com/Logius-standaarden/respec/wiki/alternateFormats)">alternateFormats</a></td>
@@ -188,7 +188,7 @@ De laatste kolom heeft de bedoeling het proces om het onderliggende document te 
 			<td>Array (zie een beschrijving onder deze tabel).</td>
 			<td>Lokaal</td>
 			<td/>
-			<td>Te gebruiken voor het toevoegen van content aan het Respec document. Het heeft de voorkeur de 'Sectie' methode te gebruiken. </td>
+			<td>Te gebruiken voor het toevoegen van content aan het Respec document. Het heeft de voorkeur [de 'Sectie' methode](./#sectie-methode) te gebruiken.</td>
 			<td/>
 		</tr>
 		<tr>
