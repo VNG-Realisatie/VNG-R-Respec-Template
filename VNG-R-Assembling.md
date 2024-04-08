@@ -149,84 +149,68 @@ De laatste kolom heeft de bedoeling het proces om het onderliggende document te 
 	<thead>
 		<tr>
 			<th>Property</th>
-			<th><a href="https://github.com/Logius-standaarden/respec/wiki/addSectionLinks">Link</a></th>
 			<th>Type</th>
 			<th>Afspraak gebruik binnen VNG-R (Globaal/Lokaal)</th>
 			<th>Vaste globale waarde of default waarde</th>
-			<th>Gerelateerd property</th>
 			<th>Beschrijving</th>
-			<th>Opmerking/Vraag/Actie</th>
+			<th>Opmerking</th>
 		</tr>
 	</thead>
 	<tbody>
 		<tr>
-			<td>addSectionLinks</td>
-			<td><a href="https://github.com/Logius-standaarden/respec/wiki/alternateFormats">link</a></td>
+			<td><a href="https://github.com/Logius-standaarden/respec/wiki/addSectionLinks">addSectionLinks</a></td>
 			<td>boolean</td>
 			<td>Globaal</td>
 			<td>false</td>
-			<td/>
 			<td>Bepaald of er een paragraafteken (§), met een link naar de paragraaf waar het teken vóór komt te staan, wordt gegenereerd of niet.<br/>
 			Kan handig zijn om anderen de gelegenheid te bieden om links naar specifieke paragrafen in je specificaties te kopiëren en elders te gebruiken.</td>
-			<td>Dit kan zowel globaal als lokaal gedefinieerd worden en kan, indien globaal gedefinieerd, lokaal overruled worden.</td>
+			<td>Deze property is globaal op 'true' ingesteld maar kan lokaal overruled worden.</td>
 		</tr>
 		<tr>
-			<td>alternateFormats</td>
-			<td><a href="https://github.com/Logius-standaarden/respec/wiki/authors">link</a></td>
+			<td><a href="[https://github.com/Logius-standaarden/respec/wiki/authors](https://github.com/Logius-standaarden/respec/wiki/alternateFormats)">alternateFormats</a></td>
 			<td>Array met per formaat de properties 'label' en 'url'.</td>
 			<td>Lokaal</td>
 			<td/>
-			<td/>
 			<td>Hiermee kun je aangeven of je de Respec documentatie ook in een ander formaat dan html aanbiedt, op dit moment alleen pdf.<br/>
 			Deze configuratie property zorgt er voor dat er een pdf bestand wordt gegenereerd en dat er in de Respec documentatie een zin gewijd wordt aan pdf formaat met daarin de link naar het pdf bestand.</td>
-			<td>Dit kan geen globale property zijn.</td>
+			<td/>
 		</tr>
 		<tr>
-			<td>authors</td>
-			<td><a href="">link</a></td>
+			<td><a href="https://github.com/Logius-standaarden/respec/wiki/authors">authors</a></td>
 			<td>Array met per naam de properties 'name', 'company' en 'companyURL'.</td>
 			<td>Lokaal</td>
 			<td/>
-			<td/>
 			<td>Bevat 1 of meerdere beschrijvingen van personen die hebben bijgedragen aan de tot stand koming van de specificatie.<br/><br/>Het heeft de voorkeur editors te gebruiken boven authors. Indien deze configuratie property niet aanwezig is wordt 'Auteurs' niet getoond.</td>
-			<td>Het verschil tussen editors en authors lijkt duidelijk. Authors hebben bijgedragen aan de initiële content van de specificatie, editors hebben verbeteringen en wijzigingen aangebracht aan die initiële content. Dat wetende begrijp ik echter niet waarom Editors de voorkeur hebben. Wellicht wil men het onderscheid liever niet maken en wordt iedereen als een editor gezien.</td>
+			<td>Het verschil tussen editors en authors lijkt duidelijk. Authors hebben bijgedragen aan de initiële content van de specificatie, editors hebben verbeteringen en wijzigingen aangebracht aan die initiële content.</td>
 		</tr>
 		<tr>
 			<td>content</td>
-			<td>n.t.b.</td>
 			<td>Array (zie een beschrijving onder deze tabel).</td>
 			<td>Lokaal</td>
 			<td/>
+			<td>Te gebruiken voor het toevoegen van content aan het Respec document. Het heeft de voorkeur de 'Sectie' methode te gebruiken. </td>
 			<td/>
-			<td>Te gebruiken voor het toevoegen van content aan het Respec document.</td>
-			<td>Ik mis deze property in de side bar van https://github.com/Logius-standaarden/respec/wiki</td>
 		</tr>
 		<tr>
-			<td>editors</td>
-			<td><a href="https://github.com/Logius-standaarden/respec/wiki/editors">link</a></td>
+			<td><a href="https://github.com/Logius-standaarden/respec/wiki/editors">editors</a></td>
 			<td>Array met per naam de properties 'name', 'company' en 'companyURL'.</td>
 			<td>Lokaal</td>
-			<td/>
 			<td/>
 			<td>1 of meerdere beschrijvingen van personen die hebben bijgedragen aan de tot stand koming van de specificatie.<br/><br/>Het heeft de voorkeur editors te gebruiken boven authors. Indien deze configuratie property niet aanwezig is wordt 'Redacteurs' getoond zonder vulling.</td>
 			<td>Het verschil tussen editors en authors lijkt duidelijk. Authors hebben bijgedragen aan de initiële content van de specificatie, editors hebben verbeteringen en wijzigingen aangebracht aan die initiële content. Dat wetende begrijp ik echter niet waarom Editors de voorkeur hebben. Wellicht wil men het onderscheid liever niet maken en wordt iedereen als een editor gezien.</td>
 		</tr>
 		<tr>
-			<td>formerEditors</td>
-			<td><a href="https://github.com/w3c/respec/wiki/formerEditors">link</a></td>
+			<td><a href="https://github.com/w3c/respec/wiki/formerEditors">formerEditors</a></td>
 			<td>Array met per naam de properties 'name', 'company' en 'companyURL'.</td>
 			<td>Lokaal</td>
-			<td/>
 			<td/>
 			<td>Bevat 1 of meerdere beschrijvingen van personen die in het verleden hebben bijgedragen aan de totstandkoming van de specificatie.</td>
 			<td/>
 		</tr>
 		<tr>
-			<td>github</td>
-			<td><a href="https://github.com/Logius-standaarden/respec/wiki/github">link</a></td>
+			<td><a href="https://github.com/Logius-standaarden/respec/wiki/github">github</a></td>
 			<td>URI of een array van de properties 'repoURL' en 'branch'.</td>
 			<td>Lokaal</td>
-			<td/>
 			<td/>
 			<td>Gebruikt voor het genereren van de links in de 'Doe mee' tabel bovenin de Respec documentatie. Kan gevuld worden met
 				<ul>
@@ -243,21 +227,17 @@ De laatste kolom heeft de bedoeling het proces om het onderliggende document te 
 			<td></td>
 		</tr>
 		<tr>
-			<td>labelColor</td>
-			<td><a href="https://github.com/Logius-standaarden/respec/wiki/labelColor">link</a></td>
+			<td><a href="https://github.com/Logius-standaarden/respec/wiki/labelColor">labelColor</a></td>
 			<td>Hexadecimale colorcode.</td>
 			<td>Globaal</td>
-			<td/>
 			<td/>
 			<td>Definieert de bij de in 'LocalizationStrings' gedefinieerde waardes horende kleuren.<br/><br/>Mag niet Lokaal overruled worden.</td>
 			<td>Bij VNG-R zullen we nog de bij onze statussen gewenste kleuren moeten definiëren.</td>
 		</tr>
 		<tr>
-			<td>latestVersion</td>
-			<td><a href="https://github.com/Logius-standaarden/respec/wiki/latestVersion">link</a></td>
+			<td><a href="https://github.com/Logius-standaarden/respec/wiki/latestVersion">latestVersion</a></td>
 			<td>Combinatie van strings en configuration propertynamen.</td>
 			<td>Globaal</td>
-			<td/>
 			<td/>
 			<td>Url van de laatst gepubliceerde versie.<br/>
 			Wordt opgebouwd m.b.v. andere gedefinieerde configuration properties en '/' tekens. Daarin voorkomende hoofdletters worden omgezet naar kleine letters.<br/><br/>
@@ -266,33 +246,27 @@ De laatste kolom heeft de bedoeling het proces om het onderliggende document te 
 			<td>Hoewel dit zowel globaal als lokaal gedefinieerd kan worden is het voorstel dat dit globaal gebeurd. Als we toestaan dat het lokaal gebeurd dan is de werking van de links niet te garanderen en kan het gevolgen hebben voor de structuur van de publishing repository.</td>
 		</tr>
 		<tr>
-			<td>license</td>
-			<td><a href="https://github.com/Logius-standaarden/respec/wiki/license">link</a></td>
+			<td><a href="https://github.com/Logius-standaarden/respec/wiki/license">license</a></td>
 			<td>enumeration</td>
 			<td>Globaal</td>
 			<td>eupl</td>
-			<td/>
 			<td>Definieert het licentietype dat van toepassing is op de specificatie. VNG-R hanteert de 'EUPL' licentie maar zo gewenst kan ook gekozen worden voor 'CC0', 'CC-BY' of 'CC-BY-ND'. Toegestane waardes 'eupl', 'cc0', 'cc-by', 'cc-by-nd'. Wordt gebruikt om licentie-logo en bijbehorende link in het document te genereren.
 				Nieuwe licentie types en het bijbehorende logo kunnen in de Globale property 'licenses' worden gedefinieerd.<br/><br/>Kan lokaal overruled worden.</td>
 			<td>Willen we wel dat deze lokaal overruled kan worden?</td>
 		</tr>
 		<tr>
-			<td>licenses</td>
-			<td><a href="https://github.com/Logius-standaarden/respec/wiki/licenses">link</a></td>
+			<td><a href="https://github.com/Logius-standaarden/respec/wiki/licenses">licenses</a></td>
 			<td>Array met per licentiecode de properties 'name', 'short', 'url' en 'image'.</td>
 			<td>Globaal</td>
-			<td/>
 			<td/>
 			<td>Definieert middels een array van configuratie opties de te gebruiken soorten licenties waarnaar middels de code kan worden verwezen in de configuratie-optie 'license'.<br/><br/>Mag waarschijnlijk lokaal overruled worden.</td>
 			<td>Bij VNG-R zullen we moeten bepalen welke licenties bij ons van toepassing (zouden kunnen) zijn.<br/>Ik vermoed dat ook deze lokaal te overrulen is maar willen we dat wel.</td>
 		</tr>
 		<tr>
-			<td>localBiblio</td>
-			<td><a href="https://github.com/Logius-standaarden/respec/wiki/localBiblio">link</a></td>
+			<td><a href="https://github.com/Logius-standaarden/respec/wiki/localBiblio">localBiblio</a></td>
 			<td>1 of meerdere objecten met set van properties.</td>
 			<td>?</td>
 			<td>n.t.b.</td>
-			<td/>
 			<td>Hiermee kan een lijst met referenties in het hoofdstuk 'Referenties' worden gegenereerd. Die referenties bevatten metainformatie (bijv. auteur, publicatiedatum en status) en links naar de betreffende externe referenties. De referenties worden echter alleen opgenomen in dat hoofdstuk als er in het Respec document naar verwezen wordt middels een link in de volgende syntax `[[Referentienaam]]`. Deze syntax geldt voor zowel html als markdown documenten.<br/><br/>
 				Indien een link wordt opgenomen in een normatief documentdeel zal de referentie terecht komen in de subparagraaf 'Normatieve referenties'. Is deze opgenomen in een informatief documentdeel dan komt deze in de subparagraaf 'Informatieve referenties' terecht.<br/><br/>
 				Gerefereerd kan worden aan specrefs die beschikbaar zijn in <a href="https://www.specref.org/">de SpecRef database</a> (zie ook <a href="https://github.com/tobie/specref">https://github.com/tobie/specref</a> of aan zelf in deze propertty gedefinieerde referenties. De syntax voor de inhoud van de localBiblio property is <a href="https://github.com/tobie/specref/blob/main/schemas/raw-reference.json">hier</a> beschreven.<br/><br/>
@@ -300,136 +274,110 @@ De laatste kolom heeft de bedoeling het proces om het onderliggende document te 
 			<td/>
 		</tr>
 		<tr>
-			<td>localizationStrings</td>
-			<td><a href="https://github.com/Logius-standaarden/respec/wiki/localizationStrings">link</a></td>
+			<td><a href="https://github.com/Logius-standaarden/respec/wiki/localizationStrings">localizationStrings</a></td>
 			<td>Array van properties per taalcode</td>
 			<td>Globaal</td>
-			<td/>
 			<td/>
 			<td>Bevat voor een aantal doelen en talen voor de te gebruiken codes en de daarbij horende volledige tekst.</td>
 			<td>Nog te bepalen voor welke doelen hier codes gedefinieerd kunnen worden.<br/><br/>
 				Bij VNG-R zullen we moeten bepalen of alle bestaande codes gewenst zijn en of er nieuwe codes toegevoegd moeten worden.<br/><br/>Is Lokaal specificeren voor deze configuratie property wel aan de orde.</td>
 		</tr>
 		<tr>
-			<td>logos</td>
-			<td><a href="https://github.com/Logius-standaarden/respec/wiki/logos">link</a></td>
+			<td><a href="https://github.com/Logius-standaarden/respec/wiki/logos">logos</a></td>
 			<td>Array per logo van de properties 'src', 'alt', 'id', 'height' en 'url'.</td>
 			<td>Globaal</td>
 			<td>VNG Realisatie logo</td>
-			<td/>
 			<td>definieert de src, alternate tekst, url en grootte van het linksboven in de specificatie te plaatsen logo.<br/><br/>Mag niet Lokaal overruled worden.</td>
 			<td>Willen we het VNG Realisatie logo geplaatst hebben of een ander logo?</td>
 		</tr>
 		<tr>
-			<td>maxTocLevel</td>
-			<td><a href="https://github.com/w3c/respec/wiki/maxTocLevel">link</a></td>
+			<td><a href="https://github.com/w3c/respec/wiki/maxTocLevel">maxTocLevel</a></td>
 			<td>Integer</td>
 			<td>Lokaal</td>
 			<td>0</td>
-			<td/>
 			<td>Bepaald het aantal niveau's dat maximaal wordt opgenomen in de inhoudsopgave van het Respec document.<br/><br/>Kan lokaal overruled worden.</td>
 			<td>Default worden alle niveau's opgenomen. Maken we hier i.d.d. een lokale property van die alleen wordt opgenomen en aangepast als de inhoudsopgave dermate groot is dat het ondoenlijk wordt er doorheen te scrollen? Ik ben bang dat dit denk al redelijk snel het geval is. </td>
 		</tr>
 		<tr>
-			<td>nl_organisationName</td>
-			<td><a href="https://github.com/Logius-standaarden/respec/wiki/nl_organisationName">link</a></td>
+			<td><a href="https://github.com/Logius-standaarden/respec/wiki/nl_organisationName">nl_organisationName</a></td>
 			<td>String</td>
 			<td>Globaal</td>
 			<td>VNG Realisatie</td>
-			<td/>
 			<td>Wordt gebruikt om de subtitel en het vertikale label linksboven te genereren.<br/><br/>
 				Kan lokaal overruled worden.</td>
 			<td>Willen we wel dat deze lokaal overruled kan worden? Zo ja dan moet ook het logo misschien overruled kunnen worden.</td>
 		</tr>
 		<tr>
-			<td>nl_organisationPublishURL</td>
-			<td><a href="https://github.com/Logius-standaarden/respec/wiki/nl_organisationPublishURL">link</a></td>
+			<td><a href="https://github.com/Logius-standaarden/respec/wiki/nl_organisationPublishURL">nl_organisationPublishURL</a></td>
 			<td>URL</td>
 			<td>Globaal</td>
 			<td>?</td>
-			<td/>
 			<td>Wordt gebruikt voor het genereren van de link naar de GitHub pages van de huidige, de vorige en de laatst gepubliceerde versie. Een link die leidt naar een document in de GitHub Pages interface van de 'publicatie' GitHub repository. De laatste gepubliceerde versie is overigens wat anders dan de laatste werkversie.<br/><br/>Kan worden gebruikt in de properties 'lastVersion', 'thisVersion' en 'prevVersion'.<br/><br/>Mag niet lokaal overruled worden.</td>
 			<td>Er moet bepaald worden welke waarde we hier als VNG-R willen hebben staan. Helemaal onderin de README.md doe ik een voorstel voor de publicatie GitHub repository wat daarmee verband houdt. N.m.m. moet dit een globale configuratie optie zijn en er moet dus ook beschreven worden hoe hier procesmatig mee omgegaan moet worden. Daarover moet nog wel een beslissing worden genomen en ook of een lokale variant toegestaan is.</td>
 		</tr>
 		<tr>
-			<td>nl_organisationStylesURL</td>
-			<td><a href="https://github.com/Logius-standaarden/respec/wiki/nl_organisationStylesURL">link</a></td>
+			<td><a href="https://github.com/Logius-standaarden/respec/wiki/nl_organisationStylesURL">nl_organisationStylesURL</a></td>
 			<td>URL</td>
 			<td>Globaal</td>
-			<td/>
 			<td/>
 			<td>Definieert de lokatie waar het te gebruiken css bestand staat excl. dat bestand zelf.<br/><br/>Mag niet Lokaal overruled worden.</td>
 			<td>Moet onderzocht worden of we hiervoor een eigen variant kunnen creëren en zo ja of we dat ook willen.</td>
 		</tr>
 		<tr>
-			<td>noTOC</td>
-			<td><a href="https://github.com/w3c/respec/wiki/noTOC">link</a></td>
+			<td><a href="https://github.com/w3c/respec/wiki/noTOC">noTOC</a></td>
 			<td>boolean</td>
 			<td>Lokaal</td>
 			<td>false</td>
-			<td/>
 			<td>Bepaald of er links van de inhoud een frame met de inhoudsopgave gegenereerd moet worden.</td>
 			<td>Moet het mogelijk voor repository eigenaren om te besluiten geen TOC te genereren?</td>
 		</tr>
 		<tr>
-			<td>otherLinks</td>
-			<td><a href="https://github.com/w3c/respec/wiki/otherLinks">link</a></td>
+			<td><a href="https://github.com/w3c/respec/wiki/otherLinks">otherLinks</a></td>
 			<td>Array van properties</td>
 			<td>Lokaal</td>
-			<td/>
 			<td/>
 			<td>Genereert een sectie in de header van het Respec document met als titel de key van deze property en als inhoud een of meerdere links.</td>
 			<td/>
 		</tr>
 		<tr>
-			<td>postProcess</td>
-			<td><a href="https://github.com/w3c/respec/wiki/postProcess">link</a></td>
+			<td><a href="https://github.com/w3c/respec/wiki/postProcess">postProcess</a></td>
 			<td/>
 			<td>?</td>
 			<td>?</td>
-			<td/>
 			<td>Bevat een of meer JavaScript functies die achtereenvolgend opgestart worden nadat Respec klaar is met generatie van het Respec document.</td>
 			<td>Bevat nu een functie die indien van toepassing mermaid notatie wijze omzet naar graphs.</td>
 		</tr>
 		<tr>
-			<td>previousMaturity</td>
-			<td><a href="https://github.com/Logius-standaarden/respec/wiki/previousMaturity">link</a></td>
+			<td><a href="https://github.com/Logius-standaarden/respec/wiki/previousMaturity">previousMaturity</a></td>
 			<td>enumeration</td>
 			<td>Lokaal</td>
-			<td/>
 			<td/>
 			<td>Status van de voorgaande versie.<br/><br/>
 				Kan evt. worden gebruikt in de properties 'prevVersion' maar wordt daar nu niet gebruikt.</td>
 			<td>Er moet bepaald worden of we deze opnemen bij het opbouwen van 'prevVersion'.</td>
 		</tr>
 		<tr>
-			<td>previousPublishDate</td>
-			<td><a href="https://github.com/Logius-standaarden/respec/wiki/previousPublishDate">link</a></td>
+			<td><a href="https://github.com/Logius-standaarden/respec/wiki/previousPublishDate">previousPublishDate</a></td>
 			<td>Datum in het formaat YYYY-MM-DD</td>
 			<td>Lokaal</td>
-			<td/>
 			<td/>
 			<td>Publicatiedatum van de voorgaande versie.<br/><br/>
 				Kan evt. worden gebruikt in de properties 'prevVersion' maar wordt daar nu niet gebruikt.</td>
 			<td>Er moet bepaald worden of we deze opnemen bij het opbouwen van 'prevVersion'.</td>
 		</tr>
 		<tr>
-			<td>previousPublishVersion</td>
-			<td><a href="https://github.com/Logius-standaarden/respec/wiki/previousPublishVersion">link</a></td>
+			<td><a href="https://github.com/Logius-standaarden/respec/wiki/previousPublishVersion">previousPublishVersion</a></td>
 			<td>SemVer notatie</td>
 			<td>Lokaal</td>
-			<td/>
 			<td/>
 			<td>Versienummer van de voorgaande versie in SemVer notatie (https://semver.org/lang/nl/).<br/><br/>
 				Wordt gebruikt in de property 'prevVersion'.</td>
 			<td>Er moet bepaald worden of we deze inderdaad opgenomen willen hebben bij het opbouwen van 'prevVersion'.</td>
 		</tr>
 		<tr>
-			<td>prevVersion</td>
-			<td><a href="https://github.com/Logius-standaarden/respec/wiki/prevVersion">link</a></td>
+			<td><a href="https://github.com/Logius-standaarden/respec/wiki/prevVersion">prevVersion</a></td>
 			<td>Combinatie van strings en propertynamen</td>
 			<td>Globaal</td>
-			<td/>
 			<td/>
 			<td>Url van de voorgaande versie.<br/>
 			Wordt opgebouwd m.b.v. andere gedefinieerde configuration properties en '/' tekens. Daarin voorkomende hoofdletters worden omgezet naar kleine letters.<br/><br/>
@@ -438,11 +386,9 @@ De laatste kolom heeft de bedoeling het proces om het onderliggende document te 
 			<td>Hoewel dit zowel globaal als lokaal gedefinieerd kan worden is het voorstel dat dit globaal gebeurd. Als we toestaan dat het lokaal gebeurd dan is de werking van de links niet te garanderen en kan het gevolgen hebben voor de structuur van de publishing repository.</td>
 		</tr>
 		<tr>
-			<td>pubDomain</td>
-			<td><a href="https://github.com/Logius-standaarden/respec/wiki/pubDomain">link</a></td>
+			<td><a href="https://github.com/Logius-standaarden/respec/wiki/pubDomain">pubDomain</a></td>
 			<td>enumeration</td>
 			<td>Globaal</td>
-			<td/>
 			<td/>
 			<td>Definieert het publicatie domein van de specificatie en heeft op dit moment de waarde 'cim'.<br/><br/>Wordt nu gebruikt in de properties 'lastVersion', 'thisVersion' en 'prevVersion'.</td>
 			<td>Er moet bepaald worden of we deze opnemen bij het opbouwen van 'lastVersion', 'thisVersion' en 'prevVersion'.<br/><br/>
@@ -459,54 +405,44 @@ De laatste kolom heeft de bedoeling het proces om het onderliggende document te 
 			</td>
 		</tr>
 		<tr>
-			<td>publishDate</td>
-			<td><a href="https://github.com/Logius-standaarden/respec/wiki/publishDate">link</a></td>
+			<td><a href="https://github.com/Logius-standaarden/respec/wiki/publishDate">publishDate</a></td>
 			<td>Datum in het formaat YYYY-MM-DD</td>
 			<td>Lokaal</td>
-			<td/>
 			<td/>
 			<td>Publicatiedatum van de huidige versie.<br/><br/>
 				Kan evt. worden gebruikt in de properties 'latestVersion' en 'thisVersion'.</td>
 			<td>Er moet bepaald worden of we deze opnemen bij het opbouwen van 'prevVersion'.</td>
 		</tr>
 		<tr>
-			<td>publishVersion</td>
-			<td><a href="https://github.com/Logius-standaarden/respec/wiki/publishVersion">link</a></td>
+			<td><a href="https://github.com/Logius-standaarden/respec/wiki/publishVersion">publishVersion</a></td>
 			<td>SemVer notatie</td>
 			<td>Lokaal</td>
-			<td/>
 			<td/>
 			<td>Versienummer van de huidige versie in SemVer notatie (https://semver.org/lang/nl/).<br/><br/>
 				Wordt gebruikt in de properties 'lastVersion' en 'thisVersion'.</td>
 			<td>Er moet bepaald worden of we deze inderdaad opgenomen willen hebben bij het opbouwen van 'prevVersion'.</td>
 		</tr>
 		<tr>
-			<td>shortName</td>
-			<td><a href="https://github.com/Logius-standaarden/respec/wiki/shortName">link</a></td>
+			<td><a href="https://github.com/Logius-standaarden/respec/wiki/shortName">shortName</a></td>
 			<td>String</td>
 			<td>Lokaal</td>
-			<td/>
 			<td/>
 			<td>Korte naam (mnemonic) van de specificatie.<br/><br/>
 				Wordt gebruikt in de properties 'lastVersion', 'thisVersion' en 'prevVersion'.</td>
 			<td>Er moet bepaald worden of we deze inderdaad opgenomen willen hebben bij het opbouwen van 'prevVersion'.</td>
 		</tr>
 		<tr>
-			<td>sotdText</td>
-			<td><a href="https://github.com/Logius-standaarden/respec/wiki/sotdText">link</a></td>
+			<td><a href="https://github.com/Logius-standaarden/respec/wiki/sotdText">sotdText</a></td>
 			<td>Array van properties per taalcode.</td>
 			<td>Globaal</td>
-			<td></td>
 			<td/>
 			<td>Bevat voor een aantal 'specStatus'sen en talen de te gebruiken codes en de daarbij horende volledige tekst.<br/><br/>Mag niet lokaal overruled worden.</td>
 			<td>Bij VNG-R zullen we moeten bepalen welke teksten er bij welke status gegenereerd moeten worden.</td>
 		</tr>
 		<tr>
-			<td>specStatus</td>
-			<td><a href="https://github.com/Logius-standaarden/respec/wiki/specStatus">link</a></td>
+			<td><a href="https://github.com/Logius-standaarden/respec/wiki/specStatus">specStatus</a></td>
 			<td>enumeration</td>
 			<td>Lokaal</td>
-			<td/>
 			<td/>
 			<td>Definieert de status van de specificatie. Wordt gebruikt om de subtitel en het vertikale label linksboven te genereren. Bepaald ook de kleur van dat label. Dit dient in de lokale configuratie gedefinieerd te worden.<br/><br/>
 				De kleuren voor de VNG-R statussen kunnen worden gedefinieerd in de globale optie 'labelColor'.<br/><br/>
@@ -514,42 +450,34 @@ De laatste kolom heeft de bedoeling het proces om het onderliggende document te 
 			<td>Er moet bepaald worden of we deze opnemen bij het opbouwen van 'latestVersion', 'thisVersion' en 'prevVersion'.</td>
 		</tr>
 		<tr>
-			<td>spectype</td>
-			<td><a href="https://github.com/Logius-standaarden/respec/wiki/specType">link</a></td>
+			<td><a href="https://github.com/Logius-standaarden/respec/wiki/specType">spectype</a></td>
 			<td>enumeration</td>
 			<td>Lokaal</td>
-			<td/>
 			<td/>
 			<td>Definieert het type van de specificatie. Wordt gebruikt om de subtitel en het vertikale label linksboven te genereren. In het template heeft dit de waarde 'IM' aangezien we bij VNG-R Respec veelal zullen gebruiken om Informatiemodellen mee te publiceren.<br/><br/>
 				Kan evt. ook worden gebruikt in de properties 'latestVersion', 'thisVersion' en 'prevVersion'.</td>
 			<td>Er moet bepaald worden of we deze opnemen bij het opbouwen van 'latestVersion', 'thisVersion' en 'prevVersion'.</td>
 		</tr>
 		<tr>
-			<td>subtitle</td>
-			<td><a href="https://github.com/w3c/respec/wiki/subtitle">link</a></td>
+			<td><a href="https://github.com/w3c/respec/wiki/subtitle">subtitle</a></td>
 			<td>String</td>
 			<td>Lokaal</td>
 			<td>n.v.t.</td>
-			<td/>
 			<td>String die als subtitel van de titel van het document dient. Wordt geplaatst boven de gegenereerde subtitel waarin de organisatienaam, documenttype, specStatus en versiedatum worden gebruikt.</td>
 			<td/>
 		</tr>
 		<tr>
-			<td>testSuiteURI</td>
-			<td><a href="https://github.com/w3c/respec/wiki/testSuiteURI">link</a></td>
+			<td><a href="https://github.com/w3c/respec/wiki/testSuiteURI">testSuiteURI</a></td>
 			<td>URL</td>
 			<td>Lokaal</td>
 			<td>n.v.t.</td>
-			<td/>
 			<td>Genereert een sectie in de header van het Respec document met als titel 'Test suite' en als inhoud een link naar een testsuite. Wellicht te gebruiken voor het API Testplatform maar alleen als we Respec ook gaan gebruiken voor de API's.</td>
 			<td>Wordt de genoemde sectie niet gegenereerd als we deze property weglaten?</td>
 		</tr>
 		<tr>
-			<td>thisVersion</td>
-			<td><a href="https://github.com/Logius-standaarden/respec/wiki/thisVersion">link</a></td>
+			<td><a href="https://github.com/Logius-standaarden/respec/wiki/thisVersion">thisVersion</a></td>
 			<td>Combinatie van strings en propertynamen</td>
 			<td>Globaal</td>
-			<td/>
 			<td/>
 			<td>Url van de huidige versie.<br/>
 			Wordt opgebouwd m.b.v. andere gedefinieerde configuration properties en '/' tekens. Daarin voorkomende hoofdletters worden omgezet naar kleine letters.<br/><br/>
@@ -559,41 +487,33 @@ De laatste kolom heeft de bedoeling het proces om het onderliggende document te 
 		</tr>
 		<tr>
 			<td>title</td>
-			<td>-</td>
 			<td/>
 			<td>Lokaal</td>
 			<td/>
+			<td>De titel van het Respec document.</td>
 			<td/>
-			<td>De titel van de betreffende specificatie.</td>
-			<td>Ik mis deze property in de side bar van https://github.com/Logius-standaarden/respec/wiki</td>
 		</tr>
 		<tr>
-			<td>useLabel</td>
-			<td><a href="https://github.com/Logius-standaarden/respec/wiki/useLabel">link</a></td>
+			<td><a href="https://github.com/Logius-standaarden/respec/wiki/useLabel">useLabel</a></td>
 			<td>boolean</td>
 			<td>Globaal</td>
 			<td>true</td>
-			<td/>
 			<td>Bepaald of het verticale label aan de linker bovenzijde van de inhoudsopgave gegenereerd moet worden.<br/><br/>
 				Kan lokaal overruled worden.</td>
 			<td>Willen we wel dat deze lokaal overruled kan worden?<br/><br/>
 				Ik mis deze property in de side bar van https://github.com/Logius-standaarden/respec/wiki</td>
 		</tr>
 		<tr>
-			<td>useLogo</td>
-			<td><a href="https://github.com/Logius-standaarden/respec/wiki/useLogo">link</a></td>
+			<td><a href="https://github.com/Logius-standaarden/respec/wiki/useLogo">useLogo</a></td>
 			<td>boolean</td>
 			<td>Globaal</td>
 			<td>true</td>
-			<td/>
 			<td>Bepaald of het VNG-Realisatie logo in de rechter bovenzijde van het document geplaatst moet worden.<br/><br/>
 				Kan lokaal overruled worden.</td>
 			<td>Willen we wel dat deze lokaal overruled kan worden?</td>
 		</tr>
 		<!--tr>
 			<td>useSideBar</td>
-			<td>-</td>
-			<td/>
 			<td/>
 			<td/>
 			<td/>
@@ -601,11 +521,9 @@ De laatste kolom heeft de bedoeling het proces om het onderliggende document te 
 			<td>Property staat wel in de side bar van https://github.com/Logius-standaarden/respec/wiki maar link leidt niet naar een pagina met uitleg.</td>
 	</tr-->
 		<tr>
-			<td>edDraftURI</td>
-			<td><a href="https://github.com/w3c/respec/wiki/edDraftURI">link</a></td>
+			<td><a href="https://github.com/w3c/respec/wiki/edDraftURI">edDraftURI</a></td>
 			<td>URL</td>
 			<td>?</td>
-			<td/>
 			<td/>
 			<td>Beschrijft de url waar de draft van de specificatie kan worden bekeken. Er wordt geadviseerd de Editors Draft niet te publiceren. Indien deze property een lege waarde heeft wordt 'Laatste werkversie' niet getoond.</td>
 			<td/>
