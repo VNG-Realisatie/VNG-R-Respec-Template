@@ -39,8 +39,17 @@ let respecConfig = {
     ],
   github: "https://github.com/VNG-Realisatie/VNG-R-Respec-Template",
 
+  licenses: {
+      tst: {
+          name: "Test licentie",
+          short: "TST",
+          url: "https://www.donaldduck.nl/",
+          image: "https://www.google.com/imgres?q=donald%20duck&imgurl=https%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fen%2Fa%2Fa5%2FDonald_Duck_angry_transparent_background.png&imgrefurl=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FDonald_Duck&docid=5YW2q776-BkUzM&tbnid=8j1JI9Qi6suE9M&vet=12ahUKEwicp5f90LKFAxVYXUEAHSbHAh0QM3oECBUQAA..i&w=270&h=351&hcb=2&ved=2ahUKEwicp5f90LKFAxVYXUEAHSbHAh0QM3oECBUQAA",
+      },
+  },
 //  maxTocLevel: 2,
   
+  license: "tst",
   // Creëer PDF en link deze aan de file in de header van het html document (optioneel). Het is (nog) niet mogelijk hier een globale property van te maken:
   alternateFormats: [
       {
