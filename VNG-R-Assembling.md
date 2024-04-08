@@ -234,8 +234,8 @@ De laatste kolom heeft de bedoeling het proces om het onderliggende document te 
 			<td>Definieert de bij de in 'LocalizationStrings' gedefinieerde statussen horende kleuren.<br/><br/>Mag niet Lokaal overruled worden.</td>
 			<td>De alleen binnen VNG Realisatie gebruikte statussen kennen de volgende kleuren:<br/>
 			    <ul>
-				<li>In gebruik: <span style="color: #A569BD">███████</span></li>
-				<li>In ontwikkeling: <span style="color: #DC7633">███████</span></li>
+				<li>In gebruik: <span style="color: #A569BD">█████</span></li>
+				<li>In ontwikkeling: <span style="color: #DC7633">█████</span></li>
 			    </ul>
 			</td>
 		</tr>
