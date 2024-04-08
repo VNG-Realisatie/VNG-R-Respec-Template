@@ -40,7 +40,26 @@ let respecConfig = {
   github: "https://github.com/VNG-Realisatie/VNG-R-Respec-Template",
 
   //  maxTocLevel: 2,
-  
+
+      localizationStrings: {
+        nl: {
+            // Specificatie-statussen	
+            ig: "IG versie",
+            io: "IO versie",
+	    // Specificatie-types
+            basis: "Document",
+            no: "Norm",
+            st: "Standaard",
+            im: "Informatiemodel",
+            pr: "Praktijkrichtlijn",
+            hr: "Handreiking",
+            wa: "Werkafspraak",
+            al: "Algemeen",
+            bd: "Beheerdocumentatie",
+            bp: "Best practice",
+        },
+    },
+
   // Creëer PDF en link deze aan de file in de header van het html document (optioneel). Het is (nog) niet mogelijk hier een globale property van te maken:
   alternateFormats: [
       {
