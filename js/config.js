@@ -41,14 +41,7 @@ let respecConfig = {
 
   //  maxTocLevel: 2,
 
-    logos: [{
-        src: "https://upload.wikimedia.org/wikipedia%2Fen%2Fa%2Fa5%2FDonald_Duck_angry_transparent_background.png",
-        alt: "VNG-Realisatie",
-        id: "VNG-Realisatie",
-        height: 77,
-        url: "https://www.vng.nl",
-    }],
-
+  nl_organisationPublishURL: "https://vng.nl/publicatie",
 
   // Creëer PDF en link deze aan de file in de header van het html document (optioneel). Het is (nog) niet mogelijk hier een globale property van te maken:
   alternateFormats: [
