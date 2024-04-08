@@ -41,7 +41,7 @@ let respecConfig = {
 
   //  maxTocLevel: 2,
 
-  nl_organisationPublishURL: "https://vng.nl/publicatie",
+  nl_organisationStylesURL: "https://gitdocumentatie.logius.nl/",
 
   // Creëer PDF en link deze aan de file in de header van het html document (optioneel). Het is (nog) niet mogelijk hier een globale property van te maken:
   alternateFormats: [
