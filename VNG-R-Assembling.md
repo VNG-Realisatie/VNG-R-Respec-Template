@@ -5,7 +5,7 @@ De acties die in het voorgaande hoofdstuk staan beschreven leveren een html best
 Binnen VNG-R maken we gebruik van een door Logius vervaardigde extensie op het W3C Respec framework. We volgen daarbij andere organisaties in Nederland die hetzelfde doen zoals Geonovum. Van het door Logius beschikbaar gestelde template is een VNG-R versie beschikbaar binnen de VNG-Realisatie GitHub organisatie. Dat geeft de mogelijkheid om te verwijzen naar een VNG-R Respec configuratie waardoor we specifiek voor VNG-Realisatie geldende configuraties, zoals bijv. het VNG-Realisatie logo, kunnen aanbrengen. Deze vind je in de repository 'Respec-Organization-configurations'.
 Het template zelf kan echter door eenieder worden gebruikt om de eigen Respec documentatie te vervaardigen en daarbinnen bestaan nog mogelijkheden om jouw Respec documentatie een invulling tintje te geven.
 
-Hieronder wordt de werkwijze beschreven waarbij de 7 in de volgende paragraaf beschreven stappen moeten worden uitgevoerd door een GitHub organisatie administrator. Voorzie hem daarvoor van de gewenste respository naam.
+Hieronder wordt de werkwijze beschreven waarbij de 8 in de volgende paragraaf beschreven stappen moeten worden uitgevoerd door een GitHub organisatie administrator. Voorzie hem daarvoor van de gewenste respository naam.
 
 ## Door administrator uit te voeren acties
 1. Open het [VNG-R Respec template](https://github.com/vng-realisatie/VNG-R-Respec-Template) en klik in de README op die pagina op de link 'Use this template';
@@ -162,7 +162,7 @@ Een groot aantal properties worden globaal gedefinieerd maar kunnen lokaal overr
 			<td>Globaal en lokaal</td>
 			<td>true</td>
 			<td>Bepaald of er een paragraafteken (§), met een link naar de paragraaf waar het teken vóór komt te staan, wordt gegenereerd of niet.<br/>
-				Kan handig zijn om anderen de gelegenheid te bieden om links naar specifieke paragrafen in je specificaties te kopiëren en elders te gebruiken.</td>
+				Kan handig zijn om anderen de gelegenheid te bieden om links naar specifieke paragrafen in je Respec document te kopiëren en elders te gebruiken.</td>
 			<td>Deze property kan lokaal overruled worden.</td>
 		</tr>
 		<tr>
@@ -170,8 +170,8 @@ Een groot aantal properties worden globaal gedefinieerd maar kunnen lokaal overr
 			<td>Array met per formaat de properties 'label' en 'url'.</td>
 			<td>Lokaal</td>
 			<td/>
-			<td>Hiermee kun je aangeven of je de Respec documentatie ook in een ander formaat dan html aanbiedt, op dit moment alleen pdf.<br/>
-				Deze configuratie property zorgt er voor dat er een pdf bestand wordt gegenereerd en dat er in de Respec documentatie een zin gewijd wordt aan pdf 
+			<td>Hiermee kun je aangeven of je de Respec documentatie ook in een ander formaat dan html aanbiedt, op dit moment is alleen pdf mogelijk.<br/>
+				Deze configuratie property zorgt er voor dat er een pdf bestand wordt gegenereerd en dat er in de Respec documentatie een zin gewijd wordt aan het pdf 
 				formaat met daarin de link naar het pdf bestand.</td>
 			<td/>
 		</tr>
@@ -180,9 +180,9 @@ Een groot aantal properties worden globaal gedefinieerd maar kunnen lokaal overr
 			<td>Array met per naam de properties 'name', 'company' en 'companyURL'.</td>
 			<td>Lokaal</td>
 			<td/>
-			<td>Bevat 1 of meerdere beschrijvingen van personen die hebben bijgedragen aan de tot stand koming van de specificatie.<br/><br/>Het heeft de voorkeur editors te gebruiken 
+			<td>Bevat 1 of meerdere beschrijvingen van personen die hebben bijgedragen aan de tot stand koming van het Respec document.<br/><br/>Het heeft de voorkeur editors te gebruiken 
 				boven authors. Indien deze configuratie property niet aanwezig is wordt 'Auteurs' niet getoond.</td>
-			<td>Authors hebben bijgedragen aan de initiële content van de specificatie, editors hebben verbeteringen en wijzigingen aangebracht aan die initiële content.</td>
+			<td>Authors hebben bijgedragen aan de initiële content van het Respec document, editors hebben verbeteringen en wijzigingen aangebracht aan die initiële content.</td>
 		</tr>
 		<tr>
 			<td>content</td>
@@ -197,16 +197,16 @@ Een groot aantal properties worden globaal gedefinieerd maar kunnen lokaal overr
 			<td>Array met per naam de properties 'name', 'company' en 'companyURL'.</td>
 			<td>Lokaal</td>
 			<td/>
-			<td>Één of meerdere beschrijvingen van personen die hebben bijgedragen aan de tot stand koming van de specificatie.<br/><br/>Het heeft de voorkeur editors te gebruiken boven 
+			<td>Één of meerdere beschrijvingen van personen die hebben bijgedragen aan de tot stand koming van het Respec document.<br/><br/>Het heeft de voorkeur editors te gebruiken boven 
 				authors. Indien deze configuratie property niet aanwezig is wordt 'Redacteurs' getoond zonder vulling.</td>
-			<td>Authors hebben bijgedragen aan de initiële content van de specificatie, editors hebben verbeteringen en wijzigingen aangebracht aan die initiële content.</td>
+			<td>Authors hebben bijgedragen aan de initiële content van het Respec document, editors hebben verbeteringen en wijzigingen aangebracht aan die initiële content.</td>
 		</tr>
 		<tr>
 			<td><a href="https://github.com/w3c/respec/wiki/formerEditors">formerEditors</a></td>
 			<td>Array met per naam de properties 'name', 'company' en 'companyURL'.</td>
 			<td>Lokaal</td>
 			<td/>
-			<td>Bevat 1 of meerdere beschrijvingen van personen die in het verleden hebben bijgedragen aan de totstandkoming van de specificatie.</td>
+			<td>Bevat 1 of meerdere beschrijvingen van personen die in het verleden hebben bijgedragen aan de totstandkoming van het Respec document.</td>
 			<td/>
 		</tr>
 		<tr>
@@ -221,7 +221,7 @@ Een groot aantal properties worden globaal gedefinieerd maar kunnen lokaal overr
 					<li>een set van properties bestaande uit
 					<ul>
 						<li>repoURL: Een van bovenstaande opties</li>
-						<li>branch: de branch waarin de specificaties maar ook issues staan opgeslagen.</li>
+						<li>branch: de branch waarin het Respec document maar ook issues staan opgeslagen.</li>
 					</ul>
 					</li>
 				</ul>
@@ -233,11 +233,11 @@ Een groot aantal properties worden globaal gedefinieerd maar kunnen lokaal overr
 			<td>Hexadecimale colorcode.</td>
 			<td>Globaal</td>
 			<td/>
-			<td>Definieert de bij de in 'LocalizationStrings' gedefinieerde statussen horende kleuren.<br/><br/>Deze property kan niet Lokaal overruled worden.</td>
-			<td>De alleen binnen VNG Realisatie gebruikte statussen kennen de volgende kleuren:<br/>
+			<td>Definieert de bij de in 'LocalizationStrings' gedefinieerde statussen horende kleuren.<br/><br/>Deze property kan niet Lokaal gespecificeerd en dus overruled worden.</td>
+			<td>De specifiek voor VNG Realisatie gedefinieerde statussen kennen de volgende kleuren:<br/>
 			    <ul>
-				<li>In gebruik (IG): <span style="color: #A569BD">█████</span></li>
-				<li>In ontwikkeling (IO): <span style="color: #DC7633">█████</span></li>
+				<li>In Gebruik (IG): <span style="color: #A569BD">█████</span></li>
+				<li>In Ontwikkeling (IO): <span style="color: #DC7633">█████</span></li>
 			    </ul>
 			</td>
 		</tr>
@@ -247,7 +247,7 @@ Een groot aantal properties worden globaal gedefinieerd maar kunnen lokaal overr
 			<td>Globaal</td>
 			<td>Samenvoeging van achtereenvolgens `nl_organisationPublishURL`, `pubDomain`, "/",  en `shortName`.</td>
 			<td>Wordt opgebouwd m.b.v. andere gedefinieerde configuration properties en '/' tekens. Daarin voorkomende hoofdletters worden omgezet naar kleine letters.<br/><br/>
-				Indien deze configuration property of een van de properties waaruit het bestaat niet wordt verstrekt dan wordt de gerelateerde rubriek in het Respec document 
+				Indien deze configuration property of een van de properties waaruit het bestaat niet worden verstrekt dan wordt de gerelateerde rubriek in het Respec document 
 				ook niet aangemaakt. De laatste gepubliceerde versie is overigens wat anders dan de laatste werkversie.</td>
 			<td>Deze property kan lokaal overruled worden maar ben daar terughoudend mee. Bij lokaal definiëren van deze property is de werking 
 				van de links in het document nl. niet te garanderen aangezien die zou kunnen afwijken van de afgesproken structuur in de publishing repository.</td>
@@ -257,7 +257,7 @@ Een groot aantal properties worden globaal gedefinieerd maar kunnen lokaal overr
 			<td>enumeration</td>
 			<td>Globaal en lokaal</td>
 			<td>eupl</td>
-			<td>Definieert het licentietype dat van toepassing is op de specificatie. VNG-R hanteert de 'EUPL' licentie maar zo gewenst kan ook gekozen worden voor 'CC0', 'CC-BY' of 'CC-BY-ND'. 
+			<td>Definieert het licentietype dat van toepassing is op het Respec document. VNG-R hanteert de 'EUPL' licentie maar zo gewenst kan ook gekozen worden voor 'CC0', 'CC-BY' of 'CC-BY-ND'. 
 				Toegestane waardes 'eupl', 'cc0', 'cc-by', 'cc-by-nd'. Wordt gebruikt om licentie-logo en bijbehorende link in het document te genereren.<br/>
 				<br/><br/>Deze property kan en mag lokaal overruled worden.</td>
 			<td>Nieuwe licentie types en het bijbehorende logo kunnen in de Globale property 'licenses' worden gedefinieerd.</td>
@@ -304,7 +304,7 @@ Een groot aantal properties worden globaal gedefinieerd maar kunnen lokaal overr
 			<td>Array per logo van de properties 'src', 'alt', 'id', 'height' en 'url'.</td>
 			<td>Globaal en lokaal</td>
 			<td>VNG Realisatie logo</td>
-			<td>Definieert de src, alternate tekst, url en grootte van het linksboven in de specificatie te plaatsen logo.<br/><br/>Deze property kan lokaal overruled worden.</td>
+			<td>Definieert de src, alternate tekst, url en grootte van het linksboven in het Respec document te plaatsen logo.<br/><br/>Deze property kan lokaal overruled worden.</td>
 			<td>Willen we het VNG Realisatie logo geplaatst hebben of een ander logo?</td>
 		</tr>
 		<tr>
@@ -407,7 +407,7 @@ Een groot aantal properties worden globaal gedefinieerd maar kunnen lokaal overr
 			<td/>
 			<td>Url van de voorgaande versie.<br/>
 			Wordt opgebouwd m.b.v. andere gedefinieerde configuration properties en '/' tekens. Daarin voorkomende hoofdletters worden omgezet naar kleine letters.<br/><br/>
-			Indien deze configuration property of een van de properties waaruit het bestaat niet wordt verstrekt dan wordt de gerelateerde rubriek in de specificatie ook niet aangemaakt.<br/><br/>
+			Indien deze configuration property of een van de properties waaruit het bestaat niet wordt verstrekt dan wordt de gerelateerde rubriek in het Respec document ook niet aangemaakt.<br/><br/>
 			Mag niet lokaal overruled worden.</td>
 			<td>Hoewel dit zowel globaal als lokaal gedefinieerd kan worden is het voorstel dat dit globaal gebeurd. Als we toestaan dat het lokaal gebeurd dan is de werking van de links niet te garanderen en kan het gevolgen hebben voor de structuur van de publishing repository.</td>
 		</tr>
@@ -416,7 +416,7 @@ Een groot aantal properties worden globaal gedefinieerd maar kunnen lokaal overr
 			<td>enumeration</td>
 			<td>Globaal</td>
 			<td/>
-			<td>Definieert het publicatie domein van de specificatie en heeft op dit moment de waarde 'cim'.<br/><br/>Wordt nu gebruikt in de properties 'lastVersion', 'thisVersion' en 'prevVersion'.</td>
+			<td>Definieert het publicatie domein van het Respec document en heeft op dit moment de waarde 'cim'.<br/><br/>Wordt nu gebruikt in de properties 'lastVersion', 'thisVersion' en 'prevVersion'.</td>
 			<td>Er moet bepaald worden of we deze opnemen bij het opbouwen van 'lastVersion', 'thisVersion' en 'prevVersion'.<br/><br/>
 				Een andere mogelijkheid is de folder 'cim' vast op te nemen in de configuratie property 'nl_organisationPublishURL' en binnen VNG-R voor deze property de volgende waarden toe te staan en te definiëren:
 				<ul>
@@ -453,7 +453,7 @@ Een groot aantal properties worden globaal gedefinieerd maar kunnen lokaal overr
 			<td>String</td>
 			<td>Lokaal</td>
 			<td/>
-			<td>Korte naam (mnemonic) van de specificatie.<br/><br/>
+			<td>Korte naam (mnemonic) van het Respec document.<br/><br/>
 				Wordt gebruikt in de properties 'lastVersion', 'thisVersion' en 'prevVersion'.</td>
 			<td>Er moet bepaald worden of we deze inderdaad opgenomen willen hebben bij het opbouwen van 'prevVersion'.</td>
 		</tr>
@@ -470,7 +470,7 @@ Een groot aantal properties worden globaal gedefinieerd maar kunnen lokaal overr
 			<td>enumeration</td>
 			<td>Lokaal</td>
 			<td/>
-			<td>Definieert de status van de specificatie. Wordt gebruikt om de subtitel en het vertikale label linksboven te genereren. Bepaald ook de kleur van dat label. Dit dient in de lokale configuratie gedefinieerd te worden.<br/><br/>
+			<td>Definieert de status van het Respec document. Wordt gebruikt om de subtitel en het vertikale label linksboven te genereren. Bepaald ook de kleur van dat label. Dit dient in de lokale configuratie gedefinieerd te worden.<br/><br/>
 				De kleuren voor de VNG-R statussen kunnen worden gedefinieerd in de globale optie 'labelColor'.<br/><br/>
 				Kan evt. ook worden gebruikt in de properties 'latestVersion', 'thisVersion' en 'prevVersion'.</td>
 			<td>Er moet bepaald worden of we deze opnemen bij het opbouwen van 'latestVersion', 'thisVersion' en 'prevVersion'.</td>
@@ -480,7 +480,7 @@ Een groot aantal properties worden globaal gedefinieerd maar kunnen lokaal overr
 			<td>enumeration</td>
 			<td>Lokaal</td>
 			<td/>
-			<td>Definieert het type van de specificatie. Wordt gebruikt om de subtitel en het vertikale label linksboven te genereren. In het template heeft dit de waarde 'IM' aangezien we bij VNG-R Respec veelal zullen gebruiken om Informatiemodellen mee te publiceren.<br/><br/>
+			<td>Definieert het type van het Respec document. Wordt gebruikt om de subtitel en het vertikale label linksboven te genereren. In het template heeft dit de waarde 'IM' aangezien we bij VNG-R Respec veelal zullen gebruiken om Informatiemodellen mee te publiceren.<br/><br/>
 				Kan evt. ook worden gebruikt in de properties 'latestVersion', 'thisVersion' en 'prevVersion'.</td>
 			<td>Er moet bepaald worden of we deze opnemen bij het opbouwen van 'latestVersion', 'thisVersion' en 'prevVersion'.</td>
 		</tr>
@@ -507,7 +507,7 @@ Een groot aantal properties worden globaal gedefinieerd maar kunnen lokaal overr
 			<td/>
 			<td>Url van de huidige versie.<br/>
 			Wordt opgebouwd m.b.v. andere gedefinieerde configuration properties en '/' tekens. Daarin voorkomende hoofdletters worden omgezet naar kleine letters.<br/><br/>
-			Indien deze configuration property of een van de properties waaruit het bestaat niet wordt verstrekt dan wordt de gerelateerde rubriek in de specificatie ook niet aangemaakt.<br/><br/>
+			Indien deze configuration property of een van de properties waaruit het bestaat niet wordt verstrekt dan wordt de gerelateerde rubriek in het Respec document ook niet aangemaakt.<br/><br/>
 			Mag niet lokaal overruled worden.</td>
 			<td>Hoewel dit zowel globaal als lokaal gedefinieerd kan worden is het voorstel dat dit globaal gebeurd. Als we toestaan dat het lokaal gebeurd dan is de werking van de links niet te garanderen en kan het gevolgen hebben voor de structuur van de publishing repository.</td>
 		</tr>
@@ -551,7 +551,7 @@ Een groot aantal properties worden globaal gedefinieerd maar kunnen lokaal overr
 			<td>URL</td>
 			<td>?</td>
 			<td/>
-			<td>Beschrijft de url waar de draft van de specificatie kan worden bekeken (de laatste werkversie). Indien deze property een lege waarde heeft wordt 'Laatste werkversie' niet getoond. De laatste werkversie is overigens wat anders dan de laatste gepubliceerde versie.</td>
+			<td>Beschrijft de url waar de draft van het Respec document kan worden bekeken (de laatste werkversie). Indien deze property een lege waarde heeft wordt 'Laatste werkversie' niet getoond. De laatste werkversie is overigens wat anders dan de laatste gepubliceerde versie.</td>
 			<td/>
 		</tr>
 	</tbody>
