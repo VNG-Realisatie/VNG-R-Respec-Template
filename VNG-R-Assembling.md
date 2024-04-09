@@ -233,7 +233,7 @@ Een groot aantal properties worden globaal gedefinieerd maar kunnen lokaal overr
 			<td>Hexadecimale colorcode.</td>
 			<td>Globaal</td>
 			<td/>
-			<td>Definieert de bij de in 'LocalizationStrings' gedefinieerde statussen horende kleuren.<br/><br/>Deze property kan niet Lokaal gespecificeerd en dus overruled worden.</td>
+			<td>Definieert de bij de in 'LocalizationStrings' gedefinieerde statussen horende kleuren.<br/><br/>Deze property kan niet Lokaal gespecificeerd en dus ook niet overruled worden.</td>
 			<td>De specifiek voor VNG Realisatie gedefinieerde statussen kennen de volgende kleuren:<br/>
 			    <ul>
 				<li>In Gebruik (IG): <span style="color: #A569BD">█████</span></li>
@@ -275,7 +275,7 @@ Een groot aantal properties worden globaal gedefinieerd maar kunnen lokaal overr
 			<td><a href="https://github.com/Logius-standaarden/respec/wiki/localBiblio">localBiblio</a></td>
 			<td>Array van één of meerdere objecten met met per object de properties 'href', 'title, 'publisher', 'date' en 'rawDate'.</td>
 			<td>Globaal en lokaal</td>
-			<td>n.t.b.</td>
+			<td/>
 			<td>Hiermee kan een lijst met referenties in het hoofdstuk 'Referenties' worden gegenereerd. Die referenties bevatten metainformatie (bijv. 'auteur', 'publicatiedatum' en 'status') en 
 				links naar de betreffende externe referenties. De referenties worden echter alleen opgenomen in dat hoofdstuk als er in het Respec document naar verwezen wordt middels een 
 				link in de volgende syntax `[[Referentienaam]]`. Deze syntax geldt voor zowel html als markdown documenten.<br/><br/>
@@ -285,7 +285,7 @@ Een groot aantal properties worden globaal gedefinieerd maar kunnen lokaal overr
 				<a href="https://github.com/tobie/specref">https://github.com/tobie/specref</a> of aan zelf in deze propertty gedefinieerde referenties. De syntax voor de inhoud van de localBiblio 
 				property is <a href="https://github.com/tobie/specref/blob/main/schemas/raw-reference.json">hier</a> beschreven.<br/><br/>
 				Deze property kan zowel lokaal als globaal geconfigureerd worden.<br/><br/>Voor referenties waarvan we verwachten dat deze vaker gebruikt gaan worden of waarvan inmiddels duidelijk 
-				is dat deze vaker gebruikt worden dient een verzoek te worden gedaan deze op te nemen in de organisation-config.js of nog beter deze op te laten nemen in the 
+				is dat deze vaker gebruikt worden dient een verzoek te worden gedaan deze op te nemen in de organisation-config.js of nog beter deze op te laten nemen in de 
 				<a href="https://www.specref.org/">SpecRef database</a>. Sterker nog, het wordt zelfs aangemoedigd geen gebruik van deze property te maken. Beheerders van Respec repositories zijn 
 				er vanaf het moment dat de referentie is opgenomen in een van de twee opties zelf verantwoordelijk voor dat deze referenties uit hun eigen config.js worden verwijderd.</td>
 			<td/>
@@ -295,9 +295,9 @@ Een groot aantal properties worden globaal gedefinieerd maar kunnen lokaal overr
 			<td>Array van properties per taalcode</td>
 			<td>Globaal en lokaal</td>
 			<td/>
-			<td>Bevat voor een aantal doel- ('document statussen' en 'document types') en taalcombinaties de te gebruiken codes en de daarbij horende tekst.</td>
-			<td>Bij VNG-R zullen we moeten bepalen of alle bestaande codes gewenst zijn en of er nieuwe codes toegevoegd moeten worden.<br/><br/>Lokaal overrulen van deze property kan maar is niet 
-				gewenst. Definieer daarvoor in plaats een nieuwe code en bijbehorende tekst en neem tegelijkertijd stappen deze op te laten nemen in de globale variant van deze property.</td>
+			<td>Bevat voor een aantal doel- ('document statussen' en 'document types') / taalcombinaties de te gebruiken codes en de daarbij horende tekst.</td>
+			<td>Bij VNG-R zullen we moeten bepalen of alle bestaande codes gewenst zijn en of er nieuwe codes toegevoegd moeten worden.<br/><br/>Lokaal overrulen van deze property is niet
+				toegestaan. Definieer indien gewenst een nieuwe code en bijbehorende tekst en neem tegelijkertijd stappen deze op te laten nemen in de globale variant van deze property.</td>
 		</tr>
 		<tr>
 			<td><a href="https://github.com/Logius-standaarden/respec/wiki/logos">logos</a></td>
@@ -342,20 +342,13 @@ Een groot aantal properties worden globaal gedefinieerd maar kunnen lokaal overr
 			<td>Definieert de locatie waar het te gebruiken css bestand staat excl. dat bestand zelf.<br/><br/>Deze property kan lokaal overruled worden.</td>
 			<td/>
 		</tr>
-
-
-
-
-
-
-  
 		<tr>
 			<td><a href="https://github.com/w3c/respec/wiki/noTOC">noTOC</a></td>
 			<td>boolean</td>
 			<td>Lokaal</td>
 			<td>false</td>
 			<td>Bepaald of er links van de inhoud een frame met de inhoudsopgave gegenereerd moet worden.</td>
-			<td>Moet het mogelijk voor repository eigenaren om te besluiten geen TOC te genereren?</td>
+			<td/>
 		</tr>
 		<tr>
 			<td><a href="https://github.com/w3c/respec/wiki/otherLinks">otherLinks</a></td>
