@@ -5,8 +5,6 @@ let respecConfig = {
   shortName: "Respec-template",
   pubDomain: "hr",
 
-  postProcess: [window.respecMermaid.createFigures],
-
   // Zie de globale property 'localizationStrings/nl' voor de lijst met toegestane specificatie-types
   specType: "HR",
   
