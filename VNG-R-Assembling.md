@@ -360,10 +360,10 @@ Een groot aantal properties worden globaal gedefinieerd maar kunnen lokaal overr
 		</tr>
 		<tr>
 			<td><a href="https://github.com/w3c/respec/wiki/postProcess">postProcess</a></td>
-			<td/>
+			<td>Functie aanroep.</td>
+			<td>Globaal</td>
 			<td>?</td>
-			<td>?</td>
-			<td>Bevat een of meer JavaScript functies die achtereenvolgend opgestart worden nadat Respec klaar is met generatie van het Respec document.</td>
+			<td>Bevat een of meer JavaScript functies die achtereenvolgend opgestart worden nadat Respec klaar is met generatie van het Respec document.<br/><br/>Deze property kan niet lokaal gedefinieerd worden en dus ook niet overruled worden.</td>
 			<td>Bevat nu een functie die indien van toepassing mermaid notatie wijze omzet naar graphs.</td>
 		</tr>
 		<tr>
@@ -371,18 +371,16 @@ Een groot aantal properties worden globaal gedefinieerd maar kunnen lokaal overr
 			<td>enumeration</td>
 			<td>Lokaal</td>
 			<td/>
-			<td>Status van de voorgaande versie.<br/><br/>
-				Kan evt. worden gebruikt in de properties 'prevVersion' maar wordt daar nu niet gebruikt.</td>
-			<td>Er moet bepaald worden of we deze opnemen bij het opbouwen van 'prevVersion'.</td>
+			<td>Status van de voorgaande in de 'publicatie' repository gepubliceerde versie.</td>
+			<td>Heeft nu geen functie aangezien deze property niet wordt gebruikt in de property 'prevVersion'.</td>
 		</tr>
 		<tr>
 			<td><a href="https://github.com/Logius-standaarden/respec/wiki/previousPublishDate">previousPublishDate</a></td>
 			<td>Datum in het formaat YYYY-MM-DD</td>
 			<td>Lokaal</td>
 			<td/>
-			<td>Publicatiedatum van de voorgaande versie.<br/><br/>
-				Kan evt. worden gebruikt in de properties 'prevVersion' maar wordt daar nu niet gebruikt.</td>
-			<td>Er moet bepaald worden of we deze opnemen bij het opbouwen van 'prevVersion'.</td>
+			<td>Publicatiedatum van de voorgaande versie.</td>
+			<td>Heeft nu geen functie aangezien deze property niet wordt gebruikt in de property 'prevVersion'.</td>
 		</tr>
 		<tr>
 			<td><a href="https://github.com/Logius-standaarden/respec/wiki/previousPublishVersion">previousPublishVersion</a></td>
@@ -391,7 +389,7 @@ Een groot aantal properties worden globaal gedefinieerd maar kunnen lokaal overr
 			<td/>
 			<td>Versienummer van de voorgaande versie in SemVer notatie (https://semver.org/lang/nl/).<br/><br/>
 				Wordt gebruikt in de property 'prevVersion'.</td>
-			<td>Er moet bepaald worden of we deze inderdaad opgenomen willen hebben bij het opbouwen van 'prevVersion'.</td>
+			<td>Heeft nu geen functie aangezien deze property niet wordt gebruikt in de property 'prevVersion'.</td>
 		</tr>
 		<tr>
 			<td><a href="https://github.com/Logius-standaarden/respec/wiki/prevVersion">prevVersion</a></td>
