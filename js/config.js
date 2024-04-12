@@ -9,14 +9,14 @@ let respecConfig = {
   specType: "HR",
   
   // Zie de globale property 'localizationStrings/nl' voor de lijst met toegestane specificatie-statussen
-  specStatus: "IG",
-  publishDate: "2024-1-10",
+  specStatus: "IO",
+  publishDate: "2024-4-12",
   publishVersion: "0.1.0",
   
   // Zie de globale property 'localizationStrings/nl' voor de lijst met toegestane maturities
-  previousMaturity: "IG",
-  previousPublishDate: "2022-06-24",
-  previousPublishVersion: "0.0.4",
+  //previousMaturity: "IG",
+  //previousPublishDate: "2022-06-24",
+  //previousPublishVersion: "0.0.4",
   
   title: "Respec documentatie generatie",
   subtitle: "Tevens een voorbeeld van een gegenereerd Respec document",
