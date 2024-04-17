@@ -39,7 +39,7 @@ Hieronder nog een aantal Mermaid voorbeelden.
 <figure>
 
 ```mermaid
-%%{init: { "sequence": { "width":800, "height":300 } } }%%
+%%{init: { "sequence": { "wrap": true, "width":800, "height":300 } } }%%
 sequenceDiagram
     participant dotcom
     participant iframe
