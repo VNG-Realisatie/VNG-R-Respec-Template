@@ -31,7 +31,7 @@ Zie de '[GitHub documentatie](https://docs.github.com/en/get-started/writing-on-
 
 **Aandachtspunten m.b.t. Mermaid**
 
-* In de code van het  bovenstaand voorbeeld is de mermaid code binnen een `figure` element geplaatst'. Let daarbij op dat er voorafgaand aan en na de ```` ``` ```` code een lege regel wordt geplaatst. Het `figure` element mag dus niet direct aansluiten op de ```` ``` ```` code.
+* In de code van het  bovenstaand voorbeeld is de mermaid code binnen een `figure` element geplaatst'. Let daarbij op dat er voorafgaand aan de eerste en na de laatste ```` ``` ```` code een lege regel wordt geplaatst. Het `figure` element mag dus niet direct aansluiten op de ```` ``` ```` code.
 * Vermijd markdown frontmatter secties zoals<br/><code>---</code><br/><code>title: Animal example</code><br/><code>---</code><br/>De ervaring is dat deze een goede verwerking van de Mermaid code verhinderd.
 
 Hieronder nog een aantal Mermaid voorbeelden.
