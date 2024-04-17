@@ -1222,30 +1222,6 @@ Ter ondersteuning bij het oplossen van die problemen beschrijven we er hier een 
 </tbody></table>
 </section><section id="het-vng-r-respec-proces"><div class="header-wrapper"><h2 id="x6-het-vng-r-respec-proces"><bdi class="secno">6. </bdi>Het VNG-R Respec proces</h2><a class="self-link" href="#het-vng-r-respec-proces" aria-label="Permalink for Section 6."></a></div>
 <p>Onderstaande flowchart beschrijft het proces zoals we dat binnen VNG Realisatie hanteren om tot Respec documentatie te komen. Daarnaast is het echter ook een voorbeeld van het gebruik van de Mermaid syntax voor het vervaardigen van zo'n flowchart. Zie de '<a href="https://mermaid.js.org/syntax/flowchart.html">Flowchart syntax</a>' voor een uitleg van de Mermaid syntax.</p>
-
-    
-```mermaid
-%%{init: {"flowchart": {"defaultRenderer": "elk"}} }%%
-graph TD;
-    A([Start])----&gt;B{"<b>1</b><br>Eerste versie<br>van Respec<br>documentatie?"};
-    B{"<b>1</b><br>Eerste versie<br>van Respec<br>documentatie?"}--Nee--&gt;C("...");
-    C("...")----&gt;D("<b>3</b><br>Creëer nieuwe content of pas content aan");
-    C("...")----&gt;E("<b>5</b><br>Pas basisstructuur aan voor versie");
-    D("<b>3</b><br>Creëer nieuwe content of pas content aan")----&gt;I("<b>4</b><br>Assembleer document");
-    I("<b>4</b><br>Assembleer document")----&gt;J("<b>5</b><br>Pas document configuratie properties aan");
-    B{"<b>1</b><br>Eerste versie<br>van Respec<br>documentatie?"}--Ja--&gt;F("...");
-    F("...")----&gt;G("<b>2</b><br>Creëer en configureer project repo");
-    F("...")----&gt;H("<b>6</b><br>Creëer basisstructuur in publicatie repo");
-    G("<b>2</b><br>Creëer en configureer project repo")----&gt;D("<b>3</b><br>Creëer nieuwe content of pas content aan");
-    H("<b>6</b><br>Creëer basisstructuur in publicatie repo")----&gt;E("<b>7</b><br>Pas basisstructuur aan voor versie");
-    E("<b>7</b><br>Pas basisstructuur aan voor versie")----&gt;K("<b>8</b><br>Plaats gegenereerde documenten in publicatie repo");
-    K("<b>8</b><br>Plaats gegenereerde documenten in publicatie repo")----&gt;L("<b>9</b><br>Gebruik publicatie link Respec doc in GH Pages");
-    J("<b>5</b><br>Pas document configuratie properties aan")----&gt;K("<b>8</b><br>Plaats gegenereerde documenten in publicatie repo");
-    L("<b>9</b><br>Gebruik publicatie link Respec doc in GH Pages")----&gt;M([Stop]);
-```
-
-<figcaption>Het VNG-R Respec proces (Mermaid voorbeeld)</figcaption>
-
 <figure id="fig-het-vng-r-respec-proces-mermaid-voorbeeld">
     
 <pre><svg id="diagram-1" width="100%" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" height="1947.2718505859375" style="max-width: 849.49609375px;" viewBox="0 0 849.49609375 1947.2718505859375"><style>
@@ -1256,6 +1232,7 @@ graph TD;
 
 <figure id="fig-sequence-diagram">
 ```mermaid
+%%{init: {"sequencediagram": {"defaultRenderer": "elk"}} }%%
 sequenceDiagram
     participant dotcom
     participant iframe
