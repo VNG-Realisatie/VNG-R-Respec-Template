@@ -39,7 +39,7 @@ Hieronder nog een aantal Mermaid voorbeelden.
 <figure>
 
 ```mermaid
-%%{init: {"flowchart": {"useMaxWidth": 100}} }%%
+%%{init: { "sequence": { "width":300 } } }%%
 sequenceDiagram
     participant dotcom
     participant iframe
