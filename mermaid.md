@@ -25,7 +25,7 @@ flowchart TD
 ```
 
 <figcaption>Het VNG-R Respec proces (Mermaid voorbeeld)</figcaption>
-</figure>
+</figure><br/><br/>
 
 Zie de '[GitHub documentatie](https://docs.github.com/en/get-started/writing-on-github/working-with-advanced-formatting/creating-diagrams#creating-mermaid-diagrams)' voor een uitleg van de Mermaid syntax.
 
@@ -52,38 +52,6 @@ sequenceDiagram
 ```
 
 <figcaption>Sequence diagram</figcaption>
-</figure>
-
-<figure>
-
-```mermaid
-%%{init: {"classDiagram": {"defaultRenderer": "elk"}} }%%
-classDiagram
-    note "From Duck till Zebra"
-    Animal <|-- Duck
-    note for Duck "can fly\ncan swim\ncan dive\ncan help in debugging"
-    Animal <|-- Fish
-    Animal <|-- Zebra
-    Animal : +int age
-    Animal : +String gender
-    Animal: +isMammal()
-    Animal: +mate()
-    class Duck{
-        +String beakColor
-        +swim()
-        +quack()
-    }
-    class Fish{
-        -int sizeInFeet
-        -canEat()
-    }
-    class Zebra{
-        +bool is_wild
-        +run()
-    }
-```
-
-<figcaption>class diagram</figcaption>
 </figure>
 
 <figure>
