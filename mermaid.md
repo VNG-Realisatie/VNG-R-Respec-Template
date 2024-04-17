@@ -48,9 +48,6 @@ sequenceDiagram
 <figure>
 
 ```mermaid
----
-title: Animal example
----
 classDiagram
     note "From Duck till Zebra"
     Animal <|-- Duck
@@ -82,9 +79,6 @@ classDiagram
 <figure>
 
 ```mermaid
----
-title: Simple sample
----
 stateDiagram-v2
     [*] --> Still
     Still --> [*]
@@ -101,9 +95,6 @@ stateDiagram-v2
 <figure>
 
 ```mermaid
----
-title: Order example
----
 erDiagram
     CUSTOMER ||--o{ ORDER : places
     ORDER ||--|{ LINE-ITEM : contains
