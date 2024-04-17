@@ -57,6 +57,7 @@ sequenceDiagram
 <figure>
 
 ```mermaid
+%%{init: {"classDiagram": {"defaultRenderer": "elk"}} }%%
 classDiagram
     note "From Duck till Zebra"
     Animal <|-- Duck
