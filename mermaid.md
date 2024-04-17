@@ -6,7 +6,7 @@ Onderstaande flowchart beschrijft het proces zoals we dat binnen VNG Realisatie 
     
 ```mermaid
 %%{init: {"flowchart": {"defaultRenderer": "elk"}} }%%
-flowchart TD
+graph TD
     A([Start])---->B{"<b>1</b><br/>Eerste versie<br/>van Respec<br/>documentatie?"}
     B{"<b>1</b><br/>Eerste versie<br/>van Respec<br/>documentatie?"}--Nee-->C("...")
     C("...")---->D("<b>3</b><br/>Creëer nieuwe content of pas content aan")
@@ -32,13 +32,14 @@ Zie de '[GitHub documentatie](https://docs.github.com/en/get-started/writing-on-
 **Aandachtspunten m.b.t. Mermaid**
 
 * In de code van het  bovenstaand voorbeeld is de mermaid code binnen een `figure` element geplaatst'. Let daarbij op dat er voorafgaand aan en na de ```` ``` ```` code een lege regel wordt geplaatst. Het `figure` element mag dus niet direct aansluiten op de ```` ``` ```` code.
-* Vermijd markdown header secties zoals<br/><code>---</code><br/><code>title: Animal example</code><br/><code>---</code><br/>Deze verhinderen een goede verwerking van de Mermaid code.
+* Vermijd markdown frontmatter secties zoals<br/><code>---</code><br/><code>title: Animal example</code><br/><code>---</code><br/>De ervaring is dat deze een goede verwerking van de Mermaid code verhinderd.
 
 Hieronder nog een aantal Mermaid voorbeelden.
 
 <figure>
 
 ```mermaid
+%%{init: {"flowchart": {"useMaxWidth": 100}} }%%
 sequenceDiagram
     participant dotcom
     participant iframe
