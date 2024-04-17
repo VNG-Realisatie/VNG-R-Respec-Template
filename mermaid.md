@@ -1,11 +1,10 @@
 # Het VNG-R Respec proces
 
-Onderstaande flowchart beschrijft het proces zoals we dat binnen VNG Realisatie hanteren om tot Respec documentatie te komen. Daarnaast is het echter ook een voorbeeld van het gebruik van de Mermaid syntax voor het vervaardigen van zo'n flowchart. Zie de '[GitHub documentatie](https://docs.github.com/en/get-started/writing-on-github/working-with-advanced-formatting/creating-diagrams#creating-mermaid-diagrams)' voor een uitleg van de Mermaid syntax.
+Onderstaande flowchart beschrijft het proces zoals we dat binnen VNG Realisatie hanteren om tot Respec documentatie te komen. Daarnaast is het echter ook een voorbeeld van het gebruik van de Mermaid syntax voor het vervaardigen van zo'n flowchart. 
 
 <figure>
     
 ```mermaid
-%%{init: {"flowchart": {"defaultRenderer": "elk"}} }%%
 graph TD
     A([Start])---->B{"<b>1</b><br/>Eerste versie<br/>van Respec<br/>documentatie?"}
     B{"<b>1</b><br/>Eerste versie<br/>van Respec<br/>documentatie?"}--Nee-->C("...")
@@ -26,6 +25,20 @@ graph TD
 
 <figcaption>Het VNG-R Respec proces (Mermaid voorbeeld)</figcaption>
 </figure>
+
+Zie de '[GitHub documentatie](https://docs.github.com/en/get-started/writing-on-github/working-with-advanced-formatting/creating-diagrams#creating-mermaid-diagrams)' voor een uitleg van de Mermaid syntax.
+
+**Aandachtspunten m.b.t. Mermaid**
+* In bovenstaand voorbeeld is de mermaid code binnen een `figure` element geplaatst'. Let daarbij op dat er voorafgaand aan en na de mermaid code een lege regel wordt geplaatst. Het `figure` element mag dus niet direct aansluiten op de meramid code.
+* Eventuele markdown header secties zoals
+  ```
+  ---
+  title: Animal example
+  ---
+  ```
+  verhinderen een goede verwerking van de Mermaid code.
+
+Hieronder nog een aantal Mermaid voorbeelden.
 
 <figure>
 
