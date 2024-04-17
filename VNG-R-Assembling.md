@@ -166,7 +166,7 @@ Een groot aantal properties worden globaal gedefinieerd maar kunnen lokaal overr
 			<td>Deze property kan lokaal overruled worden.</td>
 		</tr>
 		<tr>
-			<td><a href="[https://github.com/Logius-standaarden/respec/wiki/authors](https://github.com/Logius-standaarden/respec/wiki/alternateFormats)">alternateFormats</a></td>
+			<td><a href="https://github.com/Logius-standaarden/respec/wiki/alternateFormats">alternateFormats</a></td>
 			<td>Array met per formaat de properties 'label' en 'url'.</td>
 			<td>Lokaal</td>
 			<td/>
@@ -347,7 +347,7 @@ Een groot aantal properties worden globaal gedefinieerd maar kunnen lokaal overr
 			<td>boolean</td>
 			<td>Lokaal</td>
 			<td>false</td>
-			<td>Bepaald of er links van de inhoud een frame met de inhoudsopgave gegenereerd moet worden.</td>
+			<td>Bepaald of er links van de inhoud een frame met de inhoudsopgave gegenereerd wordt.</td>
 			<td/>
 		</tr>
 		<tr>
@@ -355,9 +355,10 @@ Een groot aantal properties worden globaal gedefinieerd maar kunnen lokaal overr
 			<td>Array van properties</td>
 			<td>Lokaal</td>
 			<td/>
-			<td>Genereert een sectie in de header van het Respec document met als titel de key van deze property en als inhoud een of meerdere links.</td>
+			<td>Genereert een of meerdere secties (afhankelijk van het aantal 'key' 'data' voorkomens) in de header van het Respec document met als titel de waarde van de property 'key' en als inhoud een of meerdere links.</td>
 			<td/>
 		</tr>
+		<!-- Tot hier gebleven. -->
 		<tr>
 			<td><a href="https://github.com/w3c/respec/wiki/postProcess">postProcess</a></td>
 			<td>Functie aanroep.</td>
