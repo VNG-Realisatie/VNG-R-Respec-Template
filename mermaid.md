@@ -29,6 +29,7 @@ graph TD
 Zie de '[GitHub documentatie](https://docs.github.com/en/get-started/writing-on-github/working-with-advanced-formatting/creating-diagrams#creating-mermaid-diagrams)' voor een uitleg van de Mermaid syntax.
 
 **Aandachtspunten m.b.t. Mermaid**
+
 * In bovenstaand voorbeeld is de mermaid code binnen een `figure` element geplaatst'. Let daarbij op dat er voorafgaand aan en na de mermaid code een lege regel wordt geplaatst. Het `figure` element mag dus niet direct aansluiten op de meramid code.
 * Vermijd markdown header secties zoals
   ```
