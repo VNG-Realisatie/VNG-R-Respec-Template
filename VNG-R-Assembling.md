@@ -365,7 +365,9 @@ Een groot aantal properties worden globaal gedefinieerd maar kunnen lokaal overr
 			<td>Globaal</td>
 			<td>?</td>
 			<td>Bevat een of meer JavaScript functies die achtereenvolgend opgestart worden nadat Respec klaar is met generatie van het Respec document.<br/><br/>Deze property kan niet lokaal gedefinieerd worden en dus ook niet overruled worden.</td>
-			<td>Bevat nu een functie die indien van toepassing mermaid notatie wijze omzet naar graphs.</td>
+			<td>Bevat nu een functie die indien van toepassing mermaid notatie wijze omzet naar graphs. Voor meer info zie de [GitHub documentatie](https://docs.github.com/en/get-started/writing-on-github/working-with-advanced-formatting/creating-diagrams#creating-mermaid-diagrams).<br/><br/>
+			In het voorbeeld is de mermaid code binnen een `figure` element geplaatst'. Let er daarbij op dat er voorafgaand aan en na de mermaid code een lege regel wordt geplaatst. Het `figure` element mag dus niet direct aansluiten op de meramid code.
+			</td>
 		</tr>
 		<tr>
 			<td><a href="https://github.com/Logius-standaarden/respec/wiki/previousMaturity">previousMaturity</a></td>
