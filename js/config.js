@@ -63,33 +63,5 @@ let respecConfig = {
            "rawDate": "2023"
         },
     },
-  otherLinks: [
-    {
-      key: "Implementation status",
-      data: [
-        {
-          value: "Gecko",
-          href: "https://bugzilla.mozilla.org/show_bug.cgi?id=xxxx",
-        },
-        {
-          value: "Blink",
-          href: "https://code.google.com/p/chromium/issues/detail?id=xxx",
-        },
-      ],
-    },
-    {
-      key: "Test facilities",
-      data: [
-        {
-          value: "STP",
-          href: "https://stp.nl",
-        },
-        {
-          value: "API testplatform",
-          href: "https://api-test.nl",
-        },
-      ],
-    },
-  ],
 
 };
