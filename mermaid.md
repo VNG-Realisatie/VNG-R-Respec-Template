@@ -70,7 +70,8 @@ classDiagram
     class Zebra{
         +bool is_wild
         +run()
-    }```
+    }
+```
 
 <figcaption>class diagram</figcaption>
 </figure>
