@@ -28,8 +28,8 @@ graph TD
 </figure>
 
 <figure>
+
 ```mermaid
-%%{init: {"sequencediagram": {"defaultRenderer": "elk"}} }%%
 sequenceDiagram
     participant dotcom
     participant iframe
@@ -41,5 +41,6 @@ sequenceDiagram
     dotcom->>iframe: set mermaid data on iframe
     iframe->>iframe: render mermaid
 ```
+
 <figcaption>Sequence diagram</figcaption>
 </figure>
