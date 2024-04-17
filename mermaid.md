@@ -31,13 +31,7 @@ Zie de '[GitHub documentatie](https://docs.github.com/en/get-started/writing-on-
 **Aandachtspunten m.b.t. Mermaid**
 
 * In bovenstaand voorbeeld is de mermaid code binnen een `figure` element geplaatst'. Let daarbij op dat er voorafgaand aan en na de mermaid code een lege regel wordt geplaatst. Het `figure` element mag dus niet direct aansluiten op de meramid code.
-* Vermijd markdown header secties zoals
-  ```
-  ---
-  title: Animal example
-  ---
-  ```
-  Deze verhinderen een goede verwerking van de Mermaid code.
+* Vermijd markdown header secties zoals<br/><code>---</code><br/><code>title: Animal example</code><br/><code>---</code><br/>Deze verhinderen een goede verwerking van de Mermaid code.
 
 Hieronder nog een aantal Mermaid voorbeelden.
 
