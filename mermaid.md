@@ -5,7 +5,8 @@ Onderstaande flowchart beschrijft het proces zoals we dat binnen VNG Realisatie 
 <figure>
     
 ```mermaid
-graph TD
+%%{init: {"flowchart": {"defaultRenderer": "elk"}} }%%
+flowchart TD
     A([Start])---->B{"<b>1</b><br/>Eerste versie<br/>van Respec<br/>documentatie?"}
     B{"<b>1</b><br/>Eerste versie<br/>van Respec<br/>documentatie?"}--Nee-->C("...")
     C("...")---->D("<b>3</b><br/>Creëer nieuwe content of pas content aan")
