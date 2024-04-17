@@ -26,3 +26,14 @@ graph TD;
 
 <figcaption>Het VNG-R Respec proces (Mermaid voorbeeld)</figcaption>
 </figure>
+
+<figure>
+```mermaid
+%%{init: {"flowchart": {"defaultRenderer": "elk"}} }%%
+sequenceDiagram;
+    Alice->>John: Hello John, how are you?;
+    John-->>Alice: Great!;
+    Alice-)John: See you later!;
+```	
+<figcaption>Sequence diagram</figcaption>
+</figure>
