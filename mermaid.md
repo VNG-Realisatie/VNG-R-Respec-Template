@@ -30,13 +30,13 @@ Zie de '[GitHub documentatie](https://docs.github.com/en/get-started/writing-on-
 
 **Aandachtspunten m.b.t. Mermaid**
 * In bovenstaand voorbeeld is de mermaid code binnen een `figure` element geplaatst'. Let daarbij op dat er voorafgaand aan en na de mermaid code een lege regel wordt geplaatst. Het `figure` element mag dus niet direct aansluiten op de meramid code.
-* Eventuele markdown header secties zoals
+* Vermijd markdown header secties zoals
   ```
   ---
   title: Animal example
   ---
   ```
-  verhinderen een goede verwerking van de Mermaid code.
+  Deze verhinderen een goede verwerking van de Mermaid code.
 
 Hieronder nog een aantal Mermaid voorbeelden.
 
