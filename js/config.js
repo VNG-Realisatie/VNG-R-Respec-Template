@@ -63,5 +63,10 @@ let respecConfig = {
            "rawDate": "2023"
         },
     },
-
+    sotdText: {
+        nl: {
+            sotd: "Status van deze handreiling",
+      	    io: "Aan dit document wordt nog gewerkt.",
+        },
+    },
 };
