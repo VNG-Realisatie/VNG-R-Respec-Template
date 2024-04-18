@@ -461,27 +461,29 @@ Een groot aantal properties worden globaal gedefinieerd maar kunnen lokaal overr
 			<td>enumeration</td>
 			<td>Lokaal</td>
 			<td/>
-			<td>Definieert de status van het Respec document. Wordt gebruikt om de subtitel en het vertikale label linksboven te genereren. Bepaald ook de kleur van dat label. Dit dient in de lokale configuratie gedefinieerd te worden.<br/><br/>
+			<td>Definieert de status van het Respec document. De te gebruiken statussen zijn gedefinieerd in de globale configuratie property 'localizationStrings'.<br/><br/>
+				Wordt gebruikt om de subtitel en het vertikale label linksboven te genereren. Bepaald ook de kleur van dat label. Dit dient in de lokale configuratie gedefinieerd te worden.<br/><br/>
 				De kleuren voor de VNG-R statussen kunnen worden gedefinieerd in de globale optie 'labelColor'.<br/><br/>
 				Kan ook worden gebruikt in de properties 'latestVersion', 'thisVersion' en 'prevVersion'.</td>
 			<td/>
 		</tr>
-		<!-- Tot hier gebleven. -->
 		<tr>
 			<td><a href="https://github.com/Logius-standaarden/respec/wiki/specType">spectype</a></td>
 			<td>enumeration</td>
 			<td>Lokaal</td>
 			<td/>
-			<td>Definieert het type van het Respec document. Wordt gebruikt om de subtitel en het vertikale label linksboven te genereren. In het template heeft dit de waarde 'IM' aangezien we bij VNG-R Respec veelal zullen gebruiken om Informatiemodellen mee te publiceren.<br/><br/>
+			<td>Definieert het type van het Respec document. De te gebruiken types zijn gedefinieerd in de globale configuratie property 'localizationStrings'.<br/><br/>
+				Wordt gebruikt om de subtitel en het vertikale label linksboven te genereren. In het template heeft dit de waarde 'IM' aangezien we bij VNG-R Respec veelal zullen gebruiken om Informatiemodellen mee te publiceren.<br/><br/>
 				Kan evt. ook worden gebruikt in de properties 'latestVersion', 'thisVersion' en 'prevVersion'.</td>
-			<td>Er moet bepaald worden of we deze opnemen bij het opbouwen van 'latestVersion', 'thisVersion' en 'prevVersion'.</td>
+			<td/>
 		</tr>
 		<tr>
 			<td><a href="https://github.com/w3c/respec/wiki/subtitle">subtitle</a></td>
 			<td>String</td>
 			<td>Lokaal</td>
 			<td>n.v.t.</td>
-			<td>String die als subtitel van de titel van het document dient. Wordt geplaatst boven de gegenereerde subtitel waarin de organisatienaam, documenttype, specStatus en versiedatum worden gebruikt.</td>
+			<td>Bevat een string die als subtitel van de titel van het document dient. Deze subtitel wordt geplaatst boven de gegenereerde 2e subtitel waarin de organisatienaam, documenttype, specStatus en versiedatum worden gebruikt.<br/><br/>
+				Dit is een optionele configuratie property.</td>
 			<td/>
 		</tr>
 		<tr>
@@ -490,8 +492,9 @@ Een groot aantal properties worden globaal gedefinieerd maar kunnen lokaal overr
 			<td>Lokaal</td>
 			<td>n.v.t.</td>
 			<td>Genereert een sectie in de header van het Respec document met als titel 'Test suite' en als inhoud een link naar een testsuite. Wellicht te gebruiken voor het API Testplatform maar alleen als we Respec ook gaan gebruiken voor de API's.</td>
-			<td>Wordt de genoemde sectie niet gegenereerd als we deze property weglaten?</td>
+			<td>Deze sectie wordt niet gegenereerd als deze property niet aanwezig is.</td>
 		</tr>
+		<!-- Tot hier gebleven. -->
 		<tr>
 			<td><a href="https://github.com/Logius-standaarden/respec/wiki/thisVersion">thisVersion</a></td>
 			<td>Combinatie van strings en propertynamen</td>
