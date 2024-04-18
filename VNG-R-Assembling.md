@@ -142,7 +142,7 @@ Alle lokale configuratie properties kun je vinden in 'js/config.js' en mag je na
 
 Hieronder vind je de totale lijst van Configuratie properties. De vierde kolom geeft aan of het om een globale of lokale property gaat. Voor enkele properties is dat heel logisch, 
 zo zijn 'localizationStrings' en 'previousPublishVersion' logischerwijs globaal, 'github' en 'title' zijn juist weer lokaal.
-Een groot aantal properties worden globaal gedefinieerd maar kunnen lokaal overruled worden zoals 'useLogo'. Doe dat echter alleen als daar een hele goede reden voor is.
+De meeste globaal gedefinieerd properties kunnen lokaal overruled worden zoals 'useLogo'. Doe dat echter alleen als daar een hele goede reden voor is.
 
 		<!-- Tot hier gebleven. -->
 <table>
@@ -163,7 +163,7 @@ Een groot aantal properties worden globaal gedefinieerd maar kunnen lokaal overr
 			<td>Globaal en lokaal</td>
 			<td>true</td>
 			<td>Bepaald of er een paragraafteken (§), met een link naar de paragraaf waar het teken vóór komt te staan, wordt gegenereerd of niet.<br/>
-				Kan handig zijn om anderen de gelegenheid te bieden om links naar specifieke paragrafen in je Respec document te kopiëren en elders te gebruiken.</td>
+				Biedt anderen de gelegenheid tom links naar specifieke paragrafen in je Respec document te kopiëren en elders te gebruiken. Er is voor gekozen standaard altijd de links mee te genereren.</td>
 			<td>Deze property kan lokaal overruled worden.</td>
 		</tr>
 		<tr>
@@ -234,12 +234,13 @@ Een groot aantal properties worden globaal gedefinieerd maar kunnen lokaal overr
 			<td>Hexadecimale colorcode.</td>
 			<td>Globaal</td>
 			<td/>
-			<td>Definieert de bij de in 'LocalizationStrings' gedefinieerde statussen horende kleuren.<br/><br/>Deze property kan niet Lokaal gespecificeerd en dus ook niet overruled worden.</td>
+			<td>Definieert de bij de in 'LocalizationStrings' gedefinieerde statussen horende kleuren.</td>
 			<td>De specifiek voor VNG Realisatie gedefinieerde statussen kennen de volgende kleuren:<br/>
 			    <ul>
 				<li>In Gebruik (IG): <span style="color: #A569BD">█████</span></li>
 				<li>In Ontwikkeling (IO): <span style="color: #DC7633">█████</span></li>
 			    </ul>
+			    Deze property kan niet Lokaal gespecificeerd en dus ook niet overruled worden.
 			</td>
 		</tr>
 		<tr>
@@ -259,9 +260,8 @@ Een groot aantal properties worden globaal gedefinieerd maar kunnen lokaal overr
 			<td>Globaal en lokaal</td>
 			<td>eupl</td>
 			<td>Definieert het licentietype dat van toepassing is op het Respec document. VNG-R hanteert de 'EUPL' licentie maar zo gewenst kan ook gekozen worden voor 'CC0', 'CC-BY' of 'CC-BY-ND'. 
-				Toegestane waardes 'eupl', 'cc0', 'cc-by', 'cc-by-nd'. Wordt gebruikt om licentie-logo en bijbehorende link in het document te genereren.<br/>
-				<br/><br/>Deze property kan en mag lokaal overruled worden.</td>
-			<td>Nieuwe licentie types en het bijbehorende logo kunnen in de Globale property 'licenses' worden gedefinieerd.</td>
+				Toegestane waardes 'eupl', 'cc0', 'cc-by', 'cc-by-nd'. Wordt gebruikt om licentie-logo en bijbehorende link in het document te genereren.</td>
+			<td>Deze property kan en mag lokaal overruled worden.<br/><br/>Nieuwe licentie types en het bijbehorende logo kunnen in de Globale property 'licenses' worden gedefinieerd.</td>
 		</tr>
 		<tr>
 			<td><a href="https://github.com/Logius-standaarden/respec/wiki/licenses">licenses</a></td>
@@ -269,8 +269,8 @@ Een groot aantal properties worden globaal gedefinieerd maar kunnen lokaal overr
 			<td>Globaal en lokaal</td>
 			<td/>
 			<td>Definieert middels een array van configuratie properties ('name', 'short', 'url' en 'image') de te gebruiken soorten licenties waarnaar middels de code kan worden verwezen in de 
-				configuratie-optie 'license'.<br/><br/>Deze property is globaal gedefinieerd maar lokaal mogen er licentietypes toegevoegd worden.</td>
-			<td/>
+				configuratie-optie 'license'.</td>
+			<td>Deze property is globaal gedefinieerd maar lokaal mogen er licentietypes toegevoegd worden.</td>
 		</tr>
 		<tr>
 			<td><a href="https://github.com/Logius-standaarden/respec/wiki/localBiblio">localBiblio</a></td>
@@ -284,12 +284,11 @@ Een groot aantal properties worden globaal gedefinieerd maar kunnen lokaal overr
 				documentdeel dan komt deze in de subparagraaf 'Informatieve referenties' terecht.<br/><br/>
 				Gerefereerd kan worden aan specrefs die beschikbaar zijn in <a href="https://www.specref.org/">de SpecRef database</a> (zie ook 
 				<a href="https://github.com/tobie/specref">https://github.com/tobie/specref</a> of aan zelf in deze propertty gedefinieerde referenties. De syntax voor de inhoud van de localBiblio 
-				property is <a href="https://github.com/tobie/specref/blob/main/schemas/raw-reference.json">hier</a> beschreven.<br/><br/>
-				Deze property kan zowel lokaal als globaal geconfigureerd worden.<br/><br/>Voor referenties waarvan we verwachten dat deze vaker gebruikt gaan worden of waarvan inmiddels duidelijk 
+				property is <a href="https://github.com/tobie/specref/blob/main/schemas/raw-reference.json">hier</a> beschreven.</td>
+			<td>Deze property kan zowel lokaal als globaal geconfigureerd worden.<br/><br/>Voor referenties waarvan we verwachten dat deze vaker gebruikt gaan worden of waarvan inmiddels duidelijk 
 				is dat deze vaker gebruikt worden dient een verzoek te worden gedaan deze op te nemen in de organisation-config.js of nog beter deze op te laten nemen in de 
 				<a href="https://www.specref.org/">SpecRef database</a>. Sterker nog, het wordt zelfs aangemoedigd geen gebruik van deze property te maken. Beheerders van Respec repositories zijn 
 				er vanaf het moment dat de referentie is opgenomen in een van de twee opties zelf verantwoordelijk voor dat deze referenties uit hun eigen config.js worden verwijderd.</td>
-			<td/>
 		</tr>
 		<tr>
 			<td><a href="https://github.com/Logius-standaarden/respec/wiki/localizationStrings">localizationStrings</a></td>
@@ -297,16 +296,16 @@ Een groot aantal properties worden globaal gedefinieerd maar kunnen lokaal overr
 			<td>Globaal en lokaal</td>
 			<td/>
 			<td>Bevat voor een aantal doel- ('document statussen' en 'document types') / taalcombinaties de te gebruiken codes en de daarbij horende tekst.</td>
-			<td>Bij VNG-R zullen we moeten bepalen of alle bestaande codes gewenst zijn en of er nieuwe codes toegevoegd moeten worden.<br/><br/>Lokaal overrulen van deze property is niet
-				toegestaan. Definieer indien gewenst een nieuwe code en bijbehorende tekst en neem tegelijkertijd stappen deze op te laten nemen in de globale variant van deze property.</td>
+			<td>Bij VNG-R zullen we moeten bepalen of alle bestaande codes gewenst zijn en of er nieuwe codes toegevoegd moeten worden.<br/><br/>Deze property kan lokaal overruled worden maar 
+				ben daar terughoudend mee.<br/>Definieer in dat geval een nieuwe code en bijbehorende tekst en neem tegelijkertijd stappen deze op te laten nemen in de globale variant van deze property.</td>
 		</tr>
 		<tr>
 			<td><a href="https://github.com/Logius-standaarden/respec/wiki/logos">logos</a></td>
 			<td>Array per logo van de properties 'src', 'alt', 'id', 'height' en 'url'.</td>
 			<td>Globaal en lokaal</td>
 			<td>VNG Realisatie logo</td>
-			<td>Definieert de src, alternate tekst, url en grootte van het linksboven in het Respec document te plaatsen logo.<br/><br/>Deze property kan lokaal overruled worden.</td>
-			<td>Willen we het VNG Realisatie logo geplaatst hebben of een ander logo?</td>
+			<td>Definieert de src, alternate tekst, url en grootte van het linksboven in het Respec document te plaatsen logo.</td>
+			<td>Willen we het VNG Realisatie logo geplaatst hebben of een ander logo?<br/><br/>Deze property kan lokaal overruled worden.</td>
 		</tr>
 		<tr>
 			<td><a href="https://github.com/w3c/respec/wiki/maxTocLevel">maxTocLevel</a></td>
