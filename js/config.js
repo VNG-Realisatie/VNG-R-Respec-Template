@@ -11,7 +11,7 @@ let respecConfig = {
   // Zie de globale property 'localizationStrings/nl' voor de lijst met toegestane specificatie-statussen
   specStatus: "IO",
   publishDate: "2024-4-12",
-  publishVersion: "0.1.0",
+  //publishVersion: "0.1.0",
   
   // Zie de globale property 'localizationStrings/nl' voor de lijst met toegestane maturities
   //previousMaturity: "IG",
@@ -61,12 +61,6 @@ let respecConfig = {
            "title": "Semantisch Versioneren 2.0.0",
            "date": "December 19, 2023",
            "rawDate": "2023"
-        },
-    },
-    sotdText: {
-        nl: {
-            sotd: "Status van deze handreiling",
-      	    io: "Aan dit document wordt nog gewerkt.",
         },
     },
 };
