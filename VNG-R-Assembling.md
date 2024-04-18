@@ -284,7 +284,9 @@ De meeste globaal gedefinieerd properties kunnen lokaal overruled worden zoals '
 				documentdeel dan komt deze in de subparagraaf 'Informatieve referenties' terecht.<br/><br/>
 				Gerefereerd kan worden aan specrefs die beschikbaar zijn in <a href="https://www.specref.org/">de SpecRef database</a> (zie ook 
 				<a href="https://github.com/tobie/specref">https://github.com/tobie/specref</a> of aan zelf in deze propertty gedefinieerde referenties. De syntax voor de inhoud van de localBiblio 
-				property is <a href="https://github.com/tobie/specref/blob/main/schemas/raw-reference.json">hier</a> beschreven.</td>
+				property is <a href="https://github.com/tobie/specref/blob/main/schemas/raw-reference.json">hier</a> beschreven.<br/><br/>
+				Neem waar van toepassing verwijzingen op naar gerelateerde wetgeving en gerelateerde standaarden op de 'Pas toe leg uit'-lijst van het Forum Standaardisatie of de Gemeentelijke 
+				standaardenlijst met verbindendheid 'pas-toe-of-leg-uit' en 'verplicht'.</td>
 			<td>Deze property kan zowel lokaal als globaal geconfigureerd worden.<br/><br/>Voor referenties waarvan we verwachten dat deze vaker gebruikt gaan worden of waarvan inmiddels duidelijk 
 				is dat deze vaker gebruikt worden dient een verzoek te worden gedaan deze op te nemen in de organisation-config.js of nog beter deze op te laten nemen in de 
 				<a href="https://www.specref.org/">SpecRef database</a>. Sterker nog, het wordt zelfs aangemoedigd geen gebruik van deze property te maken. Beheerders van Respec repositories zijn 
