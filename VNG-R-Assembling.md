@@ -261,7 +261,7 @@ De meeste globaal gedefinieerd properties kunnen lokaal overruled worden zoals '
 			<td>eupl</td>
 			<td>Definieert het licentietype dat van toepassing is op het Respec document. VNG-R hanteert de 'EUPL' licentie maar zo gewenst kan ook gekozen worden voor 'CC0', 'CC-BY' of 'CC-BY-ND'. 
 				Toegestane waardes 'eupl', 'cc0', 'cc-by', 'cc-by-nd'. Wordt gebruikt om licentie-logo en bijbehorende link in het document te genereren.</td>
-			<td>Deze property kan en mag lokaal overruled worden.<br/><br/>Nieuwe licentie types en het bijbehorende logo kunnen in de Globale property 'licenses' worden gedefinieerd.</td>
+			<td>Deze property kan en mag lokaal overruled worden.<br/><br/>Nieuwe licentie types en het bijbehorende logo's kunnen in zowel in de globale als lokale property 'licenses' worden gedefinieerd.</td>
 		</tr>
 		<tr>
 			<td><a href="https://github.com/Logius-standaarden/respec/wiki/licenses">licenses</a></td>
@@ -461,7 +461,13 @@ De meeste globaal gedefinieerd properties kunnen lokaal overruled worden zoals '
 			<td>enumeration</td>
 			<td>Lokaal</td>
 			<td/>
-			<td>Definieert de status van het Respec document. De te gebruiken statussen zijn gedefinieerd in de globale configuratie property 'localizationStrings'.<br/><br/>
+			<td>Definieert de status van het Respec document. De te gebruiken statussen zijn gedefinieerd in de globale configuratie property 'localizationStrings'. Op dit moment zijn dat:
+				<ul>
+					<li><b>cv</b>: Consultatieversie</li>
+            				<li><b>vv</b>: Versie ter vaststelling</li>
+	    				<li><b>ig</b>: In Gebruik versie</li>
+	    				<li><b>io</b>: In Ontwikkeling versie"</li>
+				</ul><br/><br/>
 				Wordt gebruikt om de subtitel en het vertikale label linksboven te genereren. Bepaald ook de kleur van dat label. Dit dient in de lokale configuratie gedefinieerd te worden.<br/><br/>
 				De kleuren voor de VNG-R statussen kunnen worden gedefinieerd in de globale optie 'labelColor'.<br/><br/>
 				Kan ook worden gebruikt in de properties 'latestVersion', 'thisVersion' en 'prevVersion'.</td>
@@ -472,7 +478,11 @@ De meeste globaal gedefinieerd properties kunnen lokaal overruled worden zoals '
 			<td>enumeration</td>
 			<td>Lokaal</td>
 			<td/>
-			<td>Definieert het type van het Respec document. De te gebruiken types zijn gedefinieerd in de globale configuratie property 'localizationStrings'.<br/><br/>
+			<td>Definieert het type van het Respec document. De te gebruiken types zijn gedefinieerd in de globale configuratie property 'localizationStrings'. Op dit moment zijn dat:
+				<ul>
+					<li><b>im</b>: Informatiemodel</li>
+            				<li><b>hl</b>: Handleiding</li>
+				</ul><br/><br/>
 				Wordt gebruikt om de subtitel en het vertikale label linksboven te genereren. In het template heeft dit de waarde 'IM' aangezien we bij VNG-R Respec veelal zullen gebruiken om Informatiemodellen mee te publiceren.<br/><br/>
 				Kan evt. ook worden gebruikt in de properties 'latestVersion', 'thisVersion' en 'prevVersion'.</td>
 			<td/>
