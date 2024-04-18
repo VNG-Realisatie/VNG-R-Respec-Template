@@ -144,6 +144,7 @@ Hieronder vind je de totale lijst van Configuratie properties. De vierde kolom g
 zo zijn 'localizationStrings' en 'previousPublishVersion' logischerwijs globaal, 'github' en 'title' zijn juist weer lokaal.
 Een groot aantal properties worden globaal gedefinieerd maar kunnen lokaal overruled worden zoals 'useLogo'. Doe dat echter alleen als daar een hele goede reden voor is.
 
+		<!-- Tot hier gebleven. -->
 <table>
 	<thead>
 		<tr>
@@ -494,17 +495,16 @@ Een groot aantal properties worden globaal gedefinieerd maar kunnen lokaal overr
 			<td>Genereert een sectie in de header van het Respec document met als titel 'Test suite' en als inhoud een link naar een testsuite. Wellicht te gebruiken voor het API Testplatform maar alleen als we Respec ook gaan gebruiken voor de API's.</td>
 			<td>Deze sectie wordt niet gegenereerd als deze property niet aanwezig is.</td>
 		</tr>
-		<!-- Tot hier gebleven. -->
 		<tr>
 			<td><a href="https://github.com/Logius-standaarden/respec/wiki/thisVersion">thisVersion</a></td>
-			<td>Combinatie van strings en propertynamen</td>
+   			<td>Combinatie van strings en configuration propertynamen.</td>
 			<td>Globaal</td>
-			<td/>
-			<td>Url van de huidige versie.<br/>
-			Wordt opgebouwd m.b.v. andere gedefinieerde configuration properties en '/' tekens. Daarin voorkomende hoofdletters worden omgezet naar kleine letters.<br/><br/>
-			Indien deze configuration property of een van de properties waaruit het bestaat niet wordt verstrekt dan wordt de gerelateerde rubriek in het Respec document ook niet aangemaakt.<br/><br/>
-			Mag niet lokaal overruled worden.</td>
-			<td>Hoewel dit zowel globaal als lokaal gedefinieerd kan worden is het voorstel dat dit globaal gebeurd. Als we toestaan dat het lokaal gebeurd dan is de werking van de links niet te garanderen en kan het gevolgen hebben voor de structuur van de publishing repository.</td>
+			<td>Samenvoeging van achtereenvolgens `nl_organisationPublishURL`, `pubDomain`, "/", `shortName`, "/" en `publishVersion`.</td>
+			<td>Wordt opgebouwd m.b.v. andere gedefinieerde configuration properties en '/' tekens. Daarin voorkomende hoofdletters worden omgezet naar kleine letters.<br/><br/>
+				Indien deze configuration property of een van de properties waaruit het bestaat niet worden verstrekt dan wordt de gerelateerde rubriek in het Respec document 
+				ook niet aangemaakt.</td>
+			<td>Deze property kan lokaal overruled worden maar ben daar terughoudend mee. Bij lokaal definiëren van deze property is de werking 
+				van de links in het document nl. niet te garanderen aangezien die zou kunnen afwijken van de afgesproken structuur in de publishing repository.</td>
 		</tr>
 		<tr>
 			<td>title</td>
@@ -521,8 +521,7 @@ Een groot aantal properties worden globaal gedefinieerd maar kunnen lokaal overr
 			<td>true</td>
 			<td>Bepaald of het verticale label aan de linker bovenzijde van de inhoudsopgave gegenereerd moet worden.<br/><br/>
 				Kan lokaal overruled worden.</td>
-			<td>Willen we wel dat deze lokaal overruled kan worden?<br/><br/>
-				Ik mis deze property in de side bar van https://github.com/Logius-standaarden/respec/wiki</td>
+			<td/>
 		</tr>
 		<tr>
 			<td><a href="https://github.com/Logius-standaarden/respec/wiki/useLogo">useLogo</a></td>
@@ -531,7 +530,7 @@ Een groot aantal properties worden globaal gedefinieerd maar kunnen lokaal overr
 			<td>true</td>
 			<td>Bepaald of het VNG-Realisatie logo in de rechter bovenzijde van het document geplaatst moet worden.<br/><br/>
 				Kan lokaal overruled worden.</td>
-			<td>Willen we wel dat deze lokaal overruled kan worden?</td>
+			<td/>
 		</tr>
 		<!--tr>
 			<td>useSideBar</td>
@@ -540,7 +539,7 @@ Een groot aantal properties worden globaal gedefinieerd maar kunnen lokaal overr
 			<td/>
 			<td>Functie van deze property is onbekend.</td>
 			<td>Property staat wel in de side bar van https://github.com/Logius-standaarden/respec/wiki maar link leidt niet naar een pagina met uitleg.</td>
-	</tr-->
+		</tr>
 		<tr>
 			<td><a href="https://github.com/w3c/respec/wiki/edDraftURI">edDraftURI</a></td>
 			<td>URL</td>
@@ -548,6 +547,6 @@ Een groot aantal properties worden globaal gedefinieerd maar kunnen lokaal overr
 			<td/>
 			<td>Beschrijft de url waar de draft van het Respec document kan worden bekeken (de laatste werkversie). Indien deze property een lege waarde heeft wordt 'Laatste werkversie' niet getoond. De laatste werkversie is overigens wat anders dan de laatste gepubliceerde versie.</td>
 			<td/>
-		</tr>
+		</tr-->
 	</tbody>
 </table>
