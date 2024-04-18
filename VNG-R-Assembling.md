@@ -245,7 +245,7 @@ De meeste globaal gedefinieerd properties kunnen lokaal overruled worden zoals '
 		<tr>
 			<td><a href="https://github.com/Logius-standaarden/respec/wiki/latestVersion">latestVersion</a></td>
 			<td>Combinatie van strings en configuration propertynamen.</td>
-			<td>Globaal</td>
+			<td>Globaal en lokaal</td>
 			<td>Samenvoeging van achtereenvolgens `nl_organisationPublishURL`, `pubDomain`, "/",  en `shortName`.</td>
 			<td>Wordt opgebouwd m.b.v. andere gedefinieerde configuration properties en '/' tekens. Daarin voorkomende hoofdletters worden omgezet naar kleine letters.<br/><br/>
 				Indien deze configuration property of een van de properties waaruit het bestaat niet worden verstrekt dan wordt de gerelateerde rubriek in het Respec document 
@@ -314,16 +314,16 @@ De meeste globaal gedefinieerd properties kunnen lokaal overruled worden zoals '
 			<td>Integer</td>
 			<td>Globaal en lokaal</td>
 			<td/>
-			<td>Bepaald het aantal niveau's dat maximaal wordt opgenomen in de inhoudsopgave van het Respec document.<br/><br/>Deze property kan lokaal overruled worden.</td>
-			<td>Default worden alle niveau's opgenomen.</td>
+			<td>Bepaald het aantal niveau's dat maximaal wordt opgenomen in de inhoudsopgave van het Respec document.</td>
+			<td>Default worden alle niveau's opgenomen.<br/><br/>Deze property kan lokaal overruled worden.</td>
 		</tr>
 		<tr>
 			<td><a href="https://github.com/Logius-standaarden/respec/wiki/nl_organisationName">nl_organisationName</a></td>
 			<td>String</td>
 			<td>Globaal en lokaal</td>
 			<td>VNG Realisatie</td>
-			<td>Wordt gebruikt om de subtitel en het vertikale label linksboven te genereren.<br/><br/>Deze property kan lokaal overruled worden.</td>
-			<td/>
+			<td>Wordt gebruikt om de subtitel en het vertikale label linksboven te genereren.</td>
+			<td>Deze property kan lokaal overruled worden.</td>
 		</tr>
 		<tr>
 			<td><a href="https://github.com/Logius-standaarden/respec/wiki/nl_organisationPublishURL">nl_organisationPublishURL</a></td>
@@ -341,8 +341,8 @@ De meeste globaal gedefinieerd properties kunnen lokaal overruled worden zoals '
 			<td>URL</td>
 			<td>Globaal en lokaal</td>
 			<td>https://gitdocumentatie.logius.nl/publicatie/respec/style/</td>
-			<td>Definieert de locatie waar het te gebruiken css bestand staat excl. dat bestand zelf.<br/><br/>Deze property kan lokaal overruled worden.</td>
-			<td/>
+			<td>Definieert de locatie waar het te gebruiken css bestand staat excl. dat bestand zelf.</td>
+			<td>Deze property kan lokaal overruled worden.</td>
 		</tr>
 		<tr>
 			<td><a href="https://github.com/w3c/respec/wiki/noTOC">noTOC</a></td>
@@ -365,8 +365,9 @@ De meeste globaal gedefinieerd properties kunnen lokaal overruled worden zoals '
 			<td>Functie aanroep.</td>
 			<td>Globaal</td>
 			<td>?</td>
-			<td>Bevat een of meer JavaScript functies die achtereenvolgend opgestart worden nadat Respec klaar is met generatie van het Respec document.<br/><br/>Deze property kan niet lokaal gedefinieerd worden en dus ook niet overruled worden.</td>
-			<td>Bevat nu een functie die indien van toepassing mermaid notatie wijze omzet naar graphs.</td>
+			<td>Bevat een of meer JavaScript functies die achtereenvolgend opgestart worden nadat Respec klaar is met generatie van het Respec document.</td>
+			<td>Bevat nu een functie die indien van toepassing mermaid notatie wijze omzet naar graphs.<br/><br/>
+				Deze property kan niet lokaal gedefinieerd worden en dus ook niet overruled worden.</td>
 		</tr>
 		<tr>
 			<td><a href="https://github.com/Logius-standaarden/respec/wiki/previousMaturity">previousMaturity</a></td>
@@ -396,7 +397,7 @@ De meeste globaal gedefinieerd properties kunnen lokaal overruled worden zoals '
 		<tr>
 			<td><a href="https://github.com/Logius-standaarden/respec/wiki/prevVersion">prevVersion</a></td>
 			<td>Combinatie van strings en configuration propertynamen.</td>
-			<td>Globaal</td>
+			<td>Globaal en lokaal</td>
 			<td>Samenvoeging van achtereenvolgens `nl_organisationPublishURL`, `pubDomain`, "/", `shortName`, "/" en `previousPublishVersion`.</td>
 			<td>Wordt opgebouwd m.b.v. andere gedefinieerde configuration properties en '/' tekens. Daarin voorkomende hoofdletters worden omgezet naar kleine letters.<br/><br/>
 				Indien deze configuration property of een van de properties waaruit het bestaat niet worden verstrekt dan wordt de gerelateerde rubriek in het Respec document 
@@ -420,7 +421,8 @@ De meeste globaal gedefinieerd properties kunnen lokaal overruled worden zoals '
 					<li>sd (Sociaal domein)</li>
 					<li>bv (Bedrijfsvoering)</li>
 				</ul>
-				Dat betekent wel dat de folderstructuur van de 'publicatie' GitHub repository ook moet worden aangepast.<br/><br/>Property kan ook een waarde hebben als `zd/cim`.<br/><br/>De globale waarde van deze property kan lokaal overruled worden.
+				Dat betekent wel dat de folderstructuur van de 'publicatie' GitHub repository ook moet worden aangepast.<br/><br/>Property kan ook een waarde hebben als `zd/cim`.<br/><br/>Deze property kan lokaal 
+				overruled worden maar ben daar terughoudend mee. Bij lokaal definiëren van deze property is de werking van de links in het document nl. niet te garanderen aangezien die zou kunnen afwijken van de afgesproken structuur in de publishing repository..
 			</td>
 		</tr>
 		<tr>
@@ -455,8 +457,8 @@ De meeste globaal gedefinieerd properties kunnen lokaal overruled worden zoals '
 			<td>Array van properties per taalcode.</td>
 			<td>Globaal en lokaal</td>
 			<td/>
-			<td>Bevat voor een aantal 'specStatus'sen en talen de te gebruiken codes en de daarbij horende volledige tekst.<br/><br/>Kan lokaal overruled worden.</td>
-			<td>Bij VNG-R zullen we moeten bepalen welke teksten er bij welke status gegenereerd moeten worden.</td>
+			<td>Bevat voor een aantal 'specStatus'sen en talen de te gebruiken codes en de daarbij horende volledige tekst.</td>
+			<td>Bij VNG-R zullen we moeten bepalen welke teksten er bij welke status gegenereerd moeten worden.<br/><br/>Kan lokaal overruled worden.</td>
 		</tr>
 		<tr>
 			<td><a href="https://github.com/Logius-standaarden/respec/wiki/specStatus">specStatus</a></td>
@@ -509,7 +511,7 @@ De meeste globaal gedefinieerd properties kunnen lokaal overruled worden zoals '
 		<tr>
 			<td><a href="https://github.com/Logius-standaarden/respec/wiki/thisVersion">thisVersion</a></td>
    			<td>Combinatie van strings en configuration propertynamen.</td>
-			<td>Globaal</td>
+			<td>Globaal en lokaal</td>
 			<td>Samenvoeging van achtereenvolgens `nl_organisationPublishURL`, `pubDomain`, "/", `shortName`, "/" en `publishVersion`.</td>
 			<td>Wordt opgebouwd m.b.v. andere gedefinieerde configuration properties en '/' tekens. Daarin voorkomende hoofdletters worden omgezet naar kleine letters.<br/><br/>
 				Indien deze configuration property of een van de properties waaruit het bestaat niet worden verstrekt dan wordt de gerelateerde rubriek in het Respec document 
@@ -528,19 +530,19 @@ De meeste globaal gedefinieerd properties kunnen lokaal overruled worden zoals '
 		<tr>
 			<td><a href="https://github.com/Logius-standaarden/respec/wiki/useLabel">useLabel</a></td>
 			<td>boolean</td>
-			<td>Globaal</td>
+			<td>Globaal en lokaal</td>
 			<td>true</td>
 			<td>Bepaald of het verticale label aan de linker bovenzijde van de inhoudsopgave gegenereerd moet worden.<br/><br/>
-				Kan lokaal overruled worden.</td>
+				Deze property kan lokaal overruled worden.</td>
 			<td/>
 		</tr>
 		<tr>
 			<td><a href="https://github.com/Logius-standaarden/respec/wiki/useLogo">useLogo</a></td>
 			<td>boolean</td>
-			<td>Globaal</td>
+			<td>Globaal en lokaal</td>
 			<td>true</td>
 			<td>Bepaald of het VNG-Realisatie logo in de rechter bovenzijde van het document geplaatst moet worden.<br/><br/>
-				Kan lokaal overruled worden.</td>
+				Deze property kan lokaal overruled worden.</td>
 			<td/>
 		</tr>
 		<!--tr>
