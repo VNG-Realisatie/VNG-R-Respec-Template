@@ -173,7 +173,7 @@ De meeste globaal gedefinieerd properties kunnen lokaal overruled worden zoals '
 			<td>Hiermee kun je aangeven of je de Respec documentatie ook in een ander formaat dan html aanbiedt, op dit moment is alleen pdf mogelijk.<br/>
 				Deze configuratie property zorgt er voor dat er een pdf bestand wordt gegenereerd en dat er in de Respec documentatie een zin gewijd wordt aan het pdf 
 				formaat met daarin de link naar het pdf bestand.</td>
-			<td/>
+			<td>Deze property mag indien het niet gewenst is een pdf te genereren uit becommentarieerd worden. Dat zou zich voor kunnen doen bij vroege werkversies waarvan je juist níet wil dat deze in een duurzaam formaat gaan circuleren.</td>
 		</tr>
 		<tr>
 			<td><a href="https://github.com/Logius-standaarden/respec/wiki/authors">authors</a></td>
