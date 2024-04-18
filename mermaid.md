@@ -36,10 +36,10 @@ Zie de '[GitHub documentatie](https://docs.github.com/en/get-started/writing-on-
 
 Hieronder nog een aantal Mermaid voorbeelden.
 
-<figure style="width:1800">
+<figure>
 
 ```mermaid
-%%{init: { "sequence": { "wrap": true, "width":800, "height":300 } } }%%
+%%{init: { "sequence": { "useMaxWidth": true } } }%%
 sequenceDiagram
     participant dotcom
     participant iframe
