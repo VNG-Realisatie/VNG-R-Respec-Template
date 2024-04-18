@@ -144,7 +144,6 @@ Hieronder vind je de totale lijst van Configuratie properties. De vierde kolom g
 zo zijn 'localizationStrings' en 'previousPublishVersion' logischerwijs globaal, 'github' en 'title' zijn juist weer lokaal.
 De meeste globaal gedefinieerd properties kunnen lokaal overruled worden zoals 'useLogo'. Doe dat echter alleen als daar een hele goede reden voor is.
 
-		<!-- Tot hier gebleven. -->
 <table>
 	<thead>
 		<tr>
@@ -307,7 +306,8 @@ De meeste globaal gedefinieerd properties kunnen lokaal overruled worden zoals '
 			<td>Globaal en lokaal</td>
 			<td>VNG Realisatie logo</td>
 			<td>Definieert de src, alternate tekst, url en grootte van het linksboven in het Respec document te plaatsen logo.</td>
-			<td>Willen we het VNG Realisatie logo geplaatst hebben of een ander logo?<br/><br/>Deze property kan lokaal overruled worden.</td>
+			<td>Willen we het VNG Realisatie logo geplaatst hebben of een ander logo? (Vraag ligt bij Communicatie)<br/><br/>Deze property kan lokaal overruled worden. Indien deze property wordt aangepast 
+				moet ook de property 'nl_organisationName' worden aangepast.</td>
 		</tr>
 		<tr>
 			<td><a href="https://github.com/w3c/respec/wiki/maxTocLevel">maxTocLevel</a></td>
@@ -332,9 +332,9 @@ De meeste globaal gedefinieerd properties kunnen lokaal overruled worden zoals '
 			<td>https://vng-realisatie.github.io/publicatie</td>
 			<td>Wordt gebruikt voor het genereren van de link naar de GitHub pages van de huidige, de vorige en de laatst gepubliceerde versie. Een link die leidt naar een document in 
 				de GitHub Pages interface van de 'publicatie' GitHub repository en zo gewenst de in de 'publicatie' repository gedefinieerde custom domain name.<br/><br/>
-				Kan worden gebruikt in de properties 'lastVersion', 'thisVersion' en 'prevVersion'.<br/><br/>Deze property kan lokaal overruled worden maar ben daar terughoudend mee. 
-				Het betekent nl. dat de huidige en evt. voorgaande versies van het Respec document niet vanuit de VNG-R publicatie repository worden gepubliceerd.</td>
-			<td/>
+				Kan worden gebruikt in de properties 'lastVersion', 'thisVersion' en 'prevVersion'.</td>
+			<td>Willen we de organisatienaam 'VNG Realisatie'  gebruiken of een andere naam? (Vraag ligt bij Communicatie)<br/><br/>
+				Deze property kan lokaal overruled worden, in dat geval moet ook de property 'logos' worden aangepast.</td>
 		</tr>
 		<tr>
 			<td><a href="https://github.com/Logius-standaarden/respec/wiki/nl_organisationStylesURL">nl_organisationStylesURL</a></td>
