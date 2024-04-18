@@ -36,7 +36,7 @@ Zie de '[GitHub documentatie](https://docs.github.com/en/get-started/writing-on-
 
 Hieronder nog een aantal Mermaid voorbeelden.
 
-<figure>
+<figure style="width:800">
 
 ```mermaid
 %%{init: { "sequence": { "wrap": true, "width":800, "height":300 } } }%%
