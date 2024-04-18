@@ -3,7 +3,7 @@ let respecConfig = {
 //  useLabel: true,
 //  license: "eupl",
   shortName: "Respec-template",
-  pubDomain: "hr/cim",
+  pubDomain: "hr",
 
   // Zie de globale property 'localizationStrings/nl' voor de lijst met toegestane specificatie-types
   specType: "HR",
@@ -11,7 +11,7 @@ let respecConfig = {
   // Zie de globale property 'localizationStrings/nl' voor de lijst met toegestane specificatie-statussen
   specStatus: "IO",
   publishDate: "2024-4-12",
-  //publishVersion: "0.1.0",
+  publishVersion: "0.1.0",
   
   // Zie de globale property 'localizationStrings/nl' voor de lijst met toegestane maturities
   //previousMaturity: "IG",
