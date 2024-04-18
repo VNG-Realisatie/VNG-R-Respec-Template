@@ -358,16 +358,13 @@ Een groot aantal properties worden globaal gedefinieerd maar kunnen lokaal overr
 			<td>Genereert een of meerdere secties (afhankelijk van het aantal 'key' 'data' voorkomens) in de header van het Respec document met als titel de waarde van de property 'key' en als inhoud een of meerdere links.</td>
 			<td/>
 		</tr>
-		<!-- Tot hier gebleven. -->
 		<tr>
 			<td><a href="https://github.com/w3c/respec/wiki/postProcess">postProcess</a></td>
 			<td>Functie aanroep.</td>
 			<td>Globaal</td>
 			<td>?</td>
 			<td>Bevat een of meer JavaScript functies die achtereenvolgend opgestart worden nadat Respec klaar is met generatie van het Respec document.<br/><br/>Deze property kan niet lokaal gedefinieerd worden en dus ook niet overruled worden.</td>
-			<td>Bevat nu een functie die indien van toepassing mermaid notatie wijze omzet naar graphs. Voor meer info zie de [GitHub documentatie](https://docs.github.com/en/get-started/writing-on-github/working-with-advanced-formatting/creating-diagrams#creating-mermaid-diagrams).<br/><br/>
-			In het voorbeeld is de mermaid code binnen een `figure` element geplaatst'. Let er daarbij op dat er voorafgaand aan en na de mermaid code een lege regel wordt geplaatst. Het `figure` element mag dus niet direct aansluiten op de meramid code.
-			</td>
+			<td>Bevat nu een functie die indien van toepassing mermaid notatie wijze omzet naar graphs.</td>
 		</tr>
 		<tr>
 			<td><a href="https://github.com/Logius-standaarden/respec/wiki/previousMaturity">previousMaturity</a></td>
@@ -375,7 +372,7 @@ Een groot aantal properties worden globaal gedefinieerd maar kunnen lokaal overr
 			<td>Lokaal</td>
 			<td/>
 			<td>Status van de voorgaande in de 'publicatie' repository gepubliceerde versie.</td>
-			<td>Heeft nu geen functie aangezien deze property niet wordt gebruikt in de property 'prevVersion'.</td>
+			<td>Heeft op dit moment geen functie aangezien deze property niet wordt gebruikt in de property 'prevVersion'.</td>
 		</tr>
 		<tr>
 			<td><a href="https://github.com/Logius-standaarden/respec/wiki/previousPublishDate">previousPublishDate</a></td>
@@ -383,7 +380,7 @@ Een groot aantal properties worden globaal gedefinieerd maar kunnen lokaal overr
 			<td>Lokaal</td>
 			<td/>
 			<td>Publicatiedatum van de voorgaande versie.</td>
-			<td>Heeft nu geen functie aangezien deze property niet wordt gebruikt in de property 'prevVersion'.</td>
+			<td>Heeft op dit moment geen functie aangezien deze property niet wordt gebruikt in de property 'prevVersion'.</td>
 		</tr>
 		<tr>
 			<td><a href="https://github.com/Logius-standaarden/respec/wiki/previousPublishVersion">previousPublishVersion</a></td>
@@ -392,23 +389,23 @@ Een groot aantal properties worden globaal gedefinieerd maar kunnen lokaal overr
 			<td/>
 			<td>Versienummer van de voorgaande versie in SemVer notatie (https://semver.org/lang/nl/).<br/><br/>
 				Wordt gebruikt in de property 'prevVersion'.</td>
-			<td>Heeft nu geen functie aangezien deze property niet wordt gebruikt in de property 'prevVersion'.</td>
+			<td/>
 		</tr>
 		<tr>
 			<td><a href="https://github.com/Logius-standaarden/respec/wiki/prevVersion">prevVersion</a></td>
-			<td>Combinatie van strings en propertynamen</td>
+			<td>Combinatie van strings en configuration propertynamen.</td>
 			<td>Globaal</td>
-			<td/>
-			<td>Url van de voorgaande versie.<br/>
-			Wordt opgebouwd m.b.v. andere gedefinieerde configuration properties en '/' tekens. Daarin voorkomende hoofdletters worden omgezet naar kleine letters.<br/><br/>
-			Indien deze configuration property of een van de properties waaruit het bestaat niet wordt verstrekt dan wordt de gerelateerde rubriek in het Respec document ook niet aangemaakt.<br/><br/>
-			Mag niet lokaal overruled worden.</td>
-			<td>Hoewel dit zowel globaal als lokaal gedefinieerd kan worden is het voorstel dat dit globaal gebeurd. Als we toestaan dat het lokaal gebeurd dan is de werking van de links niet te garanderen en kan het gevolgen hebben voor de structuur van de publishing repository.</td>
+			<td>Samenvoeging van achtereenvolgens `nl_organisationPublishURL`, `pubDomain`, "/", `shortName`, "/" en `previousPublishVersion`.</td>
+			<td>Wordt opgebouwd m.b.v. andere gedefinieerde configuration properties en '/' tekens. Daarin voorkomende hoofdletters worden omgezet naar kleine letters.<br/><br/>
+				Indien deze configuration property of een van de properties waaruit het bestaat niet worden verstrekt dan wordt de gerelateerde rubriek in het Respec document 
+				ook niet aangemaakt.</td>
+			<td>Deze property kan lokaal overruled worden maar ben daar terughoudend mee. Bij lokaal definiëren van deze property is de werking 
+				van de links in het document nl. niet te garanderen aangezien die zou kunnen afwijken van de afgesproken structuur in de publishing repository.</td>
 		</tr>
 		<tr>
 			<td><a href="https://github.com/Logius-standaarden/respec/wiki/pubDomain">pubDomain</a></td>
 			<td>enumeration</td>
-			<td>Globaal</td>
+			<td>Globaal en lokaal</td>
 			<td/>
 			<td>Definieert het publicatie domein van het Respec document en heeft op dit moment de waarde 'cim'.<br/><br/>Wordt nu gebruikt in de properties 'lastVersion', 'thisVersion' en 'prevVersion'.</td>
 			<td>Er moet bepaald worden of we deze opnemen bij het opbouwen van 'lastVersion', 'thisVersion' en 'prevVersion'.<br/><br/>
@@ -421,7 +418,7 @@ Een groot aantal properties worden globaal gedefinieerd maar kunnen lokaal overr
 					<li>sd (Sociaal domein)</li>
 					<li>bv (Bedrijfsvoering)</li>
 				</ul>
-				Dat betekent wel dat de folderstructuur van de 'publicatie' GitHub repository ook moet worden aangepast.
+				Dat betekent wel dat de folderstructuur van de 'publicatie' GitHub repository ook moet worden aangepast.<br/><br/>Property kan ook een waarde hebben als `zd/cim`.<br/><br/>De globale waarde van deze property kan lokaal overruled worden.
 			</td>
 		</tr>
 		<tr>
@@ -430,8 +427,8 @@ Een groot aantal properties worden globaal gedefinieerd maar kunnen lokaal overr
 			<td>Lokaal</td>
 			<td/>
 			<td>Publicatiedatum van de huidige versie.<br/><br/>
-				Kan evt. worden gebruikt in de properties 'latestVersion' en 'thisVersion'.</td>
-			<td>Er moet bepaald worden of we deze opnemen bij het opbouwen van 'prevVersion'.</td>
+				Kan evt. worden gebruikt in de property 'thisVersion'.</td>
+			<td>Heeft op dit moment geen functie aangezien deze property niet wordt gebruikt in de property 'thisVersion'.</td>
 		</tr>
 		<tr>
 			<td><a href="https://github.com/Logius-standaarden/respec/wiki/publishVersion">publishVersion</a></td>
@@ -439,24 +436,24 @@ Een groot aantal properties worden globaal gedefinieerd maar kunnen lokaal overr
 			<td>Lokaal</td>
 			<td/>
 			<td>Versienummer van de huidige versie in SemVer notatie (https://semver.org/lang/nl/).<br/><br/>
-				Wordt gebruikt in de properties 'lastVersion' en 'thisVersion'.</td>
-			<td>Er moet bepaald worden of we deze inderdaad opgenomen willen hebben bij het opbouwen van 'prevVersion'.</td>
+				Wordt gebruikt in de property 'thisVersion'.</td>
+			<td/>
 		</tr>
 		<tr>
 			<td><a href="https://github.com/Logius-standaarden/respec/wiki/shortName">shortName</a></td>
 			<td>String</td>
 			<td>Lokaal</td>
 			<td/>
-			<td>Korte naam (mnemonic) van het Respec document.<br/><br/>
+			<td>Korte naam (bijv. een mnemonic) van het Respec document.<br/><br/>
 				Wordt gebruikt in de properties 'lastVersion', 'thisVersion' en 'prevVersion'.</td>
-			<td>Er moet bepaald worden of we deze inderdaad opgenomen willen hebben bij het opbouwen van 'prevVersion'.</td>
+			<td/>
 		</tr>
 		<tr>
 			<td><a href="https://github.com/Logius-standaarden/respec/wiki/sotdText">sotdText</a></td>
 			<td>Array van properties per taalcode.</td>
-			<td>Globaal</td>
+			<td>Globaal en lokaal</td>
 			<td/>
-			<td>Bevat voor een aantal 'specStatus'sen en talen de te gebruiken codes en de daarbij horende volledige tekst.<br/><br/>Mag niet lokaal overruled worden.</td>
+			<td>Bevat voor een aantal 'specStatus'sen en talen de te gebruiken codes en de daarbij horende volledige tekst.<br/><br/>Kan lokaal overruled worden.</td>
 			<td>Bij VNG-R zullen we moeten bepalen welke teksten er bij welke status gegenereerd moeten worden.</td>
 		</tr>
 		<tr>
@@ -466,9 +463,10 @@ Een groot aantal properties worden globaal gedefinieerd maar kunnen lokaal overr
 			<td/>
 			<td>Definieert de status van het Respec document. Wordt gebruikt om de subtitel en het vertikale label linksboven te genereren. Bepaald ook de kleur van dat label. Dit dient in de lokale configuratie gedefinieerd te worden.<br/><br/>
 				De kleuren voor de VNG-R statussen kunnen worden gedefinieerd in de globale optie 'labelColor'.<br/><br/>
-				Kan evt. ook worden gebruikt in de properties 'latestVersion', 'thisVersion' en 'prevVersion'.</td>
-			<td>Er moet bepaald worden of we deze opnemen bij het opbouwen van 'latestVersion', 'thisVersion' en 'prevVersion'.</td>
+				Kan ook worden gebruikt in de properties 'latestVersion', 'thisVersion' en 'prevVersion'.</td>
+			<td/>
 		</tr>
+		<!-- Tot hier gebleven. -->
 		<tr>
 			<td><a href="https://github.com/Logius-standaarden/respec/wiki/specType">spectype</a></td>
 			<td>enumeration</td>
