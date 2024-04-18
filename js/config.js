@@ -9,12 +9,9 @@ let respecConfig = {
   specType: "HR",
   
   // Zie de globale property 'localizationStrings/nl' voor de lijst met toegestane specificatie-statussen
-//  specStatus: "IO",
+  specStatus: "IO",
   publishDate: "2024-4-12",
   publishVersion: "0.1.0",
-
-  specStatus: "ED",
-  edDraftURI: "https://www.rodetri.nl/draft",
 
   // Zie de globale property 'localizationStrings/nl' voor de lijst met toegestane maturities
   //previousMaturity: "IG",
