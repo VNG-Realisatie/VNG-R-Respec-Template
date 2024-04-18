@@ -3,7 +3,7 @@ let respecConfig = {
 //  useLabel: true,
 //  license: "eupl",
   shortName: "Respec-template",
-//  pubDomain: "hr",
+  pubDomain: "hr",
 
   // Zie de globale property 'localizationStrings/nl' voor de lijst met toegestane specificatie-types
   specType: "HR",
