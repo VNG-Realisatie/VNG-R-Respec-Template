@@ -1,7 +1,4 @@
 let respecConfig = {
-   latestVersion: ["nl_organisationPublishURL", "pubDomain", "/", "shortName", "/", "publishDate"],
-   thisVersion: ["nl_organisationPublishURL", "pubDomain", "/", "shortName", "/", "publishDate", "/", "publishVersion"],
-   prevVersion: ["nl_organisationPublishURL", "pubDomain", "/", "shortName", "/", "publishDate", "/", "previousPublishVersion"],
 //  useLogo: true,
 //  useLabel: true,
 //  license: "eupl",
