@@ -13,6 +13,7 @@ let respecConfig = {
   publishDate: "2024-4-12",
   publishVersion: "0.1.0",
 
+  edDraftURI: ""
   // Zie de globale property 'localizationStrings/nl' voor de lijst met toegestane maturities
   //previousMaturity: "IG",
   //previousPublishDate: "2022-06-24",
