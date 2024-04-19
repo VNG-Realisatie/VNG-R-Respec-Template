@@ -246,7 +246,7 @@ De meeste globaal gedefinieerd properties kunnen lokaal overruled worden zoals '
 			<td><a href="https://github.com/Logius-standaarden/respec/wiki/latestVersion">latestVersion</a></td>
 			<td>Combinatie van strings en configuration propertynamen.</td>
 			<td>Globaal en lokaal</td>
-			<td>Samenvoeging van achtereenvolgens `nl_organisationPublishURL`, `pubDomain`, "/",  en `shortName`.</td>
+			<td>Definieert de url van de laatst gepubliceerde versie. Samenvoeging van achtereenvolgens `nl_organisationPublishURL`, `pubDomain`, "/",  en `shortName`.</td>
 			<td>Wordt opgebouwd m.b.v. andere gedefinieerde configuration properties en '/' tekens. Daarin voorkomende hoofdletters worden omgezet naar kleine letters.<br/><br/>
 				Indien deze configuration property of een van de properties waaruit het bestaat niet worden verstrekt dan wordt de gerelateerde rubriek in het Respec document 
 				ook niet aangemaakt. De laatste gepubliceerde versie is overigens wat anders dan de laatste werkversie.</td>
@@ -552,14 +552,17 @@ De meeste globaal gedefinieerd properties kunnen lokaal overruled worden zoals '
 			<td/>
 			<td>Functie van deze property is onbekend.</td>
 			<td>Property staat wel in de side bar van https://github.com/Logius-standaarden/respec/wiki maar link leidt niet naar een pagina met uitleg.</td>
-		</tr>
+		</tr-->
 		<tr>
 			<td><a href="https://github.com/w3c/respec/wiki/edDraftURI">edDraftURI</a></td>
 			<td>URL</td>
-			<td>?</td>
+			<td>Globaal en lokaal</td>
 			<td/>
-			<td>Beschrijft de url waar de draft van het Respec document kan worden bekeken (de laatste werkversie). Indien deze property een lege waarde heeft wordt 'Laatste werkversie' niet getoond. De laatste werkversie is overigens wat anders dan de laatste gepubliceerde versie.</td>
-			<td/>
-		</tr-->
+			<td>Beschrijft de url waar de draft van het Respec document kan worden bekeken (de laatste werkversie). </td>
+			<td>Deze property is niet gespecificeerd in de organization configuration wat betekent dat bij het label 'Laatste werkversie' wordt verwezen naar de 
+				GitHub pages url van de repository waarin het Respec document wordt beheerd.<br/><br/>
+				Deze property mag lokaal overruled worden. Indien deze property lokaal een lege waarde krijgt wordt 'Laatste werkversie' niet getoond. De laatste werkversie 
+				is overigens wat anders dan de laatste gepubliceerde versie.</td>
+		</tr>
 	</tbody>
 </table>
