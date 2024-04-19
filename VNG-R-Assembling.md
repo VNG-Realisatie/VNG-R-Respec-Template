@@ -245,13 +245,12 @@ De meeste globaal gedefinieerd properties kunnen lokaal overruled worden zoals '
 		<tr>
 			<td><a href="https://github.com/Logius-standaarden/respec/wiki/latestVersion">latestVersion</a></td>
 			<td>Combinatie van strings en configuration propertynamen.</td>
-			<td>Globaal en lokaal</td>
+			<td>Globaal</td>
 			<td>Samenvoeging van achtereenvolgens `nl_organisationPublishURL`, `pubDomain`, "/",  en `shortName`.</td>
 			<td>Wordt opgebouwd m.b.v. andere gedefinieerde configuration properties en '/' tekens. Daarin voorkomende hoofdletters worden omgezet naar kleine letters.<br/><br/>
 				Indien deze configuration property of een van de properties waaruit het bestaat niet worden verstrekt dan wordt de gerelateerde rubriek in het Respec document 
 				ook niet aangemaakt. De laatste gepubliceerde versie is overigens wat anders dan de laatste werkversie.</td>
-			<td>Deze property kan lokaal overruled worden maar ben daar terughoudend mee. Bij lokaal definiëren van deze property is de werking 
-				van de links in het document nl. niet te garanderen aangezien die zou kunnen afwijken van de afgesproken structuur in de publishing repository.</td>
+			<td>Deze property kan niet lokaal overruled worden.</td>
 		</tr>
 		<tr>
 			<td><a href="https://github.com/Logius-standaarden/respec/wiki/license">license</a></td>
@@ -397,13 +396,12 @@ De meeste globaal gedefinieerd properties kunnen lokaal overruled worden zoals '
 		<tr>
 			<td><a href="https://github.com/Logius-standaarden/respec/wiki/prevVersion">prevVersion</a></td>
 			<td>Combinatie van strings en configuration propertynamen.</td>
-			<td>Globaal en lokaal</td>
+			<td>Globaal</td>
 			<td>Samenvoeging van achtereenvolgens `nl_organisationPublishURL`, `pubDomain`, "/", `shortName`, "/" en `previousPublishVersion`.</td>
 			<td>Wordt opgebouwd m.b.v. andere gedefinieerde configuration properties en '/' tekens. Daarin voorkomende hoofdletters worden omgezet naar kleine letters.<br/><br/>
 				Indien deze configuration property of een van de properties waaruit het bestaat niet worden verstrekt dan wordt de gerelateerde rubriek in het Respec document 
 				ook niet aangemaakt.</td>
-			<td>Deze property kan lokaal overruled worden maar ben daar terughoudend mee. Bij lokaal definiëren van deze property is de werking 
-				van de links in het document nl. niet te garanderen aangezien die zou kunnen afwijken van de afgesproken structuur in de publishing repository.</td>
+			<td>Deze property kan niet lokaal overruled worden.</td>
 		</tr>
 		<tr>
 			<td><a href="https://github.com/Logius-standaarden/respec/wiki/pubDomain">pubDomain</a></td>
@@ -511,13 +509,12 @@ De meeste globaal gedefinieerd properties kunnen lokaal overruled worden zoals '
 		<tr>
 			<td><a href="https://github.com/Logius-standaarden/respec/wiki/thisVersion">thisVersion</a></td>
    			<td>Combinatie van strings en configuration propertynamen.</td>
-			<td>Globaal en lokaal</td>
+			<td>Globaal</td>
 			<td>Samenvoeging van achtereenvolgens `nl_organisationPublishURL`, `pubDomain`, "/", `shortName`, "/" en `publishVersion`.</td>
 			<td>Wordt opgebouwd m.b.v. andere gedefinieerde configuration properties en '/' tekens. Daarin voorkomende hoofdletters worden omgezet naar kleine letters.<br/><br/>
 				Indien deze configuration property of een van de properties waaruit het bestaat niet worden verstrekt dan wordt de gerelateerde rubriek in het Respec document 
 				ook niet aangemaakt.</td>
-			<td>Deze property kan lokaal overruled worden maar ben daar terughoudend mee. Bij lokaal definiëren van deze property is de werking 
-				van de links in het document nl. niet te garanderen aangezien die zou kunnen afwijken van de afgesproken structuur in de publishing repository.</td>
+			<td>Deze property kan niet lokaal overruled worden.</td>
 		</tr>
 		<tr>
 			<td>title</td>
