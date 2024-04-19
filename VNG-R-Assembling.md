@@ -247,11 +247,11 @@ De meeste globaal gedefinieerd properties kunnen lokaal overruled worden zoals '
 			<td>Combinatie van strings en configuration propertynamen.</td>
 			<td>Globaal en lokaal</td>
 			<td>Definieert de url van de laatst gepubliceerde versie. Samenvoeging van achtereenvolgens `nl_organisationPublishURL`, `pubDomain`, "/",  en `shortName`.</td>
-			<td>Wordt opgebouwd m.b.v. andere gedefinieerde configuration properties en '/' tekens. Daarin voorkomende hoofdletters worden omgezet naar kleine letters.<br/><br/>
-				Indien deze configuration property of een van de properties waaruit het bestaat niet worden verstrekt dan wordt de gerelateerde rubriek in het Respec document 
-				ook niet aangemaakt. De laatste gepubliceerde versie is overigens wat anders dan de laatste werkversie.</td>
-			<td>Deze property kan lokaal overruled worden maar ben daar terughoudend mee. Bij lokaal definiëren van deze property is de werking 
-				van de links in het document nl. niet te garanderen aangezien die zou kunnen afwijken van de afgesproken structuur in de publishing repository.</td>
+			<td>Wordt opgebouwd m.b.v. andere gedefinieerde configuration properties en '/' tekens. Daarin voorkomende hoofdletters worden omgezet naar kleine letters.</td>
+			<td>Indien deze configuration property of een van de properties waaruit het bestaat niet worden verstrekt dan wordt de gerelateerde rubriek in het Respec document 
+				ook niet aangemaakt.<br/><br/>Deze property kan lokaal overruled worden maar ben daar terughoudend mee. Bij lokaal definiëren van deze property is de werking 
+				van de links in het document nl. niet te garanderen aangezien die zou kunnen afwijken van de afgesproken structuur in de publishing repository.<br/><br/>
+				De laatste gepubliceerde versie is overigens wat anders dan de laatste werkversie (property 'edDraftURI').</td>
 		</tr>
 		<tr>
 			<td><a href="https://github.com/Logius-standaarden/respec/wiki/license">license</a></td>
@@ -399,10 +399,9 @@ De meeste globaal gedefinieerd properties kunnen lokaal overruled worden zoals '
 			<td>Combinatie van strings en configuration propertynamen.</td>
 			<td>Globaal en lokaal</td>
 			<td>Samenvoeging van achtereenvolgens `nl_organisationPublishURL`, `pubDomain`, "/", `shortName`, "/" en `previousPublishVersion`.</td>
-			<td>Wordt opgebouwd m.b.v. andere gedefinieerde configuration properties en '/' tekens. Daarin voorkomende hoofdletters worden omgezet naar kleine letters.<br/><br/>
-				Indien deze configuration property of een van de properties waaruit het bestaat niet worden verstrekt dan wordt de gerelateerde rubriek in het Respec document 
-				ook niet aangemaakt.</td>
-			<td>Deze property kan lokaal overruled worden maar ben daar terughoudend mee. Bij lokaal definiëren van deze property is de werking 
+			<td>Wordt opgebouwd m.b.v. andere gedefinieerde configuration properties en '/' tekens. Daarin voorkomende hoofdletters worden omgezet naar kleine letters.</td>
+			<td>Indien deze configuration property of een van de properties waaruit het bestaat niet worden verstrekt dan wordt de gerelateerde rubriek in het Respec document 
+				ook niet aangemaakt.<br/><br/>Deze property kan lokaal overruled worden maar ben daar terughoudend mee. Bij lokaal definiëren van deze property is de werking 
 				van de links in het document nl. niet te garanderen aangezien die zou kunnen afwijken van de afgesproken structuur in de publishing repository.</td>
 		</tr>
 		<tr>
@@ -513,10 +512,9 @@ De meeste globaal gedefinieerd properties kunnen lokaal overruled worden zoals '
    			<td>Combinatie van strings en configuration propertynamen.</td>
 			<td>Globaal en lokaal</td>
 			<td>Samenvoeging van achtereenvolgens `nl_organisationPublishURL`, `pubDomain`, "/", `shortName`, "/" en `publishVersion`.</td>
-			<td>Wordt opgebouwd m.b.v. andere gedefinieerde configuration properties en '/' tekens. Daarin voorkomende hoofdletters worden omgezet naar kleine letters.<br/><br/>
-				Indien deze configuration property of een van de properties waaruit het bestaat niet worden verstrekt dan wordt de gerelateerde rubriek in het Respec document 
-				ook niet aangemaakt.</td>
-			<td>Deze property kan lokaal overruled worden maar ben daar terughoudend mee. Bij lokaal definiëren van deze property is de werking 
+			<td>Wordt opgebouwd m.b.v. andere gedefinieerde configuration properties en '/' tekens. Daarin voorkomende hoofdletters worden omgezet naar kleine letters.</td>
+			<td>Indien deze configuration property of een van de properties waaruit het bestaat niet worden verstrekt dan wordt de gerelateerde rubriek in het Respec document 
+				ook niet aangemaakt.<br/><br/>Deze property kan lokaal overruled worden maar ben daar terughoudend mee. Bij lokaal definiëren van deze property is de werking 
 				van de links in het document nl. niet te garanderen aangezien die zou kunnen afwijken van de afgesproken structuur in de publishing repository.</td>
 		</tr>
 		<tr>
@@ -561,8 +559,9 @@ De meeste globaal gedefinieerd properties kunnen lokaal overruled worden zoals '
 			<td>Beschrijft de url waar de draft van het Respec document kan worden bekeken (de laatste werkversie). </td>
 			<td>Deze property is niet gespecificeerd in de organization configuration wat betekent dat bij het label 'Laatste werkversie' wordt verwezen naar de 
 				GitHub pages url van de repository waarin het Respec document wordt beheerd.<br/><br/>
-				Deze property mag lokaal overruled worden. Indien deze property lokaal een lege waarde krijgt wordt 'Laatste werkversie' niet getoond. De laatste werkversie 
-				is overigens wat anders dan de laatste gepubliceerde versie.</td>
+				Deze property mag lokaal overruled worden.<br/><br/>Indien deze property lokaal een lege waarde krijgt wordt 'Laatste werkversie' niet getoond. 
+				Het is echter nuttig om in alle gevallen een link naar de laatste werkversie te plaatsen en we bevelen dat dan ook aan.<br/><br/>De laatste 
+				werkversie is overigens wat anders dan de laatste gepubliceerde versie (property 'latestVersion').</td>
 		</tr>
 	</tbody>
 </table>
