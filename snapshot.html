@@ -147,17 +147,11 @@ ul.index code{color:inherit}
 .hljs-link{text-decoration:underline}
 </style>
 <script id="initialUserConfig" type="application/json">{
-  "thisVersion": [
+  "latestVersion": [
     "nl_organisationPublishURL",
     "pubDomain",
     "/",
-    "shortName",
-    "/",
-    "specStatus",
-    "/",
-    "publishDate",
-    "/",
-    "publishVersion"
+    "shortName"
   ],
   "shortName": "Respec-template",
   "pubDomain": "hr",
@@ -206,7 +200,7 @@ ul.index code{color:inherit}
 }</script>
 <link rel="stylesheet" href="https://www.w3.org/StyleSheets/TR/2016/base.css"></head>
 
-<body><h1 id="title" class="title">Respec documentatie generatie</h1>
+<body class="toc-inline"><h1 id="title" class="title">Respec documentatie generatie</h1>
   <section id="abstract" class="introductory"><h2>Samenvatting</h2><p>Dit document bevat een uitleg van de toepassing van Respec documentatie binnen VNG Realisatie. </p>
 <ul>
 <li>In hoofdstuk 1 wordt de werking van het template uitgelegd. Hoe je het kunt gebruiken voor je eigen specificatie, wat er precies gebeurd als je er mee aan de gang gaat en waar je daarbij op moet letten.</li>
@@ -1036,7 +1030,7 @@ Ter ondersteuning bij het oplossen van die problemen beschrijven we er hier een 
 <p>Onderstaande flowchart beschrijft het proces zoals we dat binnen VNG Realisatie hanteren om tot Respec documentatie te komen. Daarnaast is het echter ook een voorbeeld van het gebruik van de Mermaid syntax voor het vervaardigen van zo'n flowchart. </p>
 <figure id="fig-het-vng-r-respec-proces-mermaid-voorbeeld">
     
-<pre><code class="mermaid hljs" aria-busy="false">%%{init: {"flowchart": {"defaultRenderer": "elk"}} }%%
+<pre><code class="mermaid hljs" aria-busy="false" data-processed="true">%%{init: {"flowchart": {"defaultRenderer": "elk"}} }%%
 graph TD
     A([Start])----&gt;B{"&lt;b&gt;1&lt;/b&gt;&lt;br/&gt;Eerste versie&lt;br/&gt;van Respec&lt;br/&gt;documentatie?"}
     B{"&lt;b&gt;1&lt;/b&gt;&lt;br/&gt;Eerste versie&lt;br/&gt;van Respec&lt;br/&gt;documentatie?"}--Nee--&gt;C("...")
@@ -1066,7 +1060,7 @@ graph TD
 <p>Hieronder nog een aantal Mermaid voorbeelden.</p>
 <figure id="fig-sequence-diagram">
 
-<pre><code class="mermaid hljs" aria-busy="false">%%{init: { "sequence": { "useMaxWidth": true } } }%%
+<pre><code class="mermaid hljs" aria-busy="false" data-processed="true">%%{init: { "sequence": { "useMaxWidth": true } } }%%
 sequenceDiagram
     participant dotcom
     participant iframe
@@ -1083,7 +1077,7 @@ sequenceDiagram
 
 <figure id="fig-state-diagram">
 
-<pre><code class="mermaid hljs" aria-busy="false">stateDiagram-v2
+<pre><code class="mermaid hljs" aria-busy="false" data-processed="true">stateDiagram-v2
     [*] --&gt; Still
     Still --&gt; [*]
 
@@ -1097,7 +1091,7 @@ sequenceDiagram
 
 <figure id="fig-er-diagram">
 
-<pre><code class="mermaid hljs" aria-busy="false">erDiagram
+<pre><code class="mermaid hljs" aria-busy="false" data-processed="true">erDiagram
     CUSTOMER ||--o{ ORDER : places
     ORDER ||--|{ LINE-ITEM : contains
     CUSTOMER }|..|{ DELIVERY-ADDRESS : uses
@@ -1107,7 +1101,7 @@ sequenceDiagram
 
 <figure id="fig-journey-diagram">
 
-<pre><code class="mermaid hljs" aria-busy="false">journey
+<pre><code class="mermaid hljs" aria-busy="false" data-processed="true">journey
     title My working day
     section Go to work
       Make tea: 5: Me
@@ -1122,7 +1116,7 @@ sequenceDiagram
 
 <figure id="fig-gantt-chart">
 
-<pre><code class="mermaid hljs" aria-busy="false">gantt
+<pre><code class="mermaid hljs" aria-busy="false" data-processed="true">gantt
     title A Gantt Diagram
     dateFormat YYYY-MM-DD
     section Section
@@ -1137,7 +1131,7 @@ sequenceDiagram
 
 <figure id="fig-pie-charts">
 
-<pre><code class="mermaid hljs" aria-busy="false">pie title Pets adopted by volunteers
+<pre><code class="mermaid hljs" aria-busy="false" data-processed="true">pie title Pets adopted by volunteers
     "Dogs" : 386
     "Cats" : 85
     "Rats" : 15
@@ -1252,7 +1246,7 @@ Het resultaat ziet er dan bijv. zo <a href="#dfn-definitie" class="internalDFN" 
     </dd></dl>
   </section></section><p role="navigation" id="back-to-top">
     <a href="#title"><abbr title="Back to Top">↑</abbr></a>
-  </p><div class="dfn-panel" hidden="" role="dialog" aria-modal="true" id="dfn-panel-for-dfn-definitie" aria-label="Links in this document to definition: Definitie">
+  </p><div class="mermaidTooltip" style="opacity: 0;"></div><div class="dfn-panel" hidden="" role="dialog" aria-modal="true" id="dfn-panel-for-dfn-definitie" aria-label="Links in this document to definition: Definitie">
       <span class="caret"></span>
       <div>
         <a class="self-link" href="#dfn-definitie" aria-label="Permalink for definition: Definitie. Activate to close this dialog.">Permalink</a>
