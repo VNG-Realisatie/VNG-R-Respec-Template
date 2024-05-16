@@ -10,11 +10,13 @@ Het eerste type draagt over het algemeen de naam van een gewijzigd bestand en di
 In het daarop volgende menu kun je de uitegevoerde modules zien en waar het fout is gegaan, ook daar kun je weer op klikken. Tenslotte kun je daar weer de foutgelopen stap zien
 Ter ondersteuning bij het oplossen van die problemen beschrijven we er hier een aantal en geven we aan wat daar de mogelijke oorzaak van is en hoe je dat kunt oplossen.
 
-| Foutgelopen module | Foutieve stap | Probleem | Mogelijke oorzaak | Oplossing |
+| Foutgelopen module | Foutieve job | Probleem | Mogelijke oorzaak | Oplossing |
 | --- | --- | --- | --- | --- |
 | Check/Links | Check links | Er worden één of meer links getoond met http 404 codes. | De betreffende link komt voor in het aangegeven bestand. Veelal het gegenereerde snapshot.html bestand. | <li>Het kan een in het document voorkomende url betreffen die niet echt correct hoeft te zijn. In dat geval kun je hem negeren.</li><li>Betreft het de link die vermeldt staat bij 'Deze versie', 'Laatst gepubliceerde versie', 'Laatste werkversie' of 'Vorige versie' dan moet je checken of de url wel overeenkomt met een in de publicatie repository geplaatste versie of met de url van de GitHub Pages van de Respec repository zelf. Corrigeer evt. de publicatie repository.</li> |
+| Check/Links | Build/HTML | De job zelf lijkt goed te gaan want deze is groen maar in een van de stappen komt de error `Error:  undefined` voor.| Het probleem kan vele oorzaken hebben. | Open de gegenereerde GitHub Pages pagina en druk op F12. In de console view wordt de javascript error getoond. Deze kan je mogelijk verder brengen. |
+| Check/Links | Build/HTML | De job zelf lijkt goed te gaan want deze is groen maar in een van de stappen komt de error `Error:  Duplicate definition(s) of 'naam'`<br/>`Count: 1`<br/>`Plugin: core/link-to-dfn`<br/> voor.| In een of meer markdown of html bestanden komt meer dan één `dfn` element voor met een gelijke inhoud. | Zorg er voor dat er geen duplicaat `dfn` elementen meer voorkomen. |
+| Check/Links | Build/HTML | De job zelf lijkt goed te gaan want deze is groen maar in een van de stappen komt de error `Error:  Duplicate definition(s) of 'objecten'`<br/>`Count: 42`<br/>`Plugin: core/link-to-dfn`<br/> voor.| In een of meer markdown of html bestanden komt meer dan één `dfn` element voor met een gelijke waarde voor het `data-lt` attribuut. | Zorg er voor dat er geen twee of meer `dfn` elementen voorkomen met een gelijke waarde voor het `data-lt` attribuut. |
 | Check/WCAG | Run pa11y snapshot.html | Er zijn een of meerdere fouten gedetecteerd die tegen de WCAG principes in gaan | Mogelijk heb je een fout gemaakt in de html of je hebt in html een constructie gebruikt die niet gewenst is. De foutmelding ziet er vaak als volgt uit<br/>![Foutmelding](./media/Foutmelding.png) | Met het deel achter `WCAG2AA.` bijv. `Principle1.Guideline1_3.1_3_1.H49.AlignAttr` kun je over het algemeen op internet (bijv. op https://squizlabs.github.io/HTML_CodeSniffer/Standards/WCAG2/) opzoeken wat het probleem is. |
-|  |  |  |  |  |
 |  |  |  |  |  |
 |  |  |  |  |  |
 |  |  |  |  |  |
