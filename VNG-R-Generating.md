@@ -20,7 +20,7 @@ Standaard zet Imvertor alle in Enterprise Architect gedefinieerde diagrammen om 
 
 1. Alleen diagrammen die geplaatst zijn in de root folder (Stereotype = 'Basismodel') of in de folder waarin (de folder met) de componenten staan worden daarbij meegenomen;
 2. De diagrammen moeten class diagrams zijn;
-3. De naam van de diagrammen moet als suffix `- overzicht` of `- detail` hebben;
+3. De naam van de diagrammen moet als suffix '`- overzicht`' of '`- detail`' hebben;
 
 Tenslotte is de onderstaande Imvertor configuratieproperty nog van belang.
 
@@ -30,4 +30,4 @@ Tenslotte is de onderstaande Imvertor configuratieproperty nog van belang.
 
 Als deze de waarde 'yes' heeft of niet geconfigureerd is worden er in de (x)html bestanden `img` elementen met referenties naar de juiste images en imagemap elementen opgenomen.
 
-**LET OP!** Maak de in Respec op te nemen diagrammen zoveel a;s mogelijk in portrait mode op. Dat voorkomt dat je nodeloos diep op het Respec document moet inzoomen.
+**LET OP!** Maak de in Respec op te nemen diagrammen zoveel als mogelijk in portrait mode op. Dat voorkomt dat je nodeloos diep op het Respec document moet inzoomen.
