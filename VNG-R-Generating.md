@@ -18,7 +18,7 @@ Dit resulteert er in dat in de folder 'app/cat' 2 Respec bestanden geplaatst, 1 
 
 Standaard zet Imvertor alle in Enterprise Architect gedefinieerde diagrammen om naar PNG images. Deze images worden echter niet als `img` elementen opgenomen in de gegenereerde (x)html. Indien dat gewenst is dan zul je ze zelf moeten opnemen. Het is echter wel mogelijk om deze diagrammen automatisch als clickable images in de gegenereerde (x)html op te nemen. Om dat te kunnen doen moet wel aan een aantal voorwaarden worden voldaan.
 
-1. Alleen diagrammen die geplaatst zijn in de root folder (Stereotype = 'Basismodel') of in de folder waarin (de folder met) de componenten staan worden daarbij meegenomen;
+1. Alleen diagrammen die direct geplaatst zijn in de root folder (Stereotype = 'Basismodel') of in de folder waarin (de folder met) de componenten staan worden daarbij meegenomen. Ze mogen dus niet in een subfolder worden geplaatst;
 2. De diagrammen moeten class diagrams zijn;
 3. De naam van de diagrammen moet als suffix '`- overzicht`' of '`- detail`' hebben;
 
