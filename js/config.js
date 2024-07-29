@@ -45,7 +45,8 @@ let respecConfig = {
   alternateFormats: [
       {
           label: "pdf",
-          uri: "Respec-bij-VNG-R.pdf",
+          uri: ["pubDomain", "-", "shortName", "-", "publishVersion"],
+  //        uri: "Respec-bij-VNG-R.pdf",
       },
     ],
   localBiblio: {
