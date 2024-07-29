@@ -45,7 +45,7 @@ let respecConfig = {
   alternateFormats: [
       {
           label: "pdf",
-          uri: ["pubDomain", "-", "shortName", "-", "publishVersion", ".pdf"],
+          uri: "hl-Respec-template-0.2.0.pdf",
   //        uri: "Respec-bij-VNG-R.pdf",
       },
     ],
