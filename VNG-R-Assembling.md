@@ -314,7 +314,12 @@ De meeste globaal gedefinieerd properties kunnen lokaal overruled worden zoals '
 			<td>Integer</td>
 			<td>Globaal en lokaal</td>
 			<td/>
-			<td>Bepaald het aantal niveau's dat maximaal wordt opgenomen in de inhoudsopgave van het Respec document.</td>
+			<td>Is van invloed op twee zaken:
+				<ul>
+					<li>het aantal niveau's dat maximaal wordt opgenomen in de inhoudsopgave van het Respec document;</li>
+					<li>het aantal paragraafniveau's dat in de inhoud van het document wordt benummerd. Dat is altijd 1 niveau meer dan het aantal niveau's dat in de inhoudsopgave wordt opgenomen.</li>
+				</ul>
+			</td>
 			<td>Default worden alle niveau's opgenomen.<br/><br/>Deze property kan lokaal overruled worden.</td>
 		</tr>
 		<tr>
