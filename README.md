@@ -40,7 +40,7 @@ zullen zelden veranderen zoals bijv. de naam van de organisatie.
 De document_config (config.js) bevat configuratie properties die alleen relevant is voor het betreffende Respec document en hoort dan ook in elke Respec renderende repository thuis.
 
 Beide configuratie bestanden worden gelinkt in de `index.html` file waardoor ze beide bij het renderen van de Respec documentatie automatisch worden samengevoegd. Daardoor zijn de organisatie specifieke configuraties over alle Respec documentatie van VNG-R gelijk en
-hoeft deze niet steeds gekopieerd te worden. Op deze wijze zorgen we er voor dat alle VNG-R Respec documenten zo eenduidig mogelijk zijn en blijven. 
+hoeft deze niet steeds gekopieerd te worden. Op deze wijze zorgen we er voor dat alle VNG-R Respec documenten zo eenduidig mogelijk zijn en blijven. Sommige configuratie properties hebben een taalspecifieke instelling. Denk bijv. aan de documenttypes. Deze kunnen voor diverse talen gespecificeerd worden. Teneinde het Respec framework in staat te stellen de gewenste taal te kiezen moet het `<html>` element van het attribute `lang` worden voorzien met de gewenste waarde, bijv. `nl` of `en`. Ontbreekt deze dan zal de voor Respec typische Header niet gegenereerd worden.
 
 In [het volgende hoofdstuk](https://vng-realisatie.github.io/VNG-R-Respec-Template/#wow) staat beschreven hoe je de inhoud van het Respec document naar wens kunt aanpassen.
 
