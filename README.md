@@ -1,3 +1,8 @@
+| Eigenaar | Ingevuld door |
+| --- | --- |
+| Kennis centrum Architectuur | Robert Melskens |
+<hr/>
+
 ## ReSpec template instructies
 
 ReSpec is een tool om html en pdf documenten te genereren op basis van markdown en html content.
