@@ -6,6 +6,8 @@
 > Om die reden is de werkwijze tijdelijk anders.
 > * Ten eerste moet de 'Build' workflow, nadat het Respec document gerendered is (Pages build en deployment) handmatig worden opgestart. Dit kan in het 'Actions' menu.
 > * Ten tweede worden nu de bestanden 'snapshot.html' en het gerelateerde pdf bestand in de 'docs' folder geplaatst i.p.v. in de root folder van de repository.
+>
+> Onderstaande beschrijving is hierop niet aangepast.
 
 Het is de bedoeling dat het geautomatiseerd publiceren van de statische html en pdf wordt onderzocht. Vooralsnog blijven we dit handmatig doen.
 
