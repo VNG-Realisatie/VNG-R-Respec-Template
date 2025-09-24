@@ -52,6 +52,14 @@ Sommige configuratie properties hebben een taalspecifieke instelling. Denk bijv.
 In [het volgende hoofdstuk](https://vng-realisatie.github.io/VNG-R-Respec-Template/#wow) staat beschreven hoe je de inhoud van het Respec document naar wens kunt aanpassen.
 
 ### Rendering, automatische controles en publicatie
+
+> [!NOTE]  
+> De functionaliteit in deze repository is gebaseerd op door Logius aangeboden voorzieningen. Helaas levert Logius daar (nog) geen support op. Enige tijd geleden heeft Logius wijzigingen aangebracht in haar voorzieningen waardoor het renderen en de automatische controle in onze repositories niet meer functioneerde.
+> Om die reden is het bestand '.github/workflows/build.yml' hernoemd naar '.github/workflows/build.txt' en is een nieuw '.github/workflows/build.yml' gemaakt met daarin de oude functionaliteit. We hebben de koppeling van deze repository met de Logius repository dus tijdelijk deels uitgeschakeld.
+> Om die reden is de werkwijze tijdelijk anders.
+> * Ten eerste moet de 'Build' workflow, nadat het Respec document gerendered is (Pages build en deployment) handmatig worden opgestart. Dit kan in het 'Actions' menu.
+> * Ten tweede worden nu de bestanden 'snapshot.html' en het gerelateerde pdf bestand in de 'docs' folder geplaatst i.p.v. in de root folder van de repository.
+ 
 Het bestand '.github/workflows/build.yml' bevat een action script waarmee automatisch een drietal acties worden uitgevoerd nadat een bestand in de repository wordt gewijzigd, toegevoegd of verwijderd:
 * het renderen van het Respec document;
 * het checken of de gerenderde Respec html wel correct is en voldoet aan de toegankelijkheidseisen;
