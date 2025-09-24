@@ -1,6 +1,6 @@
 # Publiceren Respec documentatie (under construction)
 
-> [!IMPORTANT]  
+> **LET OP!**<br/>
 > De functionaliteit in deze repository is gebaseerd op door Logius aangeboden voorzieningen. Helaas levert Logius daar (nog) geen support op. Enige tijd geleden heeft Logius wijzigingen aangebracht in de repositories waarmee die voorzieningen worden ingevuld waardoor het renderen en de automatische controle in onze repositories niet meer functioneerde.
 > Om die reden is het bestand '.github/workflows/build.yml' hernoemd naar '.github/workflows/build.txt' en is een nieuw '.github/workflows/build.yml' gemaakt met daarin de oude functionaliteit. We hebben de koppeling van deze repository met de Logius repository dus tijdelijk deels uitgeschakeld.
 > Om die reden is de werkwijze tijdelijk anders.
