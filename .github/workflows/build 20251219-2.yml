@@ -14,21 +14,6 @@ jobs:
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
           # soms nodig in Actions containers:
-      - name: Verwijder de docs map als die bestaat
-        run: |
-          if [ -d "./docs" ]; then
-            if git ls-files --error-unmatch docs/* >/dev/null 2>&1; then
-              git rm -r docs
-              git commit -m "Docs map verwijderd"
-              git push "https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git" HEAD:${{ github.ref_name }}
-            fi
-            rm -rf ./docs
-            echo "Map './docs' is verwijderd."
-          else
-            echo "Map './docs' bestaat niet."
-          fi
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       - run: mkdir ~/static
       - name: Create cache
         uses: actions/cache@v4
@@ -52,7 +37,7 @@ jobs:
          cp ~/static/snapshot.html snapshot.html
          npm i puppeteer
          python3 -m http.server 8080 &
-         wget https://raw.githubusercontent.com/VNG-Realisatie/VNG-R-Respec-Template/refs/heads/main/js/pdf.js
+         wget https://raw.githubusercontent.com/Logius-standaarden/Automatisering/main/scripts/pdf.js
          rm -f *.pdf
          node pdf.js      
          find *.pdf
@@ -64,6 +49,21 @@ jobs:
           git add ./docs/
           git commit -m "Automatisch gegenereerde bestanden toegevoegd" || echo "Geen wijzigingen om te committen"
           git push "https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git" HEAD:${{ github.ref_name }}
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: Verwijder de docs map als die bestaat
+        run: |
+          if [ -d "./docs" ]; then
+            if git ls-files --error-unmatch docs/* >/dev/null 2>&1; then
+              git rm -r docs
+              git commit -m "Docs map verwijderd"
+              git push "https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git" HEAD:${{ github.ref_name }}
+            fi
+            rm -rf ./docs
+            echo "Map './docs' is verwijderd."
+          else
+            echo "Map './docs' bestaat niet."
+          fi
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
  
