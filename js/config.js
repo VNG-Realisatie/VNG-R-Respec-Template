@@ -66,5 +66,5 @@ let respecConfig = {
 };
 
 // Belangrijk: CommonJS export
-module.exports = config;
+module.exports = respecConfig;
 
