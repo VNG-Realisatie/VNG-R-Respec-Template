@@ -33,7 +33,7 @@ Als deze de waarde 'yes' heeft of niet geconfigureerd is worden er in de (x)html
 
 **LET OP!** Maak de in Respec op te nemen diagrammen zoveel als mogelijk in portrait mode op. Dat voorkomt dat je nodeloos diep op het Respec document moet inzoomen.
 
-Eventuele op een diagram gedefinieerde notes worden meegenomen bij de generatie en komen dan onder het diagram terecht.
+Eventuele op een diagram gedefinieerde notes worden meegenomen bij de generatie en komen dan onder het diagram terecht. 
 
 ### Clickable images en pdf
 
