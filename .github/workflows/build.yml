@@ -52,9 +52,9 @@ jobs:
          cp ~/static/snapshot.html snapshot.html
          npm i puppeteer
          python3 -m http.server 8080 &
-         wget https://raw.githubusercontent.com/VNG-Realisatie/VNG-R-Respec-Template/refs/heads/main/js/pdf.js
+         wget -O js/pdf.js https://raw.githubusercontent.com/VNG-Realisatie/VNG-R-Respec-Template/refs/heads/main/js/pdf.js
          rm -f *.pdf
-         node pdf.js      
+         node js/pdf.js      
          find *.pdf
          mv *.pdf ~/static/
       - name: Kopieer gegenereerde bestanden naar repository-map
