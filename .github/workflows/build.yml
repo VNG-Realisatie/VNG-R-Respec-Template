@@ -50,13 +50,6 @@ jobs:
       - name: PDF
         run: |
          cp ~/static/snapshot.html snapshot.html
-         npm i puppeteer
-         python3 -m http.server 8080 &
-         wget https://raw.githubusercontent.com/Logius-standaarden/Automatisering/main/scripts/pdf.js
-         rm -f *.pdf
-         node pdf.js      
-         find *.pdf
-         mv *.pdf ~/static/
       - name: Kopieer gegenereerde bestanden naar repository-map
         run: cp -r ~/static/* ./docs/
       - name: Commit en push gegenereerde bestanden
