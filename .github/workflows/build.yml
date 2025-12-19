@@ -47,6 +47,9 @@ jobs:
          echo "grep=true" >> $GITHUB_OUTPUT
          fi
       - run: mkdir ./docs
+      - name: PDF
+        run: |
+         cp ~/static/snapshot.html snapshot.html
       - name: Kopieer gegenereerde bestanden naar repository-map
         run: cp -r ~/static/* ./docs/
       - name: Commit en push gegenereerde bestanden
