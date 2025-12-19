@@ -54,7 +54,7 @@ jobs:
         run: cp -r ~/static/* ./docs/
       - name: Commit en push gegenereerde bestanden
         run: |
-          git add ./docs/
+          git add ./docs/ snapshot.html
           git commit -m "Automatisch gegenereerde bestanden toegevoegd" || echo "Geen wijzigingen om te committen"
           git push "https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git" HEAD:${{ github.ref_name }}
         env:
