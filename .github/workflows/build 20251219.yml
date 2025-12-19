@@ -12,8 +12,8 @@ jobs:
       - name: Verwijder de docs map als die bestaat
         run: |
           if [ -d "./docs" ]; then
-            if git ls-files --error-unmatch docs/* >/dev/null 2>&1; then
-              git rm -r docs
+            if git ls-files --error-unmatch docs/snapshot.html >/dev/null 2>&1; then
+              git rm -r docs/snapshot.html
               git commit -m "Docs map verwijderd"
               git push "https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git" HEAD:${{ github.ref_name }}
             fi
