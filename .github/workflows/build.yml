@@ -21,6 +21,11 @@ jobs:
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          if [ -d "./docs" ]; then
+            git rm -r ./docs
+            git commit -m "Map 'docs' automatisch verwijderd"
+          else
+          fi
 #          git rm -r ./docs
 #          git commit -m "Map 'docs' automatisch verwijderd"
           git push
