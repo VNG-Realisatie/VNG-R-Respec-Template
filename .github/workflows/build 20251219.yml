@@ -12,10 +12,11 @@ jobs:
       - name: Verwijder de docs map als die bestaat
         run: |
           if [ -d "./docs" ]; then
-            if git ls-files --error-unmatch docs/snapshot.html >/dev/null 2>&1; then
-              git rm -r docs/snapshot.html
+            if git ls-files --error-unmatch docs/* >/dev/null 2>&1; then
+              git rm -r docs
               git commit -m "Docs map verwijderd"
-              git push "https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git" HEAD:${{ github.ref_name }}
+              git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git
+              git push
             fi
             rm -rf ./docs
             echo "Map './docs' is verwijderd."
@@ -58,6 +59,7 @@ jobs:
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
           git add ./docs/ snapshot.html
           git commit -m "Automatisch gegenereerde bestanden toegevoegd" || echo "Geen wijzigingen om te committen"
-          git push "https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git" HEAD:${{ github.ref_name }}
+          git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git
+          git push
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
