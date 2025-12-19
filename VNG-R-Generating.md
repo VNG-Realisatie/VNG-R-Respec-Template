@@ -17,8 +17,7 @@ Dit resulteert er in dat in de folder 'app/cat' 2 Respec bestanden geplaatst, 1 
 ## Diagrammen als clickable images
 
 Indien op de juiste wijze geconfigureerd en aangeroepen (zie [hier](https://imvertor.armatiek.nl/imvertor-executor/dashboard/wiki?key=info-IMAGEMAPS)) zet Imvertor alle in Enterprise Architect gedefinieerde diagrammen om naar PNG images. 
-Deze images worden echter niet als `img` elementen opgenomen in de gegenereerde (x)html. Indien dat gewenst is dan zul je ze zelf moeten opnemen. (**TODO** Onderzoeken of dit wel klopt)
-Het is echter wel mogelijk om deze diagrammen automatisch als clickable images in de gegenereerde (x)html op te nemen. Om dat te kunnen doen moet wel aan een aantal voorwaarden worden voldaan.
+Deze images worden echter niet standaard als `img` elementen opgenomen in de gegenereerde (x)html. Het is echter mogelijk om deze diagrammen automatisch als clickable images in de gegenereerde (x)html op te nemen. Om dat te kunnen doen moet aan een aantal voorwaarden worden voldaan.
 
 1. Alleen diagrammen die direct geplaatst zijn in de root folder (Stereotype = 'Basismodel') of in de folder waarin (de folder met) de componenten staan worden daarbij meegenomen of binnen de entiteittypes zelf. Ze mogen dus ook niet in een subfolder van deze folders worden geplaatst. De plaatsing in het model bepaald tevens de plaatsing van het diagram in het (x)html bestand.  (**TODO** Onderzoeken wat de exacte regels zijn);
 2. De diagrammen moeten class diagrams zijn;
@@ -33,6 +32,8 @@ Tenslotte is de onderstaande Imvertor configuratieproperty nog van belang.
 Als deze de waarde 'yes' heeft of niet geconfigureerd is worden er in de (x)html bestanden `img` elementen met referenties naar de juiste images en imagemap elementen opgenomen.
 
 **LET OP!** Maak de in Respec op te nemen diagrammen zoveel als mogelijk in portrait mode op. Dat voorkomt dat je nodeloos diep op het Respec document moet inzoomen.
+
+Eventuele op een diagram gedefinieerde notes worden meegenomen bij de generatie en komen dan onder het diagram terecht.
 
 ### Clickable images en pdf
 
