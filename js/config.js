@@ -63,8 +63,4 @@ let respecConfig = {
            "rawDate": "2023"
         },
     },
-};
-
-// Belangrijk: CommonJS export
-module.exports = respecConfig;
-
+}
