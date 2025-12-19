@@ -15,6 +15,7 @@ jobs:
             if git ls-files --error-unmatch docs/* >/dev/null 2>&1; then
               git rm -r docs
               git commit -m "Docs map verwijderd"
+              git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git
               git push
             fi
             rm -rf ./docs
