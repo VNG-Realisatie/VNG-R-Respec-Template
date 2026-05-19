@@ -26,6 +26,31 @@ Je beschikt nu over een repository die je kunt gaan vullen en waarin je je perso
 ### Imvertor resultaat plaatsen
 
 Plaats het met Imvertor gegenereerde bestand in de root van de repository. Van dat bestand gebruiken we alleen de inhoud van het 'section' element met het id 'cat'. Het section element zelf gebruiken we dus niet. Verwijder alle andere content behalve de processing instruction 'DOCTYPE HTML' aan het begin van dit bestand en commit het bestand.
+
+Als het html bestand er dus aLs volgt uit ziet:
+
+```html
+<!DOCTYPE HTML>
+<section id="cat" class="normative">
+  <h2>Gegevensdefinitie</h2>
+  <p><b>Deze tekst is normatief.</b><!--SIM-RSGB-2.03-1-20260401-20260513-103007 imvertor 4.5.0--></p>
+  <section id="global_class_Model_ADRESSEERBAAROBJECTAANDUIDING">
+    ...
+  </section>
+</section>
+```
+
+Dan blijft daarvan alleen het volgende over:
+
+```html
+<!DOCTYPE HTML>
+  <h2>Gegevensdefinitie</h2>
+  <p><b>Deze tekst is normatief.</b><!--SIM-RSGB-2.03-1-20260401-20260513-103007 imvertor 4.5.0--></p>
+  <section id="global_class_Model_ADRESSEERBAAROBJECTAANDUIDING">
+    ...
+  </section>
+```
+
 Open vervolgens het bestand 'index.html' en plaats daarin op de gewenste locatie het volgende html fragment:<br/><br/>
    `<section id="XXXX" data-include-format="html" data-include="XXXX.html"></section>`<br/><br/>
 Waarbij je 'XXXX.html' vervangt door de naam van het zojuist aangepaste bestand en 'XXXX' door een id dat de sectie duidelijk en uniek identificeert.
