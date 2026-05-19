@@ -27,7 +27,7 @@ Je beschikt nu over een repository die je kunt gaan vullen en waarin je je perso
 
 Plaats het met Imvertor gegenereerde bestand in de root van de repository. Van dat bestand gebruiken we alleen de inhoud van het 'section' element met het id 'cat'. Het section element zelf gebruiken we dus niet. Verwijder alle andere content behalve de processing instruction 'DOCTYPE HTML' aan het begin van dit bestand en commit het bestand.
 
-Als het html bestand er dus aLs volgt uit ziet:
+Als het html bestand er dus als volgt uit ziet:
 
 ```html
 <!DOCTYPE HTML>
