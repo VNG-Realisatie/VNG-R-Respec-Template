@@ -40,7 +40,7 @@ Als het html bestand er dus als volgt uit ziet:
 </section>
 ```
 
-Dan blijft daarvan alleen het volgende over:
+dan blijft daarvan dus alleen het volgende over:
 
 ```html
 <!DOCTYPE HTML>
