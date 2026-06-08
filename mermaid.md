@@ -64,22 +64,24 @@ Zodra je de eerste variant gebruikt en een bepaalde pijl komt meerdere keren voo
 ```mermaid
 %%{init: {"flowchart": {"defaultRenderer": "elk"}} }%%
 graph TD
-    A([Start])---->B("<b>1.</b> Hergebruik?")
-    B("<b>1.</b> Hergebruik?")--- Nee --->L("<b>Wijs het verzoek af.</b>")
-    B("<b>1.</b> Hergebruik?")--- Ja --->C("<b>2.</b> Verzoek gericht aan?")
-    C("<b>2.</b> Verzoek gericht aan?")--- Nee --->L("<b>Wijs het verzoek af.</b>")
-    C("<b>2.</b> Verzoek gericht aan?")--- Ja --->D("<b>3.</b> Verzoek afkomstig van ?")
-    D("<b>3.</b> Verzoek afkomstig van ?")--- Nee --->L("<b>Wijs het verzoek af.</b>")
-    D("<b>3.</b> Verzoek afkomstig van ?")--- Ja --->E("<b>4.</b> Gevraagde informatie?")
-    E("<b>4.</b> Gevraagde informatie?")--- Nee --->L("<b>Wijs het verzoek af.</b>")
-    E("<b>4.</b> Gevraagde informatie?")--- Ja ---> F("<b>5.</b> Informatie vergaard?")
-    F("<b>5.</b> Informatie vergaard?")--- Nee --->L("<b>Wijs het verzoek af.</b>")
-    F("<b>5.</b> Informatie vergaard?")--- Ja --->G("<b>6.</b> Verzochte informatie?")
-    G("<b>6.</b> Verzochte informatie?")-- Nee --->L("<b>Wijs het verzoek af.</b>")
-    L("<b>Wijs het verzoek af.</b>")---->X([Stop])
+    A([Start])---->B{"<b>1</b><br/>Eerste versie<br/>van Respec<br/>documentatie?"}
+    B{"<b>1</b><br/>Eerste versie<br/>van Respec<br/>documentatie?"}--Nee-->C("...")
+    C("...")---->D("<b>3</b><br/>Creëer nieuwe content of pas content aan")
+    C("...")---->E("<b>5</b><br/>Pas basisstructuur aan voor versie")
+    D("<b>3</b><br/>Creëer nieuwe content of pas content aan")---->I("<b>4</b><br/>Assembleer document")
+    I("<b>4</b><br/>Assembleer document")---->J("<b>5</b><br/>Pas document configuratie properties aan")
+    B{"<b>1</b><br/>Eerste versie<br/>van Respec<br/>documentatie?"}--Ja-->F("...")
+    F("...")---->G("<b>2</b><br/>Creëer en configureer project repo")
+    F("...")---->H("<b>6</b><br/>Creëer basisstructuur in publicatie repo")
+    G("<b>2</b><br/>Creëer en configureer project repo")---->D("<b>3</b><br/>Creëer nieuwe content of pas content aan")
+    H("<b>6</b><br/>Creëer basisstructuur in publicatie repo")---->E("<b>7</b><br/>Pas basisstructuur aan voor versie")
+    E("<b>7</b><br/>Pas basisstructuur aan voor versie")---->K("<b>8</b><br/>Plaats gegenereerde documenten in publicatie repo")
+    K("<b>8</b><br/>Plaats gegenereerde documenten in publicatie repo")---->L("<b>9</b><br/>Gebruik publicatie link Respec doc in GH Pages")
+    J("<b>5</b><br/>Pas document configuratie properties aan")---->K("<b>8</b><br/>Plaats gegenereerde documenten in publicatie repo")
+    L("<b>9</b><br/>Gebruik publicatie link Respec doc in GH Pages")---->M([Stop])
 ```
 
-<figcaption>Mermaid voorbeeld met pijlen met 6 streepjes.</figcaption>
+<figcaption>Het VNG-R Respec proces (Mermaid voorbeeld)</figcaption>
 </figure><br/><br/>
 
 <figure style="display: block;width: 80%;height: 80%;">
@@ -102,7 +104,7 @@ graph TD
     L("<b>Wijs het verzoek af.</b>")---->X([Stop])
 ```
 
-<figcaption>Originele code</figcaption>
+<figcaption>Originele code<br/>Mermaid voorbeeld met pijlen met 6 streepjes.</figcaption>
 </figure><br/><br/>
 
 Om dit te voorkomen kun je 2 dingen doen:
