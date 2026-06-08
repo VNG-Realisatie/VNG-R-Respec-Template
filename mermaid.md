@@ -178,7 +178,7 @@ graph TD
 
 * of pijlen met maar vier streepjes gebruiken zoals hieronder:
 
-<figure style="display: block;width: 100%;height: 100%;">
+<figure style="display: block;width: 80%;height: 80%;">
     
 ```mermaid
 %%{init: {"flowchart": {"defaultRenderer": "elk"}} }%%
@@ -227,7 +227,7 @@ graph TD
 
 Hieronder nog een aantal Mermaid voorbeelden met daaronder steeds de bijbehorende code.
 
-<figure style="display: block;width: 100%;height: 100%;">
+<figure style="display: block;width: 180%;height: 180%;">
     
 ```mermaid
 %%{init: { "sequence": { "useMaxWidth": true } } }%%
@@ -260,7 +260,7 @@ sequenceDiagram
     iframe->>iframe: render mermaid
 ```
 
-<figure style="display: block;width: 100%;height: 100%;">
+<figure style="display: block;width: 50%;height: 50%;">
 
 ```mermaid
 stateDiagram-v2
@@ -306,7 +306,7 @@ erDiagram
     CUSTOMER }|..|{ DELIVERY-ADDRESS : uses
 ```
 
-<figure style="display: block;width: 100%;height: 100%;">
+<figure style="display: block;width: 200%;height: 200%;">
 
 ```mermaid
 journey
@@ -335,7 +335,7 @@ journey
       Sit down: 5: Me
 ```
 
-<figure style="display: block;width: 100%;height: 100%;">
+<figure style="display: block;width: 200%;height: 200%;">
 
 ```mermaid
 gantt
@@ -364,7 +364,7 @@ gantt
         another task    :24d
 ```
 
-<figure style="display: block;width: 100%;height: 100%;">
+<figure style="display: block;width: 150%;height: 150%;">
 
 ```mermaid
 pie title Pets adopted by volunteers
