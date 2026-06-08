@@ -98,7 +98,7 @@ graph TD
 
 ```
 
-<figcaption>Eerste Mermaid voorbeeld met pijlen met 6 streepjes.</figcaption>
+<figcaption>Mermaid voorbeeld met pijlen met 6 streepjes.</figcaption>
 </figure><br/><br/>
 
 Om dit te voorkomen kun je 2 dingen doen:
@@ -143,7 +143,7 @@ graph TD
 
 ```
 
-<figcaption>Tweede Mermaid voorbeeld met pijlen met 6 streepjes.</figcaption>
+<figcaption>Mermaid voorbeeld met pijlen met 6 streepjes.</figcaption>
 </figure><br/><br/>
 
 Waarvan hieronder de Mermaid code:
@@ -226,7 +226,7 @@ graph TD
 
 ```
 
-<figcaption>Eerste Mermaid voorbeeld met pijlen met 4 streepjes.</figcaption>
+<figcaption>Mermaid voorbeeld met pijlen met 4 streepjes.</figcaption>
 </figure><br/><br/>
 
 Waarvan hieronder de Mermaid code:
@@ -271,22 +271,22 @@ graph TD
 Hieronder nog een aantal Mermaid voorbeelden met daaronder steeds de bijbehorende code.
 
 <figure>
+
+```mermaid
+%%{init: { "sequence": { "useMaxWidth": true } } }%%
+sequenceDiagram
+    participant dotcom
+    participant iframe
+    participant viewscreen
+    dotcom->>iframe: loads html w/ iframe url
+    iframe->>viewscreen: request template
+    viewscreen->>iframe: html & javascript
+    iframe->>dotcom: iframe ready
+    dotcom->>iframe: set mermaid data on iframe
+    iframe->>iframe: render mermaid
+```
+
 <figcaption>Sequence diagram</figcaption>
-
-```mermaid
-%%{init: { "sequence": { "useMaxWidth": true } } }%%
-sequenceDiagram
-    participant dotcom
-    participant iframe
-    participant viewscreen
-    dotcom->>iframe: loads html w/ iframe url
-    iframe->>viewscreen: request template
-    viewscreen->>iframe: html & javascript
-    iframe->>dotcom: iframe ready
-    dotcom->>iframe: set mermaid data on iframe
-    iframe->>iframe: render mermaid
-```
-
 </figure>
 
 ```text
@@ -304,7 +304,6 @@ sequenceDiagram
 ```
 
 <figure>
-<figcaption>state diagram</figcaption>
 
 ```mermaid
 stateDiagram-v2
@@ -317,6 +316,7 @@ stateDiagram-v2
     Crash --> [*]
 ```
 
+<figcaption>State diagram</figcaption>
 </figure>
 
 ```text
@@ -331,15 +331,15 @@ stateDiagram-v2
 ```
 
 <figure>
+
+```mermaid
+erDiagram
+    CUSTOMER ||--o{ ORDER : places
+    ORDER ||--|{ LINE-ITEM : contains
+    CUSTOMER }|..|{ DELIVERY-ADDRESS : uses
+```
+
 <figcaption>ER diagram</figcaption>
-
-```mermaid
-erDiagram
-    CUSTOMER ||--o{ ORDER : places
-    ORDER ||--|{ LINE-ITEM : contains
-    CUSTOMER }|..|{ DELIVERY-ADDRESS : uses
-```
-
 </figure>
 
 ```text
@@ -350,20 +350,20 @@ erDiagram
 ```
 
 <figure>
+
+```mermaid
+journey
+    title My working day
+    section Go to work
+      Make tea: 5: Me
+      Go upstairs: 3: Me
+      Do work: 1: Me, Cat
+    section Go home
+      Go downstairs: 5: Me
+      Sit down: 5: Me
+```
+
 <figcaption>Journey diagram</figcaption>
-
-```mermaid
-journey
-    title My working day
-    section Go to work
-      Make tea: 5: Me
-      Go upstairs: 3: Me
-      Do work: 1: Me, Cat
-    section Go home
-      Go downstairs: 5: Me
-      Sit down: 5: Me
-```
-
 </figure>
 
 ```text
@@ -379,20 +379,20 @@ journey
 ```
 
 <figure>
+
+```mermaid
+gantt
+    title A Gantt Diagram
+    dateFormat YYYY-MM-DD
+    section Section
+        A task          :a1, 2014-01-01, 30d
+        Another task    :after a1, 20d
+    section Another
+        Task in Another :2014-01-12, 12d
+        another task    :24d
+```
+
 <figcaption>Gantt chart</figcaption>
-
-```mermaid
-gantt
-    title A Gantt Diagram
-    dateFormat YYYY-MM-DD
-    section Section
-        A task          :a1, 2014-01-01, 30d
-        Another task    :after a1, 20d
-    section Another
-        Task in Another :2014-01-12, 12d
-        another task    :24d
-```
-
 </figure>
 
 ```text
@@ -408,7 +408,6 @@ gantt
 ```
 
 <figure>
-<figcaption>Pie chart</figcaption>
 
 ```mermaid
 pie title Pets adopted by volunteers
@@ -417,6 +416,7 @@ pie title Pets adopted by volunteers
     "Rats" : 15
 ```
 
+<figcaption>Pie chart</figcaption>
 </figure>
 
 ```text
