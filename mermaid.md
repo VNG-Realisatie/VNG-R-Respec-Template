@@ -198,43 +198,6 @@ graph TD
     G{"<b>6.</b> Valt de verzochte<br/>informatie onder het<br/>toepassingsbereik van de<br/>Who?"}-- Ja -->M("<b>Verzoek goedgekeurd.</b>")
     L("<b>Verzoek afgekeurd.</b>")---->X([Stop])
     M("<b>Verzoek goedgekeurd.</b>")---->X([Stop])
-
-
-
-
-
-
-    A([Start])---->B("`**1.** Is er sprake van hergebruik in de zin van de Who?
-    Zie paragraaf 1.1.`")
-
-    B("`**1.** Is er sprake van hergebruik in de zin van de Who?
-    Zie paragraaf 1.1.`")-- Nee -->L("`**Wijs het verzoek af**`")
-
-    B("`**1.** Is er sprake van hergebruik in de zin van de Who?
-    Zie paragraaf 1.1.`")-- Ja -->C("`**2.** Is het verzoek gericht tot een met een publieke taak belaste instelling?
-    Zie paragraaf3.1.`")
-
-    C("`**2.** Is het verzoek gericht tot een met een publieke taak belaste instelling?
-    Zie paragraaf3.1.`")-- Nee -->L("`**Wijs het verzoek af**`")
-
-    C("`**2.** Is het verzoek gericht tot een met een publieke taak belaste instelling?
-    Zie paragraaf3.1.`")
--- Ja -->D("`**3.** Is het verzoek afkomstig van een andere met een publieke taak belaste instelling? De uitwisseling van informatie tussen met een publieke taak belaste instellingen onderling is geen hergebruik van overheidsinformatie in de zin van de Who.`")
-
-    D("`**3.** Is het verzoek afkomstig van een andere met een publieke taak belaste instelling? De uitwisseling van informatie tussen met een publieke taak belaste instellingen onderling is geen hergebruik van overheidsinformatie in de zin van de Who.`")-- Nee -->L("`**Wijs het verzoek af**`")
-
-    D("`**3.** Is het verzoek afkomstig van een andere met een publieke taak belaste instelling? De uitwisseling van informatie tussen met een publieke taak belaste instellingen onderling is geen hergebruik van overheidsinformatie in de zin van de Who.`")-- Ja -->E("`**4.** Berust de gevraagde informatie bij de met een publieke taak belaste instelling waartoe het verzoek is gericht? Indien mogelijk verwijst u door naar de instelling waar de informatie wel berust.`")
-
-    E("`**4.** Berust de gevraagde informatie bij de met een publieke taak belaste instelling waartoe het verzoek is gericht? Indien mogelijk verwijst u door naar de instelling waar de informatie wel berust.`")-- Nee -->L("`**Wijs het verzoek af**`")
-
-    E("`**4.** Berust de gevraagde informatie bij de met een publieke taak belaste instelling waartoe het verzoek is gericht? Indien mogelijk verwijst u door naar de instelling waar de informatie wel berust.`")-- Ja --> F("`**5.** Is de informatie vergaard in het kader van een publieke taak? Het gaat om openbare informatie verkregen in het kader van de publieke taak van een met een publieke taak belaste instelling; direct of als bijproduct. Het gaat niet om informatie die voor interne bedrijfsvoering wordt gebruikt.`")
-
-    F("`**5.** Is de informatie vergaard in het kader van een publieke taak? Het gaat om openbare informatie verkregen in het kader van de publieke taak van een met een publieke taak belaste instelling; direct of als bijproduct. Het gaat niet om informatie die voor interne bedrijfsvoering wordt gebruikt.`")-- Nee -->L("`**Wijs het verzoek af**`")
-
-    F("`**5.** Is de informatie vergaard in het kader van een publieke taak? Het gaat om openbare informatie verkregen in het kader van de publieke taak van een met een publieke taak belaste instelling; direct of als bijproduct. Het gaat niet om informatie die voor interne bedrijfsvoering wordt gebruikt.`")-- Ja -->G("`**6.** Valt de verzochte informatie onder het toepassingsbereik van de Who? Uitgezonderde categorieën informatie zijn: a. Informatie die berust bij een publieke omroep, met een publieke omroeptaak belaste instelling of een instelling werkzaam onder de verantwoordelijkheid van een van deze instellingen; b. Informatie die berust bij een onderwijs- of onderzoeksinstelling; c. Informatie die berust bij andere culturele instellingen dan musea, bibliotheken (inclusief universiteitsbibliotheken) en archieven; d. Informatie die slechts logo’s of wapens en insignes of bevat.`")
-
-    G("`**6.** Valt de verzochte informatie onder het toepassingsbereik van de Who? Uitgezonderde categorieën informatie zijn: a. Informatie die berust bij een publieke omroep, met een publieke omroeptaak belaste instelling of een instelling werkzaam onder de verantwoordelijkheid van een van deze instellingen; b. Informatie die berust bij een onderwijs- of onderzoeksinstelling; c. Informatie die berust bij andere culturele instellingen dan musea, bibliotheken (inclusief universiteitsbibliotheken) en archieven; d. Informatie die slechts logo’s of wapens en insignes of bevat.`")-- Nee -->L("`**Wijs het verzoek af**`")
----->X([Stop])
 ```
 
 <figcaption>Mermaid voorbeeld met pijlen met 4 streepjes.</figcaption>
@@ -245,37 +208,21 @@ Waarvan hieronder de Mermaid code:
 ```text
 %%{init: {"flowchart": {"defaultRenderer": "elk"}} }%%
 graph TD
-    A([Start])--.-->B("`**1.** Is er sprake van hergebruik in de zin van de Who?
-    Zie paragraaf 1.1.`")
-
-    B("`**1.** Is er sprake van hergebruik in de zin van de Who?
-    Zie paragraaf 1.1.`")-- Nee -->L("`**Wijs het verzoek af**`")
-
-    B("`**1.** Is er sprake van hergebruik in de zin van de Who?
-    Zie paragraaf 1.1.`")-- Ja -->C("`**2.** Is het verzoek gericht tot een met een publieke taak belaste instelling?
-    Zie paragraaf3.1.`")
-
-    C("`**2.** Is het verzoek gericht tot een met een publieke taak belaste instelling?
-    Zie paragraaf3.1.`")-- Nee -->L("`**Wijs het verzoek af**`")
-
-    C("`**2.** Is het verzoek gericht tot een met een publieke taak belaste instelling?
-    Zie paragraaf3.1.`")
--- Ja -->D("`**3.** Is het verzoek afkomstig van een andere met een publieke taak belaste instelling? De uitwisseling van informatie tussen met een publieke taak belaste instellingen onderling is geen hergebruik van overheidsinformatie in de zin van de Who.`")
-
-    D("`**3.** Is het verzoek afkomstig van een andere met een publieke taak belaste instelling? De uitwisseling van informatie tussen met een publieke taak belaste instellingen onderling is geen hergebruik van overheidsinformatie in de zin van de Who.`")-- Nee -->L("`**Wijs het verzoek af**`")
-
-    D("`**3.** Is het verzoek afkomstig van een andere met een publieke taak belaste instelling? De uitwisseling van informatie tussen met een publieke taak belaste instellingen onderling is geen hergebruik van overheidsinformatie in de zin van de Who.`")-- Ja -->E("`**4.** Berust de gevraagde informatie bij de met een publieke taak belaste instelling waartoe het verzoek is gericht? Indien mogelijk verwijst u door naar de instelling waar de informatie wel berust.`")
-
-    E("`**4.** Berust de gevraagde informatie bij de met een publieke taak belaste instelling waartoe het verzoek is gericht? Indien mogelijk verwijst u door naar de instelling waar de informatie wel berust.`")-- Nee -->L("`**Wijs het verzoek af**`")
-
-    E("`**4.** Berust de gevraagde informatie bij de met een publieke taak belaste instelling waartoe het verzoek is gericht? Indien mogelijk verwijst u door naar de instelling waar de informatie wel berust.`")-- Ja --> F("`**5.** Is de informatie vergaard in het kader van een publieke taak? Het gaat om openbare informatie verkregen in het kader van de publieke taak van een met een publieke taak belaste instelling; direct of als bijproduct. Het gaat niet om informatie die voor interne bedrijfsvoering wordt gebruikt.`")
-
-    F("`**5.** Is de informatie vergaard in het kader van een publieke taak? Het gaat om openbare informatie verkregen in het kader van de publieke taak van een met een publieke taak belaste instelling; direct of als bijproduct. Het gaat niet om informatie die voor interne bedrijfsvoering wordt gebruikt.`")-- Nee -->L("`**Wijs het verzoek af**`")
-
-    F("`**5.** Is de informatie vergaard in het kader van een publieke taak? Het gaat om openbare informatie verkregen in het kader van de publieke taak van een met een publieke taak belaste instelling; direct of als bijproduct. Het gaat niet om informatie die voor interne bedrijfsvoering wordt gebruikt.`")-- Ja -->G("`**6.** Valt de verzochte informatie onder het toepassingsbereik van de Who? Uitgezonderde categorieën informatie zijn: a. Informatie die berust bij een publieke omroep, met een publieke omroeptaak belaste instelling of een instelling werkzaam onder de verantwoordelijkheid van een van deze instellingen; b. Informatie die berust bij een onderwijs- of onderzoeksinstelling; c. Informatie die berust bij andere culturele instellingen dan musea, bibliotheken (inclusief universiteitsbibliotheken) en archieven; d. Informatie die slechts logo’s of wapens en insignes of bevat.`")
-
-    G("`**6.** Valt de verzochte informatie onder het toepassingsbereik van de Who? Uitgezonderde categorieën informatie zijn: a. Informatie die berust bij een publieke omroep, met een publieke omroeptaak belaste instelling of een instelling werkzaam onder de verantwoordelijkheid van een van deze instellingen; b. Informatie die berust bij een onderwijs- of onderzoeksinstelling; c. Informatie die berust bij andere culturele instellingen dan musea, bibliotheken (inclusief universiteitsbibliotheken) en archieven; d. Informatie die slechts logo’s of wapens en insignes of bevat.`")-- Nee -->L("`**Wijs het verzoek af**`")
----->X([Stop])
+    A([Start])---->B{"<b>1.</b> Is er sprake van<br/>hergebruik in de<br/>zin van de Who?<br/>ie paragraaf 1.1."}
+    B{"<b>1.</b> Is er sprake van<br/>hergebruik in de<br/>zin van de Who?<br/>Zie paragraaf 1.1."}-- Nee -->L("<b>Wijs het verzoek af.</b>")
+    B{"<b>1.</b> Is er sprake van<br/>hergebruik in de<br/>zin van de Who?<br/>Zie paragraaf 1.1."}-- Ja -->C{"<b>2.</b> Is het verzoek gericht<br/>tot een met een publieke<br/>taak belaste instelling?<br/>Zie paragraaf 3.1."}
+    C{"<b>2.</b> Is het verzoek gericht<br/>tot een met een publieke<br/>taak belaste instelling?<br/>Zie paragraaf 3.1."}-- Nee -->L("<b>Wijs het verzoek af.</b>")
+    C{"<b>2.</b> Is het verzoek gericht<br/>tot een met een publieke<br/>taak belaste instelling?<br/>Zie paragraaf 3.1."}-- Ja -->D{"<b>3.</b> Is het verzoek afkomstig<br/>van een andere met een<br/>publieke taak belaste<br/>instelling?"}
+    D{"<b>3.</b> Is het verzoek afkomstig<br/>van een andere met een<br/>publieke taak belaste<br/>instelling?"}-- Nee -->L("<b>Wijs het verzoek af.</b>")
+    D{"<b>3.</b> Is het verzoek afkomstig<br/>van een andere met een<br/>publieke taak belaste<br/>instelling?"}-- Ja -->E{"<b>4.</b> Berust de gevraagde<br/>informatie bij de met een<br/>publieke taak belaste<br/>instelling waartoe het<br/>verzoek is gericht?"}
+    E{"<b>4.</b> Berust de gevraagde<br/>informatie bij de met een<br/>publieke taak belaste<br/>instelling waartoe het<br/>verzoek is gericht?"}-- Nee -->L("<b>Wijs het verzoek af.</b>")
+    E{"<b>4.</b> Berust de gevraagde<br/>informatie bij de met een<br/>publieke taak belaste<br/>instelling waartoe het<br/>verzoek is gericht?"}-- Ja --> F{"<b>5.</b> Is de informatie<br/>vergaard in het kader van<br/>een publieke taak?"}
+    F{"<b>5.</b> Is de informatie<br/>vergaard in het kader van<br/>een publieke taak?"}-- Nee -->L("<b>Wijs het verzoek af.</b>")
+    F{"<b>5.</b> Is de informatie<br/>vergaard in het kader van<br/>een publieke taak?"}-- Ja -->G{"<b>6.</b> Valt de verzochte<br/>informatie onder het<br/>toepassingsbereik van de<br/>Who?"}
+    G{"<b>6.</b> Valt de verzochte<br/>informatie onder het<br/>toepassingsbereik van de<br/>Who?"}-- Nee -->L("<b>Verzoek afgekeurd.</b>")
+    G{"<b>6.</b> Valt de verzochte<br/>informatie onder het<br/>toepassingsbereik van de<br/>Who?"}-- Ja -->M("<b>Verzoek goedgekeurd.</b>")
+    L("<b>Verzoek afgekeurd.</b>")---->X([Stop])
+    M("<b>Verzoek goedgekeurd.</b>")---->X([Stop])
 ```
 
 Hieronder nog een aantal Mermaid voorbeelden met daaronder steeds de bijbehorende code.
