@@ -56,51 +56,9 @@ Hieronder enkele aandachtspunten m.b.t. het gebruik van Mermaid.
 
 * In de code van het  bovenstaand voorbeeld is de mermaid code binnen een `figure` element geplaatst'. Let daarbij op dat er voorafgaand aan de eerste en na de laatste ```` ``` ```` code een lege regel wordt geplaatst. Het `figure` element mag dus niet direct aansluiten op de ```` ``` ```` code.
 * Vermijd markdown frontmatter secties zoals<br/><code>---</code><br/><code>title: Animal example</code><br/><code>---</code><br/>De ervaring is dat deze een goede verwerking van de Mermaid code verhindert.
-* Er is blijkbaar een verschil tussen het gebruik van pijlen met 6 `-` streepjes met tekst zoals `--- Ja --->` en pijlen met maar 4 streepjes met tekst zoals `-- Ja -->`.
-Zodra je de eerste variant gebruikt en een bepaalde pijl komt meerdere keren voor dan wordt deze in de gegenereerde flowchart ook meerdere keren gebruikt. Dat kan resulteren in een woud aan lijnen wat wellicht niet de bedoeling is, zie onderstaand voorbeeld:
+* Hou de teksten in de diagrammen zo kort als mogelijk. Te lange teksten leiden tot zeer verkleinde diagrammen waarvan de teksten niet meer te lezen zijn. Hier een voorbeeld:
 
-<figure style="display: block;width: 80%;height: 80%;">
-    
-```mermaid
-%%{init: {"flowchart": {"defaultRenderer": "elk"}} }%%
-graph TD
-    A([Start])---->B{"<b>1.</b> Is er sprake van<br/>hergebruik in de<br/>zin van de Who?<br/>Zie paragraaf 1.1."}
-    B{"<b>1.</b> Is er sprake van<br/>hergebruik in de<br/>zin van de Who?<br/>Zie paragraaf 1.1."}--Nee-->L("<b>Wijs het verzoek af.</b>")
-    B{"<b>1.</b> Is er sprake van<br/>hergebruik in de<br/>zin van de Who?<br/>Zie paragraaf 1.1."}--- Ja --->C{"<b>2.</b> Is het verzoek gericht<br/>tot een met een publieke<br/>taak belaste instelling?<br/>Zie paragraaf 3.1."}
-    C{"<b>2.</b> Is het verzoek gericht<br/>tot een met een publieke<br/>taak belaste instelling?<br/>Zie paragraaf 3.1."}--- Nee --->L("<b>Wijs het verzoek af.</b>")
-    L("<b>Wijs het verzoek af.</b>")---->M([Stop])
-```
-
-<figcaption>Het VNG-R Respec proces (Mermaid voorbeeld)</figcaption>
-</figure><br/><br/>
-
-<figure style="display: block;width: 80%;height: 80%;">
-    
-```mermaid
-%%{init: {"flowchart": {"defaultRenderer": "elk"}} }%%
-graph TD
-    A([Start])---->B{"<b>1.</b> Is er sprake van<br/>hergebruik in de<br/>zin van de Who?<br/>ie paragraaf 1.1."}
-    B{"<b>1.</b> Is er sprake van<br/>hergebruik in de<br/>zin van de Who?<br/>Zie paragraaf 1.1."}--- Nee --->L("<b>Wijs het verzoek af.</b>")
-    B{"<b>1.</b> Is er sprake van<br/>hergebruik in de<br/>zin van de Who?<br/>Zie paragraaf 1.1."}--- Ja --->C{"<b>2.</b> Is het verzoek gericht<br/>tot een met een publieke<br/>taak belaste instelling?<br/>Zie paragraaf 3.1."}
-    C{"<b>2.</b> Is het verzoek gericht<br/>tot een met een publieke<br/>taak belaste instelling?<br/>Zie paragraaf 3.1."}--- Nee --->L("<b>Wijs het verzoek af.</b>")
-    C{"<b>2.</b> Is het verzoek gericht<br/>tot een met een publieke<br/>taak belaste instelling?<br/>Zie paragraaf 3.1."}--- Ja --->D{"<b>3.</b> Is het verzoek afkomstig<br/>van een andere met een<br/>publieke taak belaste<br/>instelling? De uitwisseling<br/>van informatie tussen met<br/>een publieke taak belaste<br/>instellingen onderling is<br/>geen hergebruik van<br/>overheidsinformatie in<br/>de zin van de Who."}
-    D{"<b>3.</b> Is het verzoek afkomstig<br/>van een andere met een<br/>publieke taak belaste<br/>instelling? De uitwisseling<br/>van informatie tussen met<br/>een publieke taak belaste<br/>instellingen onderling is<br/>geen hergebruik van<br/>overheidsinformatie in<br/>de zin van de Who."}--- Nee --->L("<b>Wijs het verzoek af.</b>")
-    D{"<b>3.</b> Is het verzoek afkomstig<br/>van een andere met een<br/>publieke taak belaste<br/>instelling? De uitwisseling<br/>van informatie tussen met<br/>een publieke taak belaste<br/>instellingen onderling is<br/>geen hergebruik van<br/>overheidsinformatie in<br/>de zin van de Who."}--- Ja --->E{"<b>4.</b> Berust de gevraagde<br/>informatie bij de met een<br/>publieke taak belaste<br/>instelling waartoe het<br/>verzoek is gericht? Indien<br/>mogelijk verwijst u door<br/>naar de instelling waar de<br/>informatie wel berust."}
-    E{"<b>4.</b> Berust de gevraagde<br/>informatie bij de met een<br/>publieke taak belaste<br/>instelling waartoe het<br/>verzoek is gericht? Indien<br/>mogelijk verwijst u door<br/>naar de instelling waar de<br/>informatie wel berust."}--- Nee --->L("<b>Wijs het verzoek af.</b>")
-    E{"<b>4.</b> Berust de gevraagde<br/>informatie bij de met een<br/>publieke taak belaste<br/>instelling waartoe het<br/>verzoek is gericht? Indien<br/>mogelijk verwijst u door<br/>naar de instelling waar de<br/>informatie wel berust."}--- Ja ---> F{"<b>5.</b> Is de informatie<br/>vergaard in het kader van<br/>een publieke taak? Het<br/>gaat om openbare<br/>informatie verkregen in<br/>het kader van de publieke<br/>taak van een met een<br/>publieke taak belaste<br/>instelling; direct of als<br/>bijproduct. Het gaat niet<br/>om informatie die voor<br/>interne bedrijfsvoering<br/>wordt gebruikt."}
-    F{"<b>5.</b> Is de informatie<br/>vergaard in het kader van<br/>een publieke taak? Het<br/>gaat om openbare<br/>informatie verkregen in<br/>het kader van de publieke<br/>taak van een met een<br/>publieke taak belaste<br/>instelling; direct of als<br/>bijproduct. Het gaat niet<br/>om informatie die voor<br/>interne bedrijfsvoering<br/>wordt gebruikt."}--- Nee --->L("<b>Wijs het verzoek af.</b>")
-    F{"<b>5.</b> Is de informatie<br/>vergaard in het kader van<br/>een publieke taak? Het<br/>gaat om openbare<br/>informatie verkregen in<br/>het kader van de publieke<br/>taak van een met een<br/>publieke taak belaste<br/>instelling; direct of als<br/>bijproduct. Het gaat niet<br/>om informatie die voor<br/>interne bedrijfsvoering<br/>wordt gebruikt."}--- Ja --->G{"<b>6.</b> Valt de verzochte<br/>informatie onder het<br/>toepassingsbereik van de<br/>Who? Uitgezonderde<br/>categorieën informatie<br/>zijn: a. Informatie die<br/>berust bij een publieke<br/>omroep, met een publieke<br/>omroeptaak belaste<br/>instelling of een instelling<br/>werkzaam onder de<br/>verantwoordelijkheid van<br/>een van deze instellingen;<br/>b. Informatie die berust<br/>bij een onderwijs- of<br/>onderzoeksinstelling; c.<br/>Informatie die berust bij<br/>andere culturele<br/>instellingen dan musea,<br/>bibliotheken (inclusief<br/>universiteitsbibliotheken)<br/>en archieven; d.<br/>Informatie die slechts logo’s of wapens en insignes of bevat."}
-    G{"<b>6.</b> Valt de verzochte<br/>informatie onder het<br/>toepassingsbereik van de<br/>Who? Uitgezonderde<br/>categorieën informatie<br/>zijn: a. Informatie die<br/>berust bij een publieke<br/>omroep, met een publieke<br/>omroeptaak belaste<br/>instelling of een instelling<br/>werkzaam onder de<br/>verantwoordelijkheid van<br/>een van deze instellingen;<br/>b. Informatie die berust<br/>bij een onderwijs- of<br/>onderzoeksinstelling; c.<br/>Informatie die berust bij<br/>andere culturele<br/>instellingen dan musea,<br/>bibliotheken (inclusief<br/>universiteitsbibliotheken)<br/>en archieven; d.<br/>Informatie die slechts logo’s of wapens en insignes of bevat."}-- Nee --->L("<b>Wijs het verzoek af.</b>")
-    L("<b>Wijs het verzoek af.</b>")---->X([Stop])
-```
-
-<figcaption>Originele code<br/>Mermaid voorbeeld met pijlen met 6 streepjes.</figcaption>
-</figure><br/><br/>
-
-Om dit te voorkomen kun je 2 dingen doen:
-* De tekst in de pijlen uniek maken, bijv. met nummers zoals hieronder:
-
-<figure style="display: block;width: 100%;height: 100%;">
+<figure>
     
 ```mermaid
 %%{init: {"flowchart": {"defaultRenderer": "elk"}} }%%
@@ -138,8 +96,79 @@ graph TD
 ---->X([Stop])
 ```
 
+</figure><br/><br/>
+
+* Er is blijkbaar een verschil tussen het gebruik van pijlen met 6 `-` streepjes met tekst zoals `--- Ja --->` en pijlen met maar 4 streepjes met tekst zoals `-- Ja -->`.
+Zodra je de eerste variant gebruikt en een bepaalde pijl komt meerdere keren voor dan wordt deze in de gegenereerde flowchart ook meerdere keren gebruikt. Dat kan resulteren in een woud aan lijnen wat wellicht niet de bedoeling is, zie onderstaand voorbeeld:
+
+<figure style="display: block;width: 100%;height: 100%;">
+    
+```mermaid
+%%{init: {"flowchart": {"defaultRenderer": "elk"}} }%%
+graph TD
+    A([Start])---->B{"<b>1.</b> Is er sprake van<br/>hergebruik in de<br/>zin van de Who?<br/>ie paragraaf 1.1."}
+    B{"<b>1.</b> Is er sprake van<br/>hergebruik in de<br/>zin van de Who?<br/>Zie paragraaf 1.1."}--- Nee --->L("<b>Wijs het verzoek af.</b>")
+    B{"<b>1.</b> Is er sprake van<br/>hergebruik in de<br/>zin van de Who?<br/>Zie paragraaf 1.1."}--- Ja --->C{"<b>2.</b> Is het verzoek gericht<br/>tot een met een publieke<br/>taak belaste instelling?<br/>Zie paragraaf 3.1."}
+    C{"<b>2.</b> Is het verzoek gericht<br/>tot een met een publieke<br/>taak belaste instelling?<br/>Zie paragraaf 3.1."}--- Nee --->L("<b>Wijs het verzoek af.</b>")
+    C{"<b>2.</b> Is het verzoek gericht<br/>tot een met een publieke<br/>taak belaste instelling?<br/>Zie paragraaf 3.1."}--- Ja --->D{"<b>3.</b> Is het verzoek afkomstig<br/>van een andere met een<br/>publieke taak belaste<br/>instelling?"}
+    D{"<b>3.</b> Is het verzoek afkomstig<br/>van een andere met een<br/>publieke taak belaste<br/>instelling?"}--- Nee --->L("<b>Wijs het verzoek af.</b>")
+    D{"<b>3.</b> Is het verzoek afkomstig<br/>van een andere met een<br/>publieke taak belaste<br/>instelling?"}--- Ja --->E{"<b>4.</b> Berust de gevraagde<br/>informatie bij de met een<br/>publieke taak belaste<br/>instelling waartoe het<br/>verzoek is gericht?"}
+    E{"<b>4.</b> Berust de gevraagde<br/>informatie bij de met een<br/>publieke taak belaste<br/>instelling waartoe het<br/>verzoek is gericht?"}--- Nee --->L("<b>Wijs het verzoek af.</b>")
+    E{"<b>4.</b> Berust de gevraagde<br/>informatie bij de met een<br/>publieke taak belaste<br/>instelling waartoe het<br/>verzoek is gericht?"}--- Ja ---> F{"<b>5.</b> Is de informatie<br/>vergaard in het kader van<br/>een publieke taak?"}
+    F{"<b>5.</b> Is de informatie<br/>vergaard in het kader van<br/>een publieke taak?"}--- Nee --->L("<b>Wijs het verzoek af.</b>")
+    F{"<b>5.</b> Is de informatie<br/>vergaard in het kader van<br/>een publieke taak?"}--- Ja --->G{"<b>6.</b> Valt de verzochte<br/>informatie onder het<br/>toepassingsbereik van de<br/>Who?"}
+    G{"<b>6.</b> Valt de verzochte<br/>informatie onder het<br/>toepassingsbereik van de<br/>Who?"}-- Nee --->L("<b>Verzoek afgekeurd.</b>")
+    G{"<b>6.</b> Valt de verzochte<br/>informatie onder het<br/>toepassingsbereik van de<br/>Who?"}-- Ja --->M("<b>Verzoek goedgekeurd.</b>")
+    L("<b>Verzoek afgekeurd.</b>")---->X([Stop])
+    M("<b>Verzoek goedgekeurd.</b>")---->X([Stop])
+```
+
 <figcaption>Mermaid voorbeeld met pijlen met 6 streepjes.</figcaption>
 </figure><br/><br/>
+
+Om dit te voorkomen kun je 2 dingen doen:
+* De tekst in de pijlen uniek maken, bijv. met nummers zoals hieronder:
+
+<figure style="display: block;width: 100%;height: 100%;">
+    
+```mermaid
+    A([Start])---->B{"<b>1.</b> Is er sprake van<br/>hergebruik in de<br/>zin van de Who?<br/>ie paragraaf 1.1."}
+    B{"<b>1.</b> Is er sprake van<br/>hergebruik in de<br/>zin van de Who?<br/>Zie paragraaf 1.1."}--- 1.Nee --->L("<b>Wijs het verzoek af.</b>")
+    B{"<b>1.</b> Is er sprake van<br/>hergebruik in de<br/>zin van de Who?<br/>Zie paragraaf 1.1."}--- 1.Ja --->C{"<b>2.</b> Is het verzoek gericht<br/>tot een met een publieke<br/>taak belaste instelling?<br/>Zie paragraaf 3.1."}
+    C{"<b>2.</b> Is het verzoek gericht<br/>tot een met een publieke<br/>taak belaste instelling?<br/>Zie paragraaf 3.1."}--- 2.Nee --->L("<b>Wijs het verzoek af.</b>")
+    C{"<b>2.</b> Is het verzoek gericht<br/>tot een met een publieke<br/>taak belaste instelling?<br/>Zie paragraaf 3.1."}--- 2.Ja --->D{"<b>3.</b> Is het verzoek afkomstig<br/>van een andere met een<br/>publieke taak belaste<br/>instelling?"}
+    D{"<b>3.</b> Is het verzoek afkomstig<br/>van een andere met een<br/>publieke taak belaste<br/>instelling?"}--- 3.Nee --->L("<b>Wijs het verzoek af.</b>")
+    D{"<b>3.</b> Is het verzoek afkomstig<br/>van een andere met een<br/>publieke taak belaste<br/>instelling?"}--- 3.Ja --->E{"<b>4.</b> Berust de gevraagde<br/>informatie bij de met een<br/>publieke taak belaste<br/>instelling waartoe het<br/>verzoek is gericht?"}
+    E{"<b>4.</b> Berust de gevraagde<br/>informatie bij de met een<br/>publieke taak belaste<br/>instelling waartoe het<br/>verzoek is gericht?"}--- 4.Nee --->L("<b>Wijs het verzoek af.</b>")
+    E{"<b>4.</b> Berust de gevraagde<br/>informatie bij de met een<br/>publieke taak belaste<br/>instelling waartoe het<br/>verzoek is gericht?"}--- 4.Ja ---> F{"<b>5.</b> Is de informatie<br/>vergaard in het kader van<br/>een publieke taak?"}
+    F{"<b>5.</b> Is de informatie<br/>vergaard in het kader van<br/>een publieke taak?"}--- 5.Nee --->L("<b>Wijs het verzoek af.</b>")
+    F{"<b>5.</b> Is de informatie<br/>vergaard in het kader van<br/>een publieke taak?"}--- 5.Ja --->G{"<b>6.</b> Valt de verzochte<br/>informatie onder het<br/>toepassingsbereik van de<br/>Who?"}
+    G{"<b>6.</b> Valt de verzochte<br/>informatie onder het<br/>toepassingsbereik van de<br/>Who?"}-- 6.Nee --->L("<b>Verzoek afgekeurd.</b>")
+    G{"<b>6.</b> Valt de verzochte<br/>informatie onder het<br/>toepassingsbereik van de<br/>Who?"}-- 6.Ja --->M("<b>Verzoek goedgekeurd.</b>")
+    L("<b>Verzoek afgekeurd.</b>")---->X([Stop])
+    M("<b>Verzoek goedgekeurd.</b>")---->X([Stop])
+
+```
+
+<figcaption>Mermaid voorbeeld met pijlen met 6 streepjes.</figcaption>
+</figure><br/><br/>
+
+<!--%%{init: {"flowchart": {"defaultRenderer": "elk"}} }%%
+graph TD
+    A([Start])---->B("`**1.** Is er sprake van hergebruik in de zin van de Who? Zie paragraaf 1.1.`")
+    B("`**1.** Is er sprake van hergebruik in de zin van de Who? Zie paragraaf 1.1.`")--- 1.Nee --->L("`**Wijs het verzoek af**`")
+    B("`**1.** Is er sprake van hergebruik in de zin van de Who? Zie paragraaf 1.1.`")--- 1.Ja --->C("`**2.** Is het verzoek gericht tot een met een publieke taak belaste instelling? Zie paragraaf3.1.`")
+    C("`**2.** Is het verzoek gericht tot een met een publieke taak belaste instelling? Zie paragraaf3.1.`")--- 2.Nee --->L("`**Wijs het verzoek af**`")
+    C("`**2.** Is het verzoek gericht tot een met een publieke taak belaste instelling? Zie paragraaf3.1.`")--- 2.Ja --->D("`**3.** Is het verzoek afkomstig van een andere met een publieke taak belaste instelling?`")
+    D("`**3.** Is het verzoek afkomstig van een andere met een publieke taak belaste instelling? De uitwisseling van informatie tussen met een publieke taak belaste instellingen onderling is geen hergebruik van overheidsinformatie in de zin van de Who.`")--- 3.Nee --->L("`**Wijs het verzoek af**`")
+    D("`**3.** Is het verzoek afkomstig van een andere met een publieke taak belaste instelling? De uitwisseling van informatie tussen met een publieke taak belaste instellingen onderling is geen hergebruik van overheidsinformatie in de zin van de Who.`")--- 3.Ja --->E("`**4.** Berust de gevraagde informatie bij de met een publieke taak belaste instelling waartoe het verzoek is gericht? Indien mogelijk verwijst u door naar de instelling waar de informatie wel berust.`")
+    E("`**4.** Berust de gevraagde informatie bij de met een publieke taak belaste instelling waartoe het verzoek is gericht? Indien mogelijk verwijst u door naar de instelling waar de informatie wel berust.`")--- 4.Nee --->L("`**Wijs het verzoek af**`")
+    E("`**4.** Berust de gevraagde informatie bij de met een publieke taak belaste instelling waartoe het verzoek is gericht? Indien mogelijk verwijst u door naar de instelling waar de informatie wel berust.`")--- 4.Ja ---> F("`**5.** Is de informatie vergaard in het kader van een publieke taak? Het gaat om openbare informatie verkregen in het kader van de publieke taak van een met een publieke taak belaste instelling; direct of als bijproduct. Het gaat niet om informatie die voor interne bedrijfsvoering wordt gebruikt.`")
+    F("`**5.** Is de informatie vergaard in het kader van een publieke taak? Het gaat om openbare informatie verkregen in het kader van de publieke taak van een met een publieke taak belaste instelling; direct of als bijproduct. Het gaat niet om informatie die voor interne bedrijfsvoering wordt gebruikt.`")--- 5.Nee --->L("`**Wijs het verzoek af**`")
+    F("`**5.** Is de informatie vergaard in het kader van een publieke taak? Het gaat om openbare informatie verkregen in het kader van de publieke taak van een met een publieke taak belaste instelling; direct of als bijproduct. Het gaat niet om informatie die voor interne bedrijfsvoering wordt gebruikt.`")--- 5.Ja --->G("`**6.** Valt de verzochte informatie onder het toepassingsbereik van de Who? Uitgezonderde categorieën informatie zijn: a. Informatie die berust bij een publieke omroep, met een publieke omroeptaak belaste instelling of een instelling werkzaam onder de verantwoordelijkheid van een van deze instellingen; b. Informatie die berust bij een onderwijs- of onderzoeksinstelling; c. Informatie die berust bij andere culturele instellingen dan musea, bibliotheken (inclusief universiteitsbibliotheken) en archieven; d. Informatie die slechts logo’s of wapens en insignes of bevat.`")
+    G("`**6.** Valt de verzochte informatie onder het toepassingsbereik van de Who? Uitgezonderde categorieën informatie zijn: a. Informatie die berust bij een publieke omroep, met een publieke omroeptaak belaste instelling of een instelling werkzaam onder de verantwoordelijkheid van een van deze instellingen; b. Informatie die berust bij een onderwijs- of onderzoeksinstelling; c. Informatie die berust bij andere culturele instellingen dan musea, bibliotheken (inclusief universiteitsbibliotheken) en archieven; d. Informatie die slechts logo’s of wapens en insignes of bevat.`")-- 6.Nee --->L("`**Wijs het verzoek af**`")
+L("`**Wijs het verzoek af**`")---->X([Stop])
+-->
 
 Waarvan hieronder de Mermaid code:
 
