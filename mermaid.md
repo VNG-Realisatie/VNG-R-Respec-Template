@@ -2,7 +2,7 @@
 
 Onderstaande flowchart beschrijft het proces zoals we dat binnen VNG Realisatie hanteren om tot Respec documentatie te komen. Daarnaast is het echter ook een voorbeeld van het gebruik van de Mermaid syntax voor het vervaardigen van zo'n flowchart. 
 
-<figure style="display: block;width: 100%;height: 100%;">
+<figure style="display: block;width: 50%;height: 50%;">
     
 ```mermaid
 %%{init: {"flowchart": {"defaultRenderer": "elk"}} }%%
@@ -59,11 +59,11 @@ Hieronder enkele aandachtspunten m.b.t. het gebruik van Mermaid.
 * Er is blijkbaar een verschil tussen het gebruik van pijlen met 6 `-` streepjes met tekst zoals `--- Ja --->` en pijlen met maar 4 streepjes met tekst zoals `-- Ja -->`.
 Zodra je de eerste variant gebruikt en een bepaalde pijl komt meerdere keren voor dan wordt deze in de gegenereerde flowchart ook meerdere keren gebruikt. Dat kan resulteren in een woud aan lijnen wat wellicht niet de bedoeling is, zie onderstaand voorbeeld:
 
-<figure style="display: block;width: 100%;height: 100%;">
+<figure style="display: block;width: 50%;height: 50%;">
     
 ```mermaid
 %%{init: {"flowchart": {"defaultRenderer": "elk"}} }%%
-graph TD
+graph TD2
     A([Start])---->B("`**1.** Is er sprake van hergebruik in de zin van de Who?
     Zie paragraaf 1.1.`")
 
