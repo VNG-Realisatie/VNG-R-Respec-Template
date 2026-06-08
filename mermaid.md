@@ -64,10 +64,10 @@ Zodra je de eerste variant gebruikt en een bepaalde pijl komt meerdere keren voo
 ```mermaid
 %%{init: {"flowchart": {"defaultRenderer": "elk"}} }%%
 graph TD
-    A([Start])---->B{"<b>1.</b> Is er sprake van hergebruik in de zin van de Who? Zie paragraaf 1.1."}
-    B{"<b>1.</b> Is er sprake van hergebruik in de zin van de Who? Zie paragraaf 1.1."}--Nee-->L("<b>Wijs het verzoek af.</b>")
-    B{"<b>1.</b> Is er sprake van hergebruik in de zin van de Who? Zie paragraaf 1.1."}--- Ja --->C("<b>2.</b> Is het verzoek gericht tot een met een publieke taak belaste instelling? Zie paragraaf 3.1.")
-    C("<b>2.</b> Is het verzoek gericht tot een met een publieke taak belaste instelling? Zie paragraaf 3.1.")--- Nee --->L("<b>Wijs het verzoek af.</b>")
+    A([Start])---->B{"<b>1.</b> Is er sprake van<br/>hergebruik in de<br/>zin van de Who?<br/>Zie paragraaf 1.1."}
+    B{"<b>1.</b> Is er sprake van<br/>hergebruik in de<br/>zin van de Who?<br/>Zie paragraaf 1.1."}--Nee-->L("<b>Wijs het verzoek af.</b>")
+    B{"<b>1.</b> Is er sprake van<br/>hergebruik in de<br/>zin van de Who?<br/>Zie paragraaf 1.1."}--- Ja --->C{"<b>2.</b> Is het verzoek gericht<br/>tot een met een publieke<br/>taak belaste instelling?<br/>Zie paragraaf 3.1."}
+    C{"<b>2.</b> Is het verzoek gericht<br/>tot een met een publieke<br/>taak belaste instelling?<br/>Zie paragraaf 3.1."}--- Nee --->L("<b>Wijs het verzoek af.</b>")
     L("<b>Wijs het verzoek af.</b>")---->M([Stop])
 ```
 
