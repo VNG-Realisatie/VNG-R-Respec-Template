@@ -227,8 +227,8 @@ graph TD
 
 Hieronder nog een aantal Mermaid voorbeelden met daaronder steeds de bijbehorende code.
 
-<figure>
-
+<figure style="display: block;width: 100%;height: 100%;">
+    
 ```mermaid
 %%{init: { "sequence": { "useMaxWidth": true } } }%%
 sequenceDiagram
@@ -260,7 +260,7 @@ sequenceDiagram
     iframe->>iframe: render mermaid
 ```
 
-<figure>
+<figure style="display: block;width: 100%;height: 100%;">
 
 ```mermaid
 stateDiagram-v2
@@ -287,7 +287,7 @@ stateDiagram-v2
     Crash --> [*]
 ```
 
-<figure>
+<figure style="display: block;width: 100%;height: 100%;">
 
 ```mermaid
 erDiagram
@@ -306,7 +306,7 @@ erDiagram
     CUSTOMER }|..|{ DELIVERY-ADDRESS : uses
 ```
 
-<figure>
+<figure style="display: block;width: 100%;height: 100%;">
 
 ```mermaid
 journey
@@ -335,7 +335,7 @@ journey
       Sit down: 5: Me
 ```
 
-<figure>
+<figure style="display: block;width: 100%;height: 100%;">
 
 ```mermaid
 gantt
@@ -364,7 +364,7 @@ gantt
         another task    :24d
 ```
 
-<figure>
+<figure style="display: block;width: 100%;height: 100%;">
 
 ```mermaid
 pie title Pets adopted by volunteers
