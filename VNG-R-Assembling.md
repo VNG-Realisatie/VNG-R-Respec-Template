@@ -595,3 +595,34 @@ De meeste globaal gedefinieerd properties kunnen lokaal overruled worden zoals '
 		</tr>
 	</tbody>
 </table>
+
+## Bijzondere situaties
+
+1. **Inhoudelijke issues m.b.t. onderwerp staan niet in de repository van waaruit het Respec document wordt gegenereerd.**<br/><br/>In dit geval wil je in de '***Doe mee***' sectie waarschijnlijk geen links opnemen naar de repository van waaruit het Respec document wordt gegenereerd. Plaats in dit geval een `otherLinks` property met de waarde 'Doe mee` voor de 'key' subproperty. Plaats daarin weer een 'data' array met 'value/href' pairs waarbij de 'value' steeds een waarde heeft die gelijk is aan de tekst van een van de links in de standaard 'Doe mee' sectie en een 'href' waarde die gelijk is aan de url waarheen je wil linken. Zie hieronder een voorbeeld:
+
+```yaml
+  otherLinks: [{
+    key: "Doe mee",
+    data: [{
+      value: "VNG-Realisatie/Actualisering-RSGB",
+      href: "https://github.com/VNG-Realisatie/Actualisering-RSGB"
+    },
+    {
+      value: "All issues",
+      href: "https://github.com/VNG-Realisatie/Actualisering-RSGB/issues"
+    },
+    {
+      value: "Dien een melding in",
+      href: "https://github.com/VNG-Realisatie/Actualisering-RSGB/issues/new/choose"
+    },
+    {
+      value: "Revisiehistorie",
+      href: "https://github.com/VNG-Realisatie/Actualisering-RSGB/commits"
+    },
+    {
+      value: "Pull requests",
+      href: "https://github.com/VNG-Realisatie/Actualisering-RSGB/pulls"
+    },
+    ]
+  }],
+```
