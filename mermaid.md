@@ -59,6 +59,8 @@ Hieronder enkele aandachtspunten m.b.t. het gebruik van Mermaid.
 * Er is blijkbaar een verschil tussen het gebruik van pijlen met 6 `-` streepjes met tekst zoals `--- Ja --->` en pijlen met maar 4 streepjes met tekst zoals `-- Ja -->`.
 Zodra je de eerste variant gebruikt en een bepaalde pijl komt meerdere keren voor dan wordt deze in de gegenereerde flowchart ook meerdere keren gebruikt. Dat kan resulteren in een woud aan lijnen wat wellicht niet de bedoeling is, zie onderstaand voorbeeld:
 
+<figure style="display: block;width: 80%;height: 80%;">
+
 ```mermaid
 %%{init: {"flowchart": {"defaultRenderer": "elk"}} }%%
 graph TD
@@ -100,7 +102,6 @@ graph TD
     F("`**5.** Is de informatie vergaard in het kader van een publieke taak? Het gaat om openbare informatie verkregen in het kader van de publieke taak van een met een publieke taak belaste instelling; direct of als bijproduct. Het gaat niet om informatie die voor interne bedrijfsvoering wordt gebruikt.`")--- Ja --->G("`**6.** Valt de verzochte informatie onder het toepassingsbereik van de Who? Uitgezonderde categorieën informatie zijn: a. Informatie die berust bij een publieke omroep, met een publieke omroeptaak belaste instelling of een instelling werkzaam onder de verantwoordelijkheid van een van deze instellingen; b. Informatie die berust bij een onderwijs- of onderzoeksinstelling; c. Informatie die berust bij andere culturele instellingen dan musea, bibliotheken (inclusief universiteitsbibliotheken) en archieven; d. Informatie die slechts logo’s of wapens en insignes of bevat.`")
     G("`**6.** Valt de verzochte informatie onder het toepassingsbereik van de Who? Uitgezonderde categorieën informatie zijn: a. Informatie die berust bij een publieke omroep, met een publieke omroeptaak belaste instelling of een instelling werkzaam onder de verantwoordelijkheid van een van deze instellingen; b. Informatie die berust bij een onderwijs- of onderzoeksinstelling; c. Informatie die berust bij andere culturele instellingen dan musea, bibliotheken (inclusief universiteitsbibliotheken) en archieven; d. Informatie die slechts logo’s of wapens en insignes of bevat.`")-- Nee --->L("`**Wijs het verzoek af**`")
     L("`**Wijs het verzoek af**`")---->X([Stop])
-
 ```
 
 <figcaption>Mermaid voorbeeld met pijlen met 6 streepjes.</figcaption>
@@ -145,7 +146,6 @@ graph TD
 
     G("`**6.** Valt de verzochte informatie onder het toepassingsbereik van de Who? Uitgezonderde categorieën informatie zijn: a. Informatie die berust bij een publieke omroep, met een publieke omroeptaak belaste instelling of een instelling werkzaam onder de verantwoordelijkheid van een van deze instellingen; b. Informatie die berust bij een onderwijs- of onderzoeksinstelling; c. Informatie die berust bij andere culturele instellingen dan musea, bibliotheken (inclusief universiteitsbibliotheken) en archieven; d. Informatie die slechts logo’s of wapens en insignes of bevat.`")-- 6.Nee --->L("`**Wijs het verzoek af**`")
 ---->X([Stop])
-
 ```
 
 <figcaption>Mermaid voorbeeld met pijlen met 6 streepjes.</figcaption>
@@ -187,7 +187,6 @@ graph TD
 
     G("`**6.** Valt de verzochte informatie onder het toepassingsbereik van de Who? Uitgezonderde categorieën informatie zijn: a. Informatie die berust bij een publieke omroep, met een publieke omroeptaak belaste instelling of een instelling werkzaam onder de verantwoordelijkheid van een van deze instellingen; b. Informatie die berust bij een onderwijs- of onderzoeksinstelling; c. Informatie die berust bij andere culturele instellingen dan musea, bibliotheken (inclusief universiteitsbibliotheken) en archieven; d. Informatie die slechts logo’s of wapens en insignes of bevat.`")-- 6.Nee --->L("`**Wijs het verzoek af**`")
 ---->X([Stop])
-
 ```
 
 * of pijlen met maar vier streepjes gebruiken zoals hieronder:
@@ -228,7 +227,6 @@ graph TD
 
     G("`**6.** Valt de verzochte informatie onder het toepassingsbereik van de Who? Uitgezonderde categorieën informatie zijn: a. Informatie die berust bij een publieke omroep, met een publieke omroeptaak belaste instelling of een instelling werkzaam onder de verantwoordelijkheid van een van deze instellingen; b. Informatie die berust bij een onderwijs- of onderzoeksinstelling; c. Informatie die berust bij andere culturele instellingen dan musea, bibliotheken (inclusief universiteitsbibliotheken) en archieven; d. Informatie die slechts logo’s of wapens en insignes of bevat.`")-- Nee -->L("`**Wijs het verzoek af**`")
 ---->X([Stop])
-
 ```
 
 <figcaption>Mermaid voorbeeld met pijlen met 4 streepjes.</figcaption>
@@ -270,7 +268,6 @@ graph TD
 
     G("`**6.** Valt de verzochte informatie onder het toepassingsbereik van de Who? Uitgezonderde categorieën informatie zijn: a. Informatie die berust bij een publieke omroep, met een publieke omroeptaak belaste instelling of een instelling werkzaam onder de verantwoordelijkheid van een van deze instellingen; b. Informatie die berust bij een onderwijs- of onderzoeksinstelling; c. Informatie die berust bij andere culturele instellingen dan musea, bibliotheken (inclusief universiteitsbibliotheken) en archieven; d. Informatie die slechts logo’s of wapens en insignes of bevat.`")-- Nee -->L("`**Wijs het verzoek af**`")
 ---->X([Stop])
-
 ```
 
 Hieronder nog een aantal Mermaid voorbeelden met daaronder steeds de bijbehorende code.
