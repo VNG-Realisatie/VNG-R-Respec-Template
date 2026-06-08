@@ -64,21 +64,11 @@ Zodra je de eerste variant gebruikt en een bepaalde pijl komt meerdere keren voo
 ```mermaid
 %%{init: {"flowchart": {"defaultRenderer": "elk"}} }%%
 graph TD
-    A([Start])---->B{"<b>1.</b> Is er sprake van hergebruik in de zin van de Who? Zie paragraaf 1.1."}
-    B{"<b>1.</b> Is er sprake van hergebruik in de zin van de Who? Zie paragraaf 1.1."}--Nee-->C("...")
-    C("...")---->D("<b>3</b><br/>Creëer nieuwe content of pas content aan")
-    C("...")---->E("<b>5</b><br/>Pas basisstructuur aan voor versie")
-    D("<b>3</b><br/>Creëer nieuwe content of pas content aan")---->I("<b>4</b><br/>Assembleer document")
-    I("<b>4</b><br/>Assembleer document")---->J("<b>5</b><br/>Pas document configuratie properties aan")
-    B{"<b>1.</b> Is er sprake van hergebruik in de zin van de Who? Zie paragraaf 1.1."}--Ja-->F("...")
-    F("...")---->G("<b>2</b><br/>Creëer en configureer project repo")
-    F("...")---->H("<b>6</b><br/>Creëer basisstructuur in publicatie repo")
-    G("<b>2</b><br/>Creëer en configureer project repo")---->D("<b>3</b><br/>Creëer nieuwe content of pas content aan")
-    H("<b>6</b><br/>Creëer basisstructuur in publicatie repo")---->E("<b>7</b><br/>Pas basisstructuur aan voor versie")
-    E("<b>7</b><br/>Pas basisstructuur aan voor versie")---->K("<b>8</b><br/>Plaats gegenereerde documenten in publicatie repo")
-    K("<b>8</b><br/>Plaats gegenereerde documenten in publicatie repo")---->L("<b>9</b><br/>Gebruik publicatie link Respec doc in GH Pages")
-    J("<b>5</b><br/>Pas document configuratie properties aan")---->K("<b>8</b><br/>Plaats gegenereerde documenten in publicatie repo")
-    L("<b>9</b><br/>Gebruik publicatie link Respec doc in GH Pages")---->M([Stop])
+    A([Start])---->B{"<b>1.</b> Is er sprakevan hergebruik in de zin van de Who? Zie paragraaf 1.1."}
+    B{"<b>1.</b> Is er sprake van hergebruik in de zin van de Who? Zie paragraaf 1.1."}--Nee-->L("<b>Wijs het verzoek af.</b>")
+    B("<b>1.</b> Is er sprake van hergebruik in de zin van de Who? Zie paragraaf 1.1.")--- Ja --->C("<b>2.</b> Is het verzoek gericht tot een met een publieke taak belaste instelling? Zie paragraaf 3.1.")
+    C("<b>2.</b> Is het verzoek gericht tot een met een publieke taak belaste instelling? Zie paragraaf 3.1.")--- Nee --->L("<b>Wijs het verzoek af.</b>")
+    L("<b>Wijs het verzoek af.</b>")---->M([Stop])
 ```
 
 <figcaption>Het VNG-R Respec proces (Mermaid voorbeeld)</figcaption>
