@@ -2,7 +2,7 @@
 
 Onderstaande flowchart beschrijft het proces zoals we dat binnen VNG Realisatie hanteren om tot Respec documentatie te komen. Daarnaast is het echter ook een voorbeeld van het gebruik van de Mermaid syntax voor het vervaardigen van zo'n flowchart. 
 
-<figure>
+<figure style="display: block;width: 100px;max-width: 100%;height: 200px;">
     
 ```mermaid
 %%{init: {"flowchart": {"defaultRenderer": "elk"}} }%%
@@ -59,7 +59,7 @@ Hieronder enkele aandachtspunten m.b.t. het gebruik van Mermaid.
 * Er is blijkbaar een verschil tussen het gebruik van pijlen met 6 `-` streepjes met tekst zoals `--- Ja --->` en pijlen met maar 4 streepjes met tekst zoals `-- Ja -->`.
 Zodra je de eerste variant gebruikt en een bepaalde pijl komt meerdere keren voor dan wordt deze in de gegenereerde flowchart ook meerdere keren gebruikt. Dat kan resulteren in een woud aan lijnen wat wellicht niet de bedoeling is, zie onderstaand voorbeeld:
 
-<figure>
+<figure style="display: block;width: 100px;max-width: 100%;height: 200px;">
     
 ```mermaid
 %%{init: {"flowchart": {"defaultRenderer": "elk"}} }%%
@@ -104,7 +104,7 @@ graph TD
 Om dit te voorkomen kun je 2 dingen doen:
 * De tekst in de pijlen uniek maken, bijv. met nummers zoals hieronder:
 
-<figure>
+<figure style="display: block;width: 100px;max-width: 100%;height: 200px;">
     
 ```mermaid
 %%{init: {"flowchart": {"defaultRenderer": "elk"}} }%%
@@ -187,7 +187,7 @@ graph TD
 
 * of pijlen met maar vier streepjes gebruiken zoals hieronder:
 
-<figure>
+<figure style="display: block;width: 100px;max-width: 100%;height: 200px;">
     
 ```mermaid
 %%{init: {"flowchart": {"defaultRenderer": "elk"}} }%%
