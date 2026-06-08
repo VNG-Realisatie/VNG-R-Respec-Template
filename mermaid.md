@@ -64,13 +64,13 @@ Zodra je de eerste variant gebruikt en een bepaalde pijl komt meerdere keren voo
 ```mermaid
 %%{init: {"flowchart": {"defaultRenderer": "elk"}} }%%
 graph TD
-    A([Start])---->B{"<b>1</b><br/>Eerste versie<br/>van Respec<br/>documentatie?"}
-    B{"<b>1</b><br/>Eerste versie<br/>van Respec<br/>documentatie?"}--Nee-->C("...")
+    A([Start])---->B{"<b>1.</b> Is er sprake van hergebruik in de zin van de Who? Zie paragraaf 1.1."}
+    B{"<b>1.</b> Is er sprake van hergebruik in de zin van de Who? Zie paragraaf 1.1."}--Nee-->C("...")
     C("...")---->D("<b>3</b><br/>Creëer nieuwe content of pas content aan")
     C("...")---->E("<b>5</b><br/>Pas basisstructuur aan voor versie")
     D("<b>3</b><br/>Creëer nieuwe content of pas content aan")---->I("<b>4</b><br/>Assembleer document")
     I("<b>4</b><br/>Assembleer document")---->J("<b>5</b><br/>Pas document configuratie properties aan")
-    B{"<b>1</b><br/>Eerste versie<br/>van Respec<br/>documentatie?"}--Ja-->F("...")
+    B{"<b>1.</b> Is er sprake van hergebruik in de zin van de Who? Zie paragraaf 1.1."}--Ja-->F("...")
     F("...")---->G("<b>2</b><br/>Creëer en configureer project repo")
     F("...")---->H("<b>6</b><br/>Creëer basisstructuur in publicatie repo")
     G("<b>2</b><br/>Creëer en configureer project repo")---->D("<b>3</b><br/>Creëer nieuwe content of pas content aan")
