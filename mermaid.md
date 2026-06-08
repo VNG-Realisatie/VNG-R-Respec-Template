@@ -64,6 +64,29 @@ Zodra je de eerste variant gebruikt en een bepaalde pijl komt meerdere keren voo
 ```mermaid
 %%{init: {"flowchart": {"defaultRenderer": "elk"}} }%%
 graph TD
+    A([Start])---->B("<b>1.</b> Hergebruik?")
+    B("<b>1.</b> Hergebruik?")--- Nee --->L("<b>Wijs het verzoek af.</b>")
+    B("<b>1.</b> Hergebruik?")--- Ja --->C("<b>2.</b> Verzoek gericht aan?")
+    C("<b>2.</b> Verzoek gericht aan?")--- Nee --->L("<b>Wijs het verzoek af.</b>")
+    C("<b>2.</b> Verzoek gericht aan?")--- Ja --->D("<b>3.</b> Verzoek afkomstig van ?")
+    D("<b>3.</b> Verzoek afkomstig van ?")--- Nee --->L("<b>Wijs het verzoek af.</b>")
+    D("<b>3.</b> Verzoek afkomstig van ?")--- Ja --->E("<b>4.</b> Gevraagde informatie?")
+    E("<b>4.</b> Gevraagde informatie?")--- Nee --->L("<b>Wijs het verzoek af.</b>")
+    E("<b>4.</b> Gevraagde informatie?")--- Ja ---> F("<b>5.</b> Informatie vergaard?")
+    F("<b>5.</b> Informatie vergaard?")--- Nee --->L("<b>Wijs het verzoek af.</b>")
+    F("<b>5.</b> Informatie vergaard?")--- Ja --->G("<b>6.</b> Verzochte informatie?")
+    G("<b>6.</b> Verzochte informatie?")-- Nee --->L("<b>Wijs het verzoek af.</b>")
+    L("<b>Wijs het verzoek af.</b>")---->X([Stop])
+```
+
+<figcaption>Mermaid voorbeeld met pijlen met 6 streepjes.</figcaption>
+</figure><br/><br/>
+
+<figure style="display: block;width: 80%;height: 80%;">
+    
+```mermaid
+%%{init: {"flowchart": {"defaultRenderer": "elk"}} }%%
+graph TD
     A([Start])---->B("<b>1.</b> Is er sprake van hergebruik in de zin van de Who? Zie paragraaf 1.1.")
     B("<b>1.</b> Is er sprake van hergebruik in de zin van de Who? Zie paragraaf 1.1.")--- Nee --->L("<b>Wijs het verzoek af.</b>")
     B("<b>1.</b> Is er sprake van hergebruik in de zin van de Who? Zie paragraaf 1.1.")--- Ja --->C("<b>2.</b> Is het verzoek gericht tot een met een publieke taak belaste instelling? Zie paragraaf3.1.")
@@ -79,7 +102,7 @@ graph TD
     L("<b>Wijs het verzoek af.</b>")---->X([Stop])
 ```
 
-<figcaption>Mermaid voorbeeld met pijlen met 6 streepjes.</figcaption>
+<figcaption>Originele code</figcaption>
 </figure><br/><br/>
 
 Om dit te voorkomen kun je 2 dingen doen:
