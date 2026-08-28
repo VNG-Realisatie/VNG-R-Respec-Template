@@ -239,7 +239,7 @@ De meeste globaal gedefinieerd properties kunnen lokaal overruled worden zoals '
 			<td>URI of een array van de properties 'repoURL' en 'branch'.</td>
 			<td>Lokaal</td>
 			<td/>
-			<td>Gebruikt voor het genereren van de links in de 'Doe mee' tabel bovenin de Respec documentatie. Kan gevuld worden met
+			<td>Optie 1 voor het genereren van de links in de 'Doe mee' tabel bovenin de Respec documentatie. Kan gevuld worden met
 				<ul>
 					<li>een url naar een GitHub repository</li>
 					<li>het deel van de url van een GitHub repository dat komt na 'https://github.com/'</li>
@@ -250,7 +250,7 @@ De meeste globaal gedefinieerd properties kunnen lokaal overruled worden zoals '
 					</ul>
 					</li>
 				</ul>
-				Verwijst naar de GitHub repository waarin het Informatiemodel wordt beheerd.<br/><br/>Indien niet gedefinieerd dan wordt de 'Doe mee' tabel niet gegenereerd.</td>
+				Verwijst naar de GitHub repository waarin het Informatiemodel wordt beheerd.<br/><br/>Indien niet gedefinieerd dan wordt de 'Doe mee' tabel niet gegenereerd.<br/><br/>Zie de property 'otherLinks' voor een andere optie om de sectie 'Doe mee' van links te voorzien.</td>
 			<td/>
 		</tr>
 		<tr>
@@ -383,11 +383,14 @@ De meeste globaal gedefinieerd properties kunnen lokaal overruled worden zoals '
 			<td/>
 		</tr>
 		<tr>
-			<td><a href="https://github.com/w3c/respec/wiki/otherLinks">otherLinks</a></td>
-			<td>Array van properties</td>
+			<td>otherLinks</td>
+			<td>Array van de properties. Tevens een alternatief voor de 'github' property.</td>
 			<td>Lokaal</td>
 			<td/>
-			<td>Genereert een of meerdere secties (afhankelijk van het aantal 'key' 'data' voorkomens) in de header van het Respec document met als titel de waarde van de property 'key' en als inhoud een of meerdere links.</td>
+			<td>Genereert een of meerdere secties (afhankelijk van het aantal 'key' 'data' voorkomens) in de header van het Respec document met als titel de waarde van de property 'key' en als inhoud een of meerdere links.<br/><br/>Deze property kan ook gebruikt worden voor optie 2 voor het genereren van de links in de 'Doe mee' tabel bovenin de Respec documentatie.<br/>Soms is de repository op basis waarvan de Respec documentatie wordt gegenereerd niet dezelfde reppositoy als waarin de issues staan of moeten worden aangemaakt die betrekking hebben op het Respec document. In dat geval kan de 'github' property vervangen worden door de volgende structuur. Indat geval kan de volgende structuur worden gebruikt:<br/><br/>
+`otherLinks: [{`<br/>`    key: "Doe mee",`<br/>`    data: [{`<br/>`      value: "[GithUb organsiatie naam]/[repository naam]",`<br/>`      href: "[url naar de Respec Github]"`<br/>`    },`<br/>`    {`<br/>`      value: "All issues",`<br/>
+`      href: "[url naar de lijst met issues of het project in de GitHub met de issues]"`<br/>`    },`<br/>`    {`<br/>`      value: "Dien een melding in",`<br/>`      href: "[url naar de pagina in de GitHub met de issues voor het aanmaken van een nieuw issue]"`<br/>`    },`<br/>`    {`<br/>`      value: "Revisiehistorie",`<br/>`      href: "[url naar de Respec Github]/commits"`<br/>`    },`<br/>`    {`<br/>`      value: "Pull requests",`<br/>`      href: "[url naar de Respec Github]/pulls"`<br/>`    },`<br/>`    ]`<br/>`  }],`<br/><br/>
+				Verwijst naar de GitHub repository waarin het Informatiemodel wordt beheerd.<br/><br/>Indien niet gedefinieerd dan wordt de 'Doe mee' tabel niet gegenereerd.</td>
 			<td/>
 		</tr>
 		<tr>
