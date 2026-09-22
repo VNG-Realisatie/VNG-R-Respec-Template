@@ -26,18 +26,18 @@ Om het gebruik van dit template makkelijker te maken raden we het aan om een IDE
 Een gratis voorbeeld van een IDE is: [Visual studio code](https://code.visualstudio.com/). Een combinatie van GitHub desktop en je eigen favoriete Markdown editor is echter ook mogelijk.
 
 Aanpassingen maken aan het document gaat op 2 manieren:
-- De configuratie van het document aanpassing in de config files
+- De configuratie van het document aanpassen in de configuratie instellingen
 - Markdown of html files toevoegen/veranderen
 
-De **configuratie files** bevatten informatie over de organisatie en over 
+De **configuratie instellingen** bevat informatie over de organisatie en over 
 de status van het document. Helemaal onderaan hoofdstuk 3 vind je meer informatie over de configuratie opties, daarnaast kun je ook de [Logius ReSpec wiki](https://github.com/Logius-standaarden/respec/wiki) 
-bezoeken. De files zijn gesplitst in 2 files die weer in 2 verschillende repositories zijn ondergebracht:
-[organisation-config.js](https://github.com/vng-realisatie/Respec-Organization-configurations/blob/main/js/organisation-config.js) en [config.js](js/config.js).
+bezoeken. De configuratie instellingen zijn verdeeld over 2 files die ook beiden in 2 verschillende repositories zijn ondergebracht:
+[organisation-config.js](https://github.com/vng-realisatie/Respec-Organization-configurations/blob/main/js/organisation-config.js) en config.js.
 
 De organisation_config (organisation-config.js) bevat configuratie properties die betrekking hebben op alle VNG-R Respec documentatie, de properties in deze file 
-zullen zelden veranderen zoals bijv. de naam van de organisatie. 
+zullen zelden veranderen zoals bijv. de naam van de organisatie. Dit bestand wordt dan ook gedeeld door met alle VNG-R Respec repositories in de GitHub organisatie 'VNG-Realisatie'.
 
-De document_config (config.js) bevat configuratie properties die alleen relevant is voor het betreffende Respec document en hoort dan ook in elke Respec renderende repository thuis.
+De document_config (config.js) bevat configuratie properties die alleen relevant is voor het betreffende Respec document en komt dan ook in elke Respec renderende repository voor.
 
 Beide configuratie bestanden worden gelinkt in de `index.html` file waardoor ze beide bij het renderen van de Respec documentatie automatisch worden samengevoegd. Daardoor zijn de organisatie specifieke configuraties over alle Respec documentatie van VNG-R gelijk en
 hoeft deze niet steeds gekopieerd te worden. Op deze wijze zorgen we er voor dat alle VNG-R Respec documenten zo eenduidig mogelijk zijn en blijven. 
